@@ -82,6 +82,19 @@ def dashboard_page() -> None:
         st.session_state["latest_report"] = report
 
     report = st.session_state.get("latest_report")
+    if report is None and not st.session_state.get("_autoplan_done", False):
+        st.session_state["_autoplan_done"] = True
+        try:
+            st.session_state["latest_report"] = _service().plan(
+                user_id=user_id,
+                raw_input=raw,
+                strategy=PriorityStrategy(strategy),
+                timezone="Asia/Kolkata",
+            )
+            report = st.session_state["latest_report"]
+        except Exception:
+            report = None
+
     if report is None:
         st.info("Generate plan to view dashboard.")
         return

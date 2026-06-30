@@ -10,7 +10,8 @@ __pycache__/
 .venv/
 .env
 .env.*
-!.env.example
+# Keep all env variants local
+.env.example
 
 # Notebooks
 .ipynb_checkpoints/
