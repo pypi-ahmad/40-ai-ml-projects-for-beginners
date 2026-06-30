@@ -1,0 +1,2 @@
+Use hybrid routing when user asks for fresh external updates and internal policy comparison.
+Prefer local-only routing for static documentation questions.

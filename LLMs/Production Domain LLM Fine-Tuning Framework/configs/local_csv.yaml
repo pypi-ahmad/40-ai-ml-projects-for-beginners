@@ -1,0 +1,75 @@
+experiment_name: domain_llm_ft
+run_name: local_csv_smoke
+paths:
+  project_root: .
+  data_dir: data
+  artifacts_dir: artifacts
+  logs_dir: logs
+  mlruns_dir: mlruns
+dataset:
+  source: csv
+  name: local_news_tiny
+  local_path: examples/news_tiny.csv
+  text_column: text
+  label_column: label
+  sample_cap: 1000
+  min_text_length: 3
+  deduplicate: true
+  split_ratio: [0.8, 0.1, 0.1]
+tokenizer:
+  name: distilbert-base-uncased
+  max_length: 128
+  truncation: true
+  padding: max_length
+  dynamic_padding: true
+model:
+  name: distilbert
+  task: multiclass
+  num_labels: 4
+training:
+  engine: trainer
+  output_dir: artifacts/checkpoints
+  epochs: 1
+  learning_rate: 2.0e-5
+  train_batch_size: 4
+  eval_batch_size: 8
+  gradient_accumulation_steps: 1
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  scheduler: linear
+  logging_steps: 10
+  eval_steps: 20
+  save_steps: 20
+  early_stopping_patience: 2
+  gradient_checkpointing: false
+  fp16: false
+  bf16: false
+  seed: 42
+peft:
+  enabled: false
+  strategy: none
+hpo:
+  enabled: false
+  trials: 2
+  timeout_minutes: 10
+  metric_name: eval_f1
+  direction: maximize
+evaluation:
+  average: macro
+  threshold: 0.5
+  calibration_bins: 10
+export:
+  onnx: true
+  torchscript: true
+  dynamic_quantization: true
+  safetensors: true
+  int8: true
+  int4: false
+serving:
+  host: 0.0.0.0
+  api_port: 8000
+  ui_port: 8501
+  workers: 1
+monitoring:
+  collect_gpu: false
+  interval_seconds: 1.0

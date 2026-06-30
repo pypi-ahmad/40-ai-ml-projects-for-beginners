@@ -1,0 +1,58 @@
+[project]
+name = "gradio-llm-playground"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.0",
+    "httpx>=0.28",
+    "Pillow>=11.0",
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "pypdf2>=3.0",
+    "jupyter>=1.0",
+    "nbformat>=5.0",
+    "streamlit>=1.58.0",
+    "scipy>=1.18.0",
+]
+optional-dependencies.dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "pytest-timeout>=2.3",
+    "ruff>=0.9",
+    "mypy>=1.15",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+exclude = [".venv", "__pycache__", "models", "outputs", "logs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["N802", "N803", "N806"]
+"notebooks/*" = ["N802", "N803", "N806"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = ["notebooks", "models", "outputs", "logs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/"]
+timeout = 10
+timeout_method = "thread"
+filterwarnings = [
+    "ignore::DeprecationWarning:.*pkg_resources.*",
+    "ignore::UserWarning:.*gradio.*",
+]
+
+[dependency-groups]
+dev = [
+    "bandit>=1.9.4",
+    "pyright>=1.1.410",
+]

@@ -1,0 +1,11 @@
+{
+  "artifact": "iris_model.pkl",
+  "created_at": "2026-06-24T22:23:05.870946+00:00",
+  "metadata": {
+    "model_name": "KNN",
+    "seed": 42,
+    "version": "v2"
+  },
+  "sha256": "584aaceb61857afacab2d9cad192deb907cd6676f45344d8a89f3d2c89f312b0",
+  "size_bytes": 7131
+}

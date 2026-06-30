@@ -1,0 +1,70 @@
+{
+  "input": "Calculate 12 * 7 and explain briefly",
+  "metrics": {
+    "executor_latency_ms": 0.6183099976624362,
+    "planner_calls": 1.0,
+    "planner_latency_ms": 3.4131790016544983,
+    "response_calls": 1.0,
+    "response_latency_ms": 1.5112699984456412,
+    "router_calls": 2.0,
+    "router_latency_ms": 4.684475999965798,
+    "tool_calls": 2.0,
+    "tool_latency_ms": 0.2524979936424643
+  },
+  "mode": "react",
+  "run_id": "fd4b7aa0-dc3d-4257-bb1f-4fa3674eb33f",
+  "session_id": "smoke-live-3",
+  "termination_reason": "completed",
+  "trace": [
+    {
+      "action": {
+        "arguments": {
+          "expression": "12 * 7"
+        },
+        "name": "calculator"
+      },
+      "iteration": 1,
+      "latency_ms": 0.15880099817877635,
+      "observation": {
+        "citations": [],
+        "error": null,
+        "latency_ms": 0.15880099817877635,
+        "ok": true,
+        "output": {
+          "expression": "12 * 7",
+          "result": 84.0
+        },
+        "timestamp": "2026-06-25T10:29:29.775153",
+        "tool": "calculator"
+      },
+      "reflection": "fallback reflection",
+      "retries": 0,
+      "thought_summary": "math expression detected"
+    },
+    {
+      "action": {
+        "arguments": {
+          "expression": "12 * 7"
+        },
+        "name": "calculator"
+      },
+      "iteration": 2,
+      "latency_ms": 0.09369699546368793,
+      "observation": {
+        "citations": [],
+        "error": null,
+        "latency_ms": 0.09369699546368793,
+        "ok": true,
+        "output": {
+          "expression": "12 * 7",
+          "result": 84.0
+        },
+        "timestamp": "2026-06-25T10:29:30.978571",
+        "tool": "calculator"
+      },
+      "reflection": "fallback reflection",
+      "retries": 0,
+      "thought_summary": "math expression detected"
+    }
+  ]
+}

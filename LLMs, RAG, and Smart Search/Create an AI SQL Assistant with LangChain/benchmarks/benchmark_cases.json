@@ -1,0 +1,1138 @@
+[
+  {
+    "case_id": "B001",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B002",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2021.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B003",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2022.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B004",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2023.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B005",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2024.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B006",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B007",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2021.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B008",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2022.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B009",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2023.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B010",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2024.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B011",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for APAC in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'APAC'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B012",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for APAC in 2021.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'APAC'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B013",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for APAC in 2022.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'APAC'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B014",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for APAC in 2023.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'APAC'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B015",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for APAC in 2024.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'APAC'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B016",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for LATAM in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'LATAM'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B017",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for LATAM in 2021.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'LATAM'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B018",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for LATAM in 2022.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'LATAM'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B019",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for LATAM in 2023.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'LATAM'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B020",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for LATAM in 2024.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'LATAM'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B021",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in USA?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'USA'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B022",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in Germany?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'Germany'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B023",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in UK?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'UK'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B024",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in France?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'France'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B025",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in India?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'India'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B026",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in Canada?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'Canada'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B027",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in Brazil?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'Brazil'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B028",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in Japan?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'Japan'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B029",
+    "category": "top_n",
+    "question": "Who are top 10 customers by net revenue in Australia?",
+    "ground_truth_sql": "SELECT\n            c.customer_id,\n            c.company_name,\n            ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n        FROM customers c\n        JOIN orders o ON c.customer_id = o.customer_id\n        JOIN order_details od ON o.order_id = od.order_id\n        WHERE c.country = 'Australia'\n        GROUP BY c.customer_id, c.company_name\n        ORDER BY revenue DESC\n        LIMIT 10;",
+    "tags": [
+      "top_n",
+      "customer",
+      "revenue"
+    ]
+  },
+  {
+    "case_id": "B030",
+    "category": "segment_analysis",
+    "question": "Break down 2021 net revenue by product category for Enterprise customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Enterprise'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B031",
+    "category": "segment_analysis",
+    "question": "Break down 2022 net revenue by product category for Enterprise customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Enterprise'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B032",
+    "category": "segment_analysis",
+    "question": "Break down 2023 net revenue by product category for Enterprise customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Enterprise'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B033",
+    "category": "segment_analysis",
+    "question": "Break down 2024 net revenue by product category for Enterprise customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Enterprise'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B034",
+    "category": "segment_analysis",
+    "question": "Break down 2021 net revenue by product category for SMB customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'SMB'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B035",
+    "category": "segment_analysis",
+    "question": "Break down 2022 net revenue by product category for SMB customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'SMB'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B036",
+    "category": "segment_analysis",
+    "question": "Break down 2023 net revenue by product category for SMB customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'SMB'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B037",
+    "category": "segment_analysis",
+    "question": "Break down 2024 net revenue by product category for SMB customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'SMB'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B038",
+    "category": "segment_analysis",
+    "question": "Break down 2021 net revenue by product category for Mid-Market customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Mid-Market'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B039",
+    "category": "segment_analysis",
+    "question": "Break down 2022 net revenue by product category for Mid-Market customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Mid-Market'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B040",
+    "category": "segment_analysis",
+    "question": "Break down 2023 net revenue by product category for Mid-Market customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Mid-Market'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B041",
+    "category": "segment_analysis",
+    "question": "Break down 2024 net revenue by product category for Mid-Market customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Mid-Market'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B042",
+    "category": "segment_analysis",
+    "question": "Break down 2021 net revenue by product category for Public Sector customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Public Sector'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B043",
+    "category": "segment_analysis",
+    "question": "Break down 2022 net revenue by product category for Public Sector customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Public Sector'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B044",
+    "category": "segment_analysis",
+    "question": "Break down 2023 net revenue by product category for Public Sector customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Public Sector'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B045",
+    "category": "segment_analysis",
+    "question": "Break down 2024 net revenue by product category for Public Sector customers.",
+    "ground_truth_sql": "SELECT\n                cat.category_name,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue,\n                SUM(od.quantity) AS units\n            FROM customers c\n            JOIN orders o ON c.customer_id = o.customer_id\n            JOIN order_details od ON o.order_id = od.order_id\n            JOIN products p ON od.product_id = p.product_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE c.segment = 'Public Sector'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY cat.category_name\n            ORDER BY revenue DESC;",
+    "tags": [
+      "join",
+      "segment",
+      "category",
+      "group_by"
+    ]
+  },
+  {
+    "case_id": "B046",
+    "category": "window_functions",
+    "question": "Rank top customers in Europe for 2022 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'Europe'\n                  AND strftime('%Y', o.order_date) = '2022'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B047",
+    "category": "window_functions",
+    "question": "Rank top customers in Europe for 2023 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'Europe'\n                  AND strftime('%Y', o.order_date) = '2023'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B048",
+    "category": "window_functions",
+    "question": "Rank top customers in Europe for 2024 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'Europe'\n                  AND strftime('%Y', o.order_date) = '2024'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B049",
+    "category": "window_functions",
+    "question": "Rank top customers in North America for 2022 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'North America'\n                  AND strftime('%Y', o.order_date) = '2022'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B050",
+    "category": "window_functions",
+    "question": "Rank top customers in North America for 2023 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'North America'\n                  AND strftime('%Y', o.order_date) = '2023'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B051",
+    "category": "window_functions",
+    "question": "Rank top customers in North America for 2024 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'North America'\n                  AND strftime('%Y', o.order_date) = '2024'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B052",
+    "category": "window_functions",
+    "question": "Rank top customers in APAC for 2022 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'APAC'\n                  AND strftime('%Y', o.order_date) = '2022'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B053",
+    "category": "window_functions",
+    "question": "Rank top customers in APAC for 2023 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'APAC'\n                  AND strftime('%Y', o.order_date) = '2023'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B054",
+    "category": "window_functions",
+    "question": "Rank top customers in APAC for 2024 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'APAC'\n                  AND strftime('%Y', o.order_date) = '2024'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B055",
+    "category": "window_functions",
+    "question": "Rank top customers in LATAM for 2022 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'LATAM'\n                  AND strftime('%Y', o.order_date) = '2022'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B056",
+    "category": "window_functions",
+    "question": "Rank top customers in LATAM for 2023 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'LATAM'\n                  AND strftime('%Y', o.order_date) = '2023'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B057",
+    "category": "window_functions",
+    "question": "Rank top customers in LATAM for 2024 by net revenue.",
+    "ground_truth_sql": "WITH customer_rev AS (\n                SELECT\n                    c.customer_id,\n                    c.company_name,\n                    ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n                FROM customers c\n                JOIN orders o ON c.customer_id = o.customer_id\n                JOIN order_details od ON o.order_id = od.order_id\n                WHERE o.market = 'LATAM'\n                  AND strftime('%Y', o.order_date) = '2024'\n                GROUP BY c.customer_id, c.company_name\n            )\n            SELECT\n                customer_id,\n                company_name,\n                revenue,\n                DENSE_RANK() OVER (ORDER BY revenue DESC) AS revenue_rank\n            FROM customer_rev\n            ORDER BY revenue_rank, customer_id\n            LIMIT 20;",
+    "tags": [
+      "cte",
+      "window",
+      "ranking"
+    ]
+  },
+  {
+    "case_id": "B058",
+    "category": "inventory",
+    "question": "List low-stock active Beverages products at or below 20 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Beverages'\n              AND p.units_in_stock <= 20\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B059",
+    "category": "inventory",
+    "question": "List low-stock active Confections products at or below 20 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Confections'\n              AND p.units_in_stock <= 20\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B060",
+    "category": "inventory",
+    "question": "List low-stock active Seafood products at or below 20 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Seafood'\n              AND p.units_in_stock <= 20\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B061",
+    "category": "inventory",
+    "question": "List low-stock active Produce products at or below 20 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Produce'\n              AND p.units_in_stock <= 20\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B062",
+    "category": "inventory",
+    "question": "List low-stock active Beverages products at or below 40 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Beverages'\n              AND p.units_in_stock <= 40\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B063",
+    "category": "inventory",
+    "question": "List low-stock active Confections products at or below 40 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Confections'\n              AND p.units_in_stock <= 40\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B064",
+    "category": "inventory",
+    "question": "List low-stock active Seafood products at or below 40 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Seafood'\n              AND p.units_in_stock <= 40\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B065",
+    "category": "inventory",
+    "question": "List low-stock active Produce products at or below 40 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Produce'\n              AND p.units_in_stock <= 40\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B066",
+    "category": "inventory",
+    "question": "List low-stock active Beverages products at or below 60 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Beverages'\n              AND p.units_in_stock <= 60\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B067",
+    "category": "inventory",
+    "question": "List low-stock active Confections products at or below 60 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Confections'\n              AND p.units_in_stock <= 60\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B068",
+    "category": "inventory",
+    "question": "List low-stock active Seafood products at or below 60 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Seafood'\n              AND p.units_in_stock <= 60\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B069",
+    "category": "inventory",
+    "question": "List low-stock active Produce products at or below 60 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Produce'\n              AND p.units_in_stock <= 60\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B070",
+    "category": "inventory",
+    "question": "List low-stock active Beverages products at or below 80 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Beverages'\n              AND p.units_in_stock <= 80\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B071",
+    "category": "inventory",
+    "question": "List low-stock active Confections products at or below 80 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Confections'\n              AND p.units_in_stock <= 80\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B072",
+    "category": "inventory",
+    "question": "List low-stock active Seafood products at or below 80 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Seafood'\n              AND p.units_in_stock <= 80\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B073",
+    "category": "inventory",
+    "question": "List low-stock active Produce products at or below 80 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Produce'\n              AND p.units_in_stock <= 80\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B074",
+    "category": "inventory",
+    "question": "List low-stock active Beverages products at or below 100 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Beverages'\n              AND p.units_in_stock <= 100\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B075",
+    "category": "inventory",
+    "question": "List low-stock active Confections products at or below 100 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Confections'\n              AND p.units_in_stock <= 100\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B076",
+    "category": "inventory",
+    "question": "List low-stock active Seafood products at or below 100 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Seafood'\n              AND p.units_in_stock <= 100\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B077",
+    "category": "inventory",
+    "question": "List low-stock active Produce products at or below 100 units with suppliers.",
+    "ground_truth_sql": "SELECT\n                p.product_id,\n                p.product_name,\n                p.units_in_stock,\n                s.company_name AS supplier,\n                cat.category_name\n            FROM products p\n            JOIN suppliers s ON p.supplier_id = s.supplier_id\n            JOIN categories cat ON p.category_id = cat.category_id\n            WHERE cat.category_name = 'Produce'\n              AND p.units_in_stock <= 100\n              AND p.discontinued = 0\n            ORDER BY p.units_in_stock ASC, p.product_id\n            LIMIT 25;",
+    "tags": [
+      "inventory",
+      "join",
+      "filter"
+    ]
+  },
+  {
+    "case_id": "B078",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in Europe during 2021, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2021'\n              AND o.market = 'Europe'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B079",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in North America during 2021, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2021'\n              AND o.market = 'North America'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B080",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in APAC during 2021, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2021'\n              AND o.market = 'APAC'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B081",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in LATAM during 2021, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2021'\n              AND o.market = 'LATAM'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B082",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in Europe during 2022, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2022'\n              AND o.market = 'Europe'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B083",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in North America during 2022, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2022'\n              AND o.market = 'North America'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B084",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in APAC during 2022, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2022'\n              AND o.market = 'APAC'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B085",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in LATAM during 2022, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2022'\n              AND o.market = 'LATAM'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B086",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in Europe during 2023, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2023'\n              AND o.market = 'Europe'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B087",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in North America during 2023, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2023'\n              AND o.market = 'North America'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B088",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in APAC during 2023, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2023'\n              AND o.market = 'APAC'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B089",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in LATAM during 2023, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2023'\n              AND o.market = 'LATAM'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B090",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in Europe during 2024, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2024'\n              AND o.market = 'Europe'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B091",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in North America during 2024, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2024'\n              AND o.market = 'North America'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B092",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in APAC during 2024, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2024'\n              AND o.market = 'APAC'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B093",
+    "category": "employee_performance",
+    "question": "Show high-performing employees in LATAM during 2024, with at least 20 orders.",
+    "ground_truth_sql": "SELECT\n                e.employee_id,\n                e.first_name || ' ' || e.last_name AS employee_name,\n                COUNT(DISTINCT o.order_id) AS orders_handled,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM employees e\n            JOIN orders o ON e.employee_id = o.employee_id\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE strftime('%Y', o.order_date) = '2024'\n              AND o.market = 'LATAM'\n            GROUP BY e.employee_id, employee_name\n            HAVING COUNT(DISTINCT o.order_id) >= 20\n            ORDER BY revenue DESC\n            LIMIT 15;",
+    "tags": [
+      "having",
+      "employee",
+      "kpi"
+    ]
+  },
+  {
+    "case_id": "B094",
+    "category": "comparison",
+    "question": "For USA, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'USA'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B095",
+    "category": "comparison",
+    "question": "For Germany, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'Germany'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B096",
+    "category": "comparison",
+    "question": "For UK, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'UK'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B097",
+    "category": "comparison",
+    "question": "For France, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'France'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B098",
+    "category": "comparison",
+    "question": "For India, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'India'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B099",
+    "category": "comparison",
+    "question": "For Canada, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'Canada'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  },
+  {
+    "case_id": "B100",
+    "category": "comparison",
+    "question": "For Brazil, show month-over-month revenue change.",
+    "ground_truth_sql": "WITH monthly AS (\n            SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.ship_country = 'Brazil'\n            GROUP BY strftime('%Y-%m', o.order_date)\n        )\n        SELECT\n            month,\n            revenue,\n            revenue - LAG(revenue) OVER (ORDER BY month) AS mom_change\n        FROM monthly\n        ORDER BY month;",
+    "tags": [
+      "comparison",
+      "lag",
+      "window"
+    ]
+  }
+]

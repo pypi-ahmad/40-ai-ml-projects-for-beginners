@@ -1,0 +1,6 @@
+name: tatsu-lab/alpaca
+source: hf
+split: train
+task_type: instruction
+text_field: instruction
+output_field: output

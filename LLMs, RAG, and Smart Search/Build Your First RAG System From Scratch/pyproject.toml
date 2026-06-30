@@ -1,0 +1,45 @@
+[project]
+name = "rag-system-from-scratch"
+version = "1.0.0"
+description = "Build Your First RAG System From Zero to Hero - Educational tutorial series"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "datasets>=3.0.0",
+    "chromadb>=0.5.0",
+    "torch>=2.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.26.0",
+    "pyarrow>=16.1.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "tqdm>=4.66.0",
+    "ollama>=0.3.0",
+    "nltk>=3.9.0",
+    "rouge-score>=0.1.2",
+    "bert-score>=0.3.13",
+    "scikit-learn>=1.4.0",
+    "jupyter>=1.0.0",
+    "nbconvert>=7.16.0",
+    "gradio>=4.0.0",
+    "evaluate>=0.4.0",
+    "python-dotenv>=1.0.0",
+    "pytest>=8.2.0",
+    "ruff>=0.6.9",
+]
+
+[project.optional-dependencies]
+faiss = ["faiss-cpu>=1.8.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[build-system]
+requires = ["setuptools>=75.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

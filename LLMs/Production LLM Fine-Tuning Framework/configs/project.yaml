@@ -1,0 +1,106 @@
+name: project22-llmft
+runtime:
+  seed: 42
+  device: auto
+  mixed_precision: bf16
+  artifacts_dir: artifacts
+  cache_dir: .cache/llmft
+
+data:
+  datasets:
+    - alpaca_cleaned
+    - codealpaca
+    - medical_qa
+  streaming: false
+  validation_ratio: 0.1
+  max_samples_per_dataset: 48
+  min_tokens: 3
+  max_tokens: 1024
+  template: alpaca
+
+model:
+  targets:
+    - llama3_8b
+    - qwen3_8b
+    - mistral_7b
+    - gemma3
+    - phi4_mini
+    - granite41
+  allow_fallback: true
+  dtype: bf16
+  load_in_4bit: true
+  quantization_modes:
+    - 4bit
+    - 8bit
+    - fp16
+    - bf16
+
+train:
+  method: sft
+  peft_method: qlora
+  learning_rate: 0.0002
+  batch_size: 2
+  gradient_accumulation: 8
+  epochs: 1
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  max_seq_len: 2048
+  eval_steps: 50
+  save_steps: 50
+  early_stopping_patience: 3
+
+hpo:
+  enabled: true
+  trials: 8
+  metric: eval_loss
+  direction: minimize
+
+evaluation:
+  metrics:
+    - bleu
+    - rouge
+    - bertscore
+    - exact_match
+    - perplexity
+    - latency_ms
+  judge_model: granite41
+  judge_enabled: true
+
+inference:
+  backend: transformers
+  max_new_tokens: 64
+  temperature: 0.2
+  top_p: 0.9
+  top_k: 40
+  request_timeout_seconds: 2
+  enable_remote_backends: false
+  benchmark_backends:
+    - transformers
+  ollama_host: http://localhost:11434
+  vllm_host: http://localhost:8000
+
+export:
+  export_dir: artifacts/exports
+  emit_gguf: true
+  emit_onnx: false
+  emit_ollama_modelfile: true
+  emit_merged_manifest: true
+
+serve:
+  host: 0.0.0.0
+  port: 8080
+  workers: 1
+
+ui:
+  host: 0.0.0.0
+  port: 8501
+  title: LLM Fine-Tuning Framework
+
+safety:
+  enable_prompt_injection_check: true
+  enable_toxicity_check: true
+  banned_patterns:
+    - ignore previous instructions
+    - system prompt
+    - api key
+    - password

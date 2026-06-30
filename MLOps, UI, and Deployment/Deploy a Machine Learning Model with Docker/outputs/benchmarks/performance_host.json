@@ -1,0 +1,12 @@
+{
+  "requests": 120,
+  "concurrency": 20,
+  "failures": 0,
+  "latency_avg_ms": 253.3436993249476,
+  "latency_p50_ms": 230.73796900098387,
+  "latency_p95_ms": 397.31720119834785,
+  "latency_p99_ms": 447.97237092079746,
+  "throughput_rps": 76.23960872162492,
+  "label": "host",
+  "startup_seconds": 0.050199979999888455
+}

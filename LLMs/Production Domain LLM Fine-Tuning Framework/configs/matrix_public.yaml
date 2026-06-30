@@ -1,0 +1,74 @@
+experiment_name: domain_llm_ft_matrix
+run_name: public_matrix
+paths:
+  project_root: .
+  data_dir: data
+  artifacts_dir: artifacts
+  logs_dir: logs
+  mlruns_dir: mlruns
+dataset:
+  source: hf
+  name: ag_news
+  text_column: text
+  label_column: label
+  sample_cap: 4000
+  deduplicate: true
+tokenizer:
+  name: distilbert-base-uncased
+  max_length: 256
+  truncation: true
+  padding: max_length
+model:
+  name: distilbert
+  task: multiclass
+  num_labels: 4
+training:
+  engine: trainer
+  output_dir: artifacts/checkpoints
+  epochs: 1
+  learning_rate: 2.0e-5
+  train_batch_size: 8
+  eval_batch_size: 16
+  gradient_accumulation_steps: 1
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  scheduler: linear
+  logging_steps: 25
+  eval_steps: 100
+  save_steps: 100
+  early_stopping_patience: 2
+  gradient_checkpointing: true
+  fp16: true
+  bf16: false
+  seed: 42
+peft:
+  enabled: true
+  strategy: lora
+  r: 16
+  alpha: 32
+  dropout: 0.05
+hpo:
+  enabled: false
+  trials: 10
+  timeout_minutes: 90
+  metric_name: eval_f1
+  direction: maximize
+evaluation:
+  average: macro
+  threshold: 0.5
+  calibration_bins: 10
+export:
+  onnx: true
+  torchscript: true
+  dynamic_quantization: true
+  safetensors: true
+  int8: true
+  int4: false
+serving:
+  host: 0.0.0.0
+  api_port: 8000
+  ui_port: 8501
+  workers: 1
+monitoring:
+  collect_gpu: true
+  interval_seconds: 1.0

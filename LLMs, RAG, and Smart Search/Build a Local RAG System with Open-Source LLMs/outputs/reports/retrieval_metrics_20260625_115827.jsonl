@@ -1,0 +1,3 @@
+{"k": 3, "precision_at_k": 0.016666666666666666, "recall_at_k": 0.05, "mrr": 0.025, "ndcg": 0.031546487678572877, "avg_retrieval_latency_ms": 321.35755979979876}
+{"k": 5, "precision_at_k": 0.02, "recall_at_k": 0.1, "mrr": 0.025, "ndcg": 0.053080315582242535, "avg_retrieval_latency_ms": 315.0637035490945}
+{"k": 10, "precision_at_k": 0.015, "recall_at_k": 0.15, "mrr": 0.025, "ndcg": 0.0697469822489092, "avg_retrieval_latency_ms": 312.1310935996007}

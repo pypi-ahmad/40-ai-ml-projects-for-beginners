@@ -1,0 +1,16 @@
+{
+  "corpus_splits": [
+    "train",
+    "validation"
+  ],
+  "eval_splits": [
+    "validation"
+  ],
+  "num_corpus_context_keys": 20233,
+  "num_eval_context_keys": 1204,
+  "split_context_key_overlap": 1204,
+  "overlap_expected_for_retrieval": true,
+  "split_contamination_risk": false,
+  "missing_gold_doc_references": 0,
+  "leakage_pass": true
+}

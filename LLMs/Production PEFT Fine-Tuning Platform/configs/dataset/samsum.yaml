@@ -1,0 +1,6 @@
+name: samsung/samsum
+source: hf
+split: train
+task_type: summarization
+text_field: dialogue
+output_field: summary

@@ -1,0 +1,15 @@
+.git
+.gitignore
+.venv
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+catboost_info/
+outputs/
+data/raw/
+docs/
+tests/
+notebooks/.ipynb_checkpoints/
+*.log

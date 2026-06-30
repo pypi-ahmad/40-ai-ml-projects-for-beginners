@@ -1,0 +1,8 @@
+{
+  "dataset": "gauravmalik26/food-delivery-dataset",
+  "file": "train.csv",
+  "download_source": "kaggle_mcp_signed_url",
+  "downloaded_at_epoch": 1782295214,
+  "elapsed_seconds": 4.849,
+  "output_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/data/raw/train.csv"
+}

@@ -1,0 +1,10 @@
+{
+  "artifact": "iris_model_benchmark.pt",
+  "created_at": "2026-06-24T22:23:07.846148+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".pt"
+  },
+  "sha256": "4a2bfe15124d4cbcdae5eefac768cd89e5f1adbd2cd22c14aeacaf0e61e266c9",
+  "size_bytes": 9244
+}

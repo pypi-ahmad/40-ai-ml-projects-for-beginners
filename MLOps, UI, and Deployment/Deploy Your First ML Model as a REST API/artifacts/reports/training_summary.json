@@ -1,0 +1,90 @@
+{
+  "problem_type": "regression",
+  "dataset_name": "California Housing",
+  "target_name": "MedHouseVal",
+  "feature_names": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "feature_schema_version": "california-housing-v1",
+  "model_name": "LightGBM",
+  "model_version": "1.0.0",
+  "model_library": "lightgbm.sklearn",
+  "n_train": 14448,
+  "n_val": 3096,
+  "n_test": 3096,
+  "mae": 0.28398245765408336,
+  "mse": 0.17849623698204856,
+  "rmse": 0.42248815010843627,
+  "r2": 0.8650118503813424,
+  "mape": 0.1649169140328179,
+  "validation_mae": 0.2247909192147596,
+  "validation_mse": 0.10669753659914812,
+  "validation_rmse": 0.3266458886916352,
+  "validation_r2": 0.9180993428234233,
+  "validation_mape": 0.13067288243020533,
+  "train_seconds": 39.92038936500103,
+  "top_models": [
+    {
+      "model_name": "LightGBM",
+      "mae": 0.2985924014749182,
+      "mse": 0.21113732969956167,
+      "rmse": 0.4594968222953905,
+      "r2": 0.8379317216866307,
+      "mape": 0.1708968628647933
+    },
+    {
+      "model_name": "XGBoost",
+      "mae": 0.31692881110293,
+      "mse": 0.22941642602361378,
+      "rmse": 0.4789743479807805,
+      "r2": 0.8239007510639615,
+      "mape": 0.18036135961754277
+    },
+    {
+      "model_name": "ExtraTrees",
+      "mae": 0.3325847461442186,
+      "mse": 0.2623366384594592,
+      "rmse": 0.5121880889472725,
+      "r2": 0.7986313107486002,
+      "mape": 0.18640029115556556
+    },
+    {
+      "model_name": "RandomForest",
+      "mae": 0.33765800923234307,
+      "mse": 0.26756411282709675,
+      "rmse": 0.5172659981354822,
+      "r2": 0.7946187196454739,
+      "mape": 0.19222788178120098
+    },
+    {
+      "model_name": "Lasso",
+      "mae": 0.5334808144965701,
+      "mse": 0.5408669131225835,
+      "rmse": 0.735436545952527,
+      "r2": 0.584832442793626,
+      "mape": 0.32150605258155374
+    }
+  ],
+  "assumptions": [
+    "Train/validation/test split done with random_state=42",
+    "Features expected in canonical California Housing order",
+    "Model trained for local CPU inference"
+  ],
+  "limitations": [
+    "Dataset represents 1990 California census block groups",
+    "No external drift monitoring in local mode"
+  ],
+  "trained_at_utc": "2026-06-24T22:14:27.837274+00:00",
+  "serialization_format": "joblib",
+  "benchmark_profile": "full",
+  "security_note": "Never load untrusted pickle/joblib artifacts in production. Use signed artifacts and trusted storage only.",
+  "onnx_exported": false,
+  "onnx_note": "ONNX export skipped: No module named 'skl2onnx'"
+}

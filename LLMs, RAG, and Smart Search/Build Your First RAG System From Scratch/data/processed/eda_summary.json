@@ -1,0 +1,16 @@
+{
+  "num_documents": 20233,
+  "num_queries": 11873,
+  "num_unique_titles": 477,
+  "doc_length_mean": 739.6197795680324,
+  "doc_length_median": 679.0,
+  "doc_length_p95": 1315.0,
+  "question_length_mean": 59.441169038996044,
+  "question_length_p95": 98.0,
+  "answer_length_mean": 20.916160593792174,
+  "answerable_ratio": 0.4992840899519919,
+  "unanswerable_ratio": 0.5007159100480081,
+  "query_split_counts": {
+    "validation": 11873
+  }
+}

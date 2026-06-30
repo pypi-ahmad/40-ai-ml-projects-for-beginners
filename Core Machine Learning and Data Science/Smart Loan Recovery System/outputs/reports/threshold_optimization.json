@@ -1,0 +1,8 @@
+{
+  "optimized_threshold": 0.14,
+  "total_cost": 20000.0,
+  "false_positive_cost": 20000.0,
+  "false_negative_cost": 0.0,
+  "high_risk_recall": 1.0,
+  "high_risk_precision": 0.1919191919191919
+}

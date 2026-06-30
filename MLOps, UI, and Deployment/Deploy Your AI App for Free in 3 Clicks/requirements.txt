@@ -1,0 +1,7 @@
+# Runtime dependencies for Streamlit Community Cloud deployment.
+# Keep this list minimal for faster build times and lower memory pressure.
+
+streamlit==1.58.0
+requests==2.34.2
+pandas==3.0.3
+numpy==2.5.0

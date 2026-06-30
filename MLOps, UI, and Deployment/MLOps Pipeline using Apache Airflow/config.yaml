@@ -1,0 +1,77 @@
+project:
+  name: "MLOps Pipeline using Apache Airflow"
+  target_col: "Usage (minutes)"
+  date_col: "Date"
+  group_col: "App"
+  forecast_horizon_days: 1
+  random_state: 42
+
+paths:
+  data_raw: "data/raw/screentime_analysis.csv"
+  data_synthetic: "data/synthetic/screentime_augmented.csv"
+  data_validated: "data/processed/validated_data.parquet"
+  data_features: "data/processed/featured_data.parquet"
+  data_train: "data/splits/train.parquet"
+  data_test: "data/splits/test.parquet"
+  feature_rankings: "outputs/metrics/feature_rankings.csv"
+  model_leaderboard: "outputs/metrics/model_leaderboard.csv"
+  best_metrics: "outputs/metrics/best_model_metrics.json"
+  model_registry_dir: "outputs/models"
+  monitoring_dir: "outputs/monitoring"
+  reports_dir: "outputs/reports"
+  figures_dir: "outputs/figures"
+  mlruns_dir: "outputs/mlruns"
+
+synthetic_data:
+  enabled: true
+  days_to_generate: 365
+  noise_scale: 0.18
+  seasonal_scale: 0.12
+
+validation:
+  expected_columns:
+    - "Date"
+    - "App"
+    - "Usage (minutes)"
+    - "Notifications"
+    - "Times Opened"
+  min_rows: 100
+  max_missing_pct: 5.0
+  psi_threshold: 0.20
+  ks_pvalue_threshold: 0.05
+
+feature_engineering:
+  holiday_country: "US"
+  lags: [1, 2, 3, 7, 14]
+  rolling_windows: [3, 7, 14]
+  drop_na_target: true
+  clip_negative_usage: true
+
+feature_selection:
+  variance_threshold: 0.01
+  high_correlation_threshold: 0.90
+  rfe_num_features: 12
+
+training:
+  test_size: 0.2
+  cv_splits: 3
+  metric_primary: "rmse"
+  lazy_enabled: true
+  lazy_max_rows: 1200
+  flaml_enabled: true
+  flaml_time_budget_sec: 60
+  pycaret_enabled: true
+  pycaret_fold: 5
+  pycaret_session_id: 42
+
+monitoring:
+  prediction_psi_threshold: 0.20
+  error_threshold_mae: 15.0
+  runtime_warning_sec: 600
+
+scheduling:
+  validation: "0 6 * * *"
+  feature_engineering: "15 6 * * *"
+  training: "0 7 * * 1"
+  reporting: "30 7 * * 1"
+  catchup: false

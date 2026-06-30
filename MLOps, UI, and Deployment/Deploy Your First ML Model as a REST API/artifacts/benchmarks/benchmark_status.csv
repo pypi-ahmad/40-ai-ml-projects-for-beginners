@@ -1,0 +1,4 @@
+tool,status,rows,notes,path
+LazyPredict,ok,42,,"/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/MLOps, UI, and Deployment/Deploy Your First ML Model as a REST API/artifacts/benchmarks/lazypredict_benchmark.csv"
+FLAML,skipped,0,Import failed: No module named 'flaml',
+PyCaret,skipped,0,Import failed: No module named 'pycaret',

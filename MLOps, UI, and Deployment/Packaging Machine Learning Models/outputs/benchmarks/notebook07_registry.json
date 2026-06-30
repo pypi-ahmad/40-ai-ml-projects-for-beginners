@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "active_version": "v1",
+  "versions": {
+    "v1": {
+      "version_id": "v1",
+      "model_path": "models/iris_model_v1.pkl",
+      "metrics": {
+        "f1_macro": 0.96
+      },
+      "description": "baseline",
+      "author": "ml_package",
+      "created_at": "2026-06-24T22:23:53.828217+00:00",
+      "status": "active",
+      "artifact_sha256": null,
+      "dataset_fingerprint": null,
+      "parent_version": null,
+      "tags": []
+    },
+    "v2": {
+      "version_id": "v2",
+      "model_path": "models/iris_model_v2.pkl",
+      "metrics": {
+        "f1_macro": 1.0
+      },
+      "description": "improved",
+      "author": "ml_package",
+      "created_at": "2026-06-24T22:23:53.828491+00:00",
+      "status": "archived",
+      "artifact_sha256": null,
+      "dataset_fingerprint": null,
+      "parent_version": "v1",
+      "tags": []
+    }
+  }
+}

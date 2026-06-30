@@ -1,0 +1,19 @@
+{
+  "v1": {
+    "model_name": "LogisticRegression",
+    "accuracy": 0.9666666666666667,
+    "precision_macro": 0.9696969696969697,
+    "recall_macro": 0.9666666666666667,
+    "f1_macro": 0.9665831244778612,
+    "roc_auc_ovr": 1.0
+  },
+  "v2": {
+    "model_name": "KNN",
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "roc_auc_ovr": 1.0
+  },
+  "best_overall_model": "KNN"
+}

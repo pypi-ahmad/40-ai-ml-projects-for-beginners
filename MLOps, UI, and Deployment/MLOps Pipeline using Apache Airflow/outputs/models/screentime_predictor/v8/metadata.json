@@ -1,0 +1,36 @@
+{
+  "model_name": "screentime_predictor",
+  "version": 8,
+  "registered_at": "2026-06-24T22:25:00.174977",
+  "model_type": "RandomForestRegressor",
+  "metrics": {
+    "mae": 4.902624441132636,
+    "mse": 47.07794531106892,
+    "rmse": 6.861336991510395,
+    "r2": 0.9281033987854559,
+    "mape": 11.917477711728736
+  },
+  "hyperparameters": {
+    "model_name": "RandomForest",
+    "source": "core_benchmark"
+  },
+  "feature_names": [
+    "Usage_minutes_rolling_mean_14",
+    "Usage_minutes_rolling_std_14",
+    "Usage_minutes_rolling_mean_7",
+    "Usage_minutes_rolling_mean_3",
+    "Usage_minutes_rolling_std_7",
+    "usage_x_opens",
+    "Notifications_rolling_mean_7",
+    "engagement_score",
+    "Times_Opened_rolling_mean_14",
+    "Notifications_rolling_mean_3",
+    "Usage_minutes_lag_1",
+    "Notifications_rolling_std_7",
+    "Times_Opened_rolling_mean_3",
+    "Usage_minutes_lag_3",
+    "open_frequency"
+  ],
+  "stage": "staging",
+  "mlflow_run_id": null
+}

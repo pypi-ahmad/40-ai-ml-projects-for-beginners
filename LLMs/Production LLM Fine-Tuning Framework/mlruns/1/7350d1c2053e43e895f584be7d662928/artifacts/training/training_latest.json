@@ -1,0 +1,13 @@
+{
+  "checkpoints_dir": "artifacts/training/train-llama3_8b-qlora-20260628-192808-80b4a918/checkpoints",
+  "eval_loss": 10.743868,
+  "model_alias": "llama3_8b",
+  "model_id": "sshleifer/tiny-gpt2",
+  "peft_method": "qlora",
+  "run_id": "train-llama3_8b-qlora-20260628-192808-80b4a918",
+  "steps": 40,
+  "train_loss": 10.731432,
+  "train_samples": 130,
+  "used_real_stack": true,
+  "validation_samples": 14
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "format": ".pkl",
+    "artifact_path": "models/iris_model_benchmark.pkl",
+    "status": "ok",
+    "save_time_ms": 0.606,
+    "load_time_ms": 0.308,
+    "predict_time_ms": 1.408,
+    "size_bytes": 7131,
+    "error": null
+  },
+  {
+    "format": ".joblib",
+    "artifact_path": "models/iris_model_benchmark.joblib",
+    "status": "ok",
+    "save_time_ms": 1.803,
+    "load_time_ms": 0.859,
+    "predict_time_ms": 1.171,
+    "size_bytes": 11334,
+    "error": null
+  },
+  {
+    "format": ".onnx",
+    "artifact_path": "models/iris_model_benchmark.onnx",
+    "status": "ok",
+    "save_time_ms": 18.976,
+    "load_time_ms": 208.019,
+    "predict_time_ms": 0.59,
+    "size_bytes": 4989,
+    "error": null
+  },
+  {
+    "format": ".pt",
+    "artifact_path": "models/iris_model_benchmark.pt",
+    "status": "ok",
+    "save_time_ms": 1.225,
+    "load_time_ms": 11.414,
+    "predict_time_ms": 39.35,
+    "size_bytes": 9244,
+    "error": null
+  }
+]

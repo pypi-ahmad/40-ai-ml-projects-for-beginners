@@ -1,0 +1,59 @@
+{
+  "answer": "*   **NIST SP 800-171r3** discusses encryption requirements for protecting Controlled Unclassified Information (CUI), specifically mandating the implementation of cryptography to protect confidentiality [source_path#chunk_id]. This document references supporting publications such as FIPS 140-3, which outlines security requirements for cryptographic modules [source_path#chunk_id], and SP 800-52 regarding Transport Layer Security (TLS) implementations [source_path#chunk_id].\n*   **FIPS 140-3** is explicitly cited in the context of establishing key establishment and management requirements, including appropriate options, levels, and parameters for cryptography implementation [source_path#chunk_id].\n\nThe primary document addressing these specific encryption mandates within the provided text is NIST SP 800-171r3.",
+  "answer_length": 92,
+  "citation_count": 5,
+  "citations": [
+    {
+      "chunk_id": "8fdd7d27e157895cd766747ebb372aef0f59c253539b65bc168ab27255bd457e",
+      "document_name": "nist_sp_800_171r3.pdf",
+      "evidence_text": "NIST SP 800-171r3 Protecting Controlled Unclassified Information \nMay 2024 \n82 \n[84] Ross R, Pillitteri V (2024) Assessing Security Requirements for Controlled Unclassified \nInformation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST \nSpecial Publication (SP) 800-171A, Rev. 3. https://doi.org/10.6028/NIST.SP.800-171Ar3",
+      "page_number": 92,
+      "similarity_score": 0.009016393442622951,
+      "source_path": "policy/nist/nist_sp_800_171r3.pdf"
+    },
+    {
+      "chunk_id": "2af7e2542396d0185befa952a58aac4471db4ace1fce8686cd00f34b97eb0adf",
+      "document_name": "nist_sp_800_171r3.pdf",
+      "evidence_text": "NIST SP 800-171r3 Protecting Controlled Unclassified Information \nMay 2024 \niv \nTable of Contents \n1. Introduction ..............................................................................................................................1 \n2. The Fundamentals .....................................................................................................................3 \n3. The Security ",
+      "page_number": 8,
+      "similarity_score": 0.008870967741935484,
+      "source_path": "policy/nist/nist_sp_800_171r3.pdf"
+    },
+    {
+      "chunk_id": "d4f2567c9a0821f5dee020b824de77fafb352b90f61cd547ae16e107877179ce",
+      "document_name": "nist_sp_800_171r3.pdf",
+      "evidence_text": "Standards Publication (FIPS) 197, updated May 9, 2023. \nhttps://doi.org/10.6028/NIST.FIPS.197-upd1\n \n[69] McKay KA, Cooper DA (2019) Guidelines for the Selection, Configuration, and Use of \nTransport Layer Security (TLS) Implementations. (National Institute of Standards and \nTechnology, Gaithersburg, MD), NIST Special Publication (SP) 800-52, Rev. 2. \nhttps://doi.org/10.6028/NIST.SP.800-52r2\n \n[70",
+      "page_number": 90,
+      "similarity_score": 0.00873015873015873,
+      "source_path": "policy/nist/nist_sp_800_171r3.pdf"
+    },
+    {
+      "chunk_id": "edd2a18b856e9dd18f3dc1a5064ad35528185d0ef6e195824d2ad9b350d067c2",
+      "document_name": "nist_sp_800_53r5.pdf",
+      "evidence_text": "[FIPS 140-3] National Institute of Standards and Technology (2019) Security \nRequirements for Cryptographic Modules. (U.S. Department of Commerce, \nWashington, D.C.), Federal Information Processing Standards Publication \n(FIPS) 140-3. \nhttps://doi.org/10.6028/NIST.FIPS.140-3 \n[FIPS 180-4] National Institute of Standards and Technology (2015) Secure Hash \nStandard (SHS). (U.S. Department of Commerc",
+      "page_number": 406,
+      "similarity_score": 0.00859375,
+      "source_path": "policy/nist/nist_sp_800_53r5.pdf"
+    },
+    {
+      "chunk_id": "24f36cd73b50547a1668f64dae9030bc9776730b98b6810db68a3a1290c68dd9",
+      "document_name": "nist_sp_800_171r3.pdf",
+      "evidence_text": "key establishment and management requirements in accordance with applicable \nfederal laws, Executive Orders, policies, directives, regulations, and standards that \nspecify appropriate options, levels, and parameters. This requirement is related to \n03.13.11. \nREFERENCES \nSource Control: SC-12 \nSupporting Publications: FIPS 140-3 [38], SP 800-56A [73], SP 800-56B [74], SP 800-\n56C [75], SP 800-57-1",
+      "page_number": 71,
+      "similarity_score": 0.008461538461538463,
+      "source_path": "policy/nist/nist_sp_800_171r3.pdf"
+    }
+  ],
+  "filters": {},
+  "model": "qwen3.5:4b",
+  "query": "Which document discusses encryption requirements?",
+  "strategy": "hybrid",
+  "timings": {
+    "embedding_ms": 0.026949986931867898,
+    "generation_ms": 3753.5967270086985,
+    "prompt_ms": 0.028223003027960658,
+    "retrieval_ms": 1041.2407090043416,
+    "total_ms": 4794.944626992219
+  },
+  "top_k": 5
+}

@@ -1,0 +1,6 @@
+scenario,avg_risk_score,avg_recovery_probability,expected_recovery_value
+Baseline,0.4549,0.6578,6697887.73
+Income +20%,0.4533,0.6603,6722994.42
+EMI -15% (Rate Relief),0.4538,0.6595,6715154.95
+Missed payments +3,0.4821,0.6576,6695804.58
+Collateral -20%,0.4559,0.6563,6689765.66

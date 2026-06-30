@@ -1,0 +1,28 @@
+# Virtual environments and local package caches
+.venv/
+.uv-cache/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime logs and temporary telemetry
+logs/
+logs.log
+iris_api/
+train_model/
+catboost_info/
+
+# Notebook/runtime local config
+.mplconfig/
+notebooks/.mplconfig/
+
+# Misc local files
+.DS_Store

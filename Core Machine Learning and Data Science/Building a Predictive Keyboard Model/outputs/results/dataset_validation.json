@@ -1,0 +1,50 @@
+{
+  "train": {
+    "num_documents": 2061,
+    "num_sentences": 4090,
+    "num_words": 84364,
+    "num_unique_tokens": 7300,
+    "duplicate_documents": 34,
+    "empty_documents": 0,
+    "replacement_characters": 0,
+    "avg_document_length_words": 40.93352741387676
+  },
+  "val": {
+    "num_documents": 236,
+    "num_sentences": 492,
+    "num_words": 10545,
+    "num_unique_tokens": 1953,
+    "duplicate_documents": 1,
+    "empty_documents": 0,
+    "replacement_characters": 0,
+    "avg_document_length_words": 44.682203389830505
+  },
+  "test": {
+    "num_documents": 218,
+    "num_sentences": 551,
+    "num_words": 10546,
+    "num_unique_tokens": 2022,
+    "duplicate_documents": 1,
+    "empty_documents": 0,
+    "replacement_characters": 0,
+    "avg_document_length_words": 48.37614678899082
+  },
+  "combined": {
+    "num_documents": 2515,
+    "num_sentences": 5131,
+    "num_words": 105455,
+    "num_unique_tokens": 8019,
+    "duplicate_documents": 42,
+    "empty_documents": 0,
+    "replacement_characters": 0,
+    "avg_document_length_words": 41.93041749502982
+  },
+  "file_discovery": {
+    "raw_dir": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/data/raw",
+    "num_files": 2,
+    "files": [
+      "data/raw/__MACOSX/._sherlock-holm.es_stories_plain-text_advs.txt",
+      "data/raw/sherlock-holm.es_stories_plain-text_advs.txt"
+    ]
+  }
+}

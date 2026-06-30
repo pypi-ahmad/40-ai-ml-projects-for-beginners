@@ -1,0 +1,4 @@
+name: Qwen/Qwen3-1.7B-Instruct
+family: Qwen
+template: qwen
+deep_run: true

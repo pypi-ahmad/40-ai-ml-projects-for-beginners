@@ -1,0 +1,4 @@
+host: 0.0.0.0
+api_port: 8000
+streamlit_port: 8501
+streaming: true

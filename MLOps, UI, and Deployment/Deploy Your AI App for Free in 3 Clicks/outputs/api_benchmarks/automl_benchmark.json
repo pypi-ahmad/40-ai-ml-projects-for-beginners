@@ -1,0 +1,35 @@
+[
+  {
+    "framework": "LazyPredict",
+    "status": "unavailable",
+    "best_model": "",
+    "metric_name": "rmse",
+    "metric_value": 0.0,
+    "runtime_seconds": 0.0,
+    "details": {
+      "reason": "dependency not installed"
+    }
+  },
+  {
+    "framework": "FLAML",
+    "status": "unavailable",
+    "best_model": "",
+    "metric_name": "rmse",
+    "metric_value": 0.0,
+    "runtime_seconds": 0.0,
+    "details": {
+      "reason": "dependency not installed"
+    }
+  },
+  {
+    "framework": "PyCaret",
+    "status": "unavailable",
+    "best_model": "",
+    "metric_name": "rmse",
+    "metric_value": 0.0,
+    "runtime_seconds": 0.0,
+    "details": {
+      "reason": "dependency not installed"
+    }
+  }
+]

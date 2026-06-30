@@ -1,0 +1,115 @@
+project:
+  name: production-semantic-search-engine
+  environment: local
+
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  chroma_dir: artifacts/chroma
+  faiss_dir: artifacts/faiss
+  cache_dir: artifacts/cache
+  reports_dir: artifacts/reports
+  visuals_dir: artifacts/visuals
+  logs_dir: logs
+
+dataset:
+  source: huggingface
+  hf_dataset_id: khalidalt/HuffPost
+  hf_fallback_dataset_ids:
+    - heegyu/news-category-dataset
+  split: train
+  sample_size: 50000
+  seed: 42
+  enable_article_enrichment: true
+  enrichment_sample_size: 2000
+  request_timeout_seconds: 7
+  max_article_chars: 8000
+  max_concurrent_enrichment: 8
+  allowed_url_domains:
+    - huffpost.com
+    - www.huffpost.com
+
+pipeline:
+  max_document_chars: 25000
+  min_document_chars: 20
+  detect_language: true
+  deduplicate: true
+  normalize_whitespace: true
+
+chunking:
+  strategy: recursive
+  chunk_size: 512
+  chunk_overlap: 50
+  sentence_similarity_threshold: 0.72
+  tokenizer: cl100k_base
+
+embedding:
+  primary:
+    provider: sentence_transformers
+    model_name: BAAI/bge-small-en-v1.5
+    batch_size: 64
+    normalize: true
+  comparisons:
+    - provider: sentence_transformers
+      model_name: all-MiniLM-L6-v2
+      batch_size: 128
+      normalize: true
+    - provider: ollama
+      model_name: nomic-embed-text
+      normalize: true
+
+reranker:
+  enabled: true
+  model_name: BAAI/bge-reranker-base
+  top_n: 25
+
+retrieval:
+  vector_metric: cosine
+  top_k: 10
+  vector_candidates: 50
+  mmr_lambda: 0.6
+  mmr_enabled: true
+  hybrid_enabled: true
+  rrf_k: 60
+  similarity_threshold: 0.05
+
+query_processing:
+  lowercase: true
+  remove_stopwords: true
+  spell_correction: true
+  synonym_expansion: true
+  abbreviation_expansion: true
+
+vector_db:
+  primary: chroma
+  collection_name: huffpost_semantic
+  namespace: default
+  persist: true
+
+evaluation:
+  query_count: 150
+  k_values: [1, 3, 5, 10]
+  llm_judge_model: granite4.1:3b
+  use_llm_judge: true
+  baseline: bm25
+  quality_lift_metric: ndcg_at_10
+  min_relative_lift: 0.05
+
+performance:
+  target_p95_ms: 1500
+
+streamlit:
+  page_title: Semantic Search Engine
+  max_recent_searches: 30
+  rate_limit_per_minute: 40
+
+logging:
+  level: INFO
+  json_logs: true
+  file_name: semantic_search.log
+
+security:
+  allow_local_files_only: true
+  max_upload_mb: 20
+  block_hidden_files: true
+  readonly_search_mode: true

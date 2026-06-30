@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "B001",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  }
+]

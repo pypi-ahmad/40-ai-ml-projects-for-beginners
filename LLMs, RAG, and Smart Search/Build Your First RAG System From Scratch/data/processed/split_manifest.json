@@ -1,0 +1,12 @@
+{
+  "dataset_name": "rajpurkar/squad_v2",
+  "corpus_splits": [
+    "train",
+    "validation"
+  ],
+  "eval_splits": [
+    "validation"
+  ],
+  "num_documents": 20233,
+  "num_queries": 11873
+}

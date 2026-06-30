@@ -1,0 +1,18 @@
+{
+  "deepseek-r1": {
+    "reason": "model_not_available",
+    "skipped": true
+  },
+  "granite4.1:3b": {
+    "reason": "model_not_available",
+    "skipped": true
+  },
+  "llama3.1:8b": {
+    "reason": "model_not_available",
+    "skipped": true
+  },
+  "qwen3:8b": {
+    "reason": "model_not_available",
+    "skipped": true
+  }
+}

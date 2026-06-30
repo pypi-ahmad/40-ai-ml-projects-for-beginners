@@ -1,0 +1,12 @@
+.venv
+.uv-cache
+.pytest_cache
+.git
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+logs
+build
+ml_packaging.egg-info

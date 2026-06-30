@@ -1,0 +1,146 @@
+{
+  "n_raw_rows": 2000,
+  "n_clean_rows": 1744,
+  "n_samples": 1744,
+  "n_features": 18,
+  "n_outliers_removed": 61,
+  "algorithm_results": {
+    "dbscan": {
+      "n_clusters": 12,
+      "n_noise": 223,
+      "metrics": {
+        "silhouette": 0.8805001189443333,
+        "davies_bouldin": 0.17164624857589525,
+        "calinski_harabasz": 140988.23709571923,
+        "stability_ari": 1.0,
+        "composite_score": 4.0
+      }
+    },
+    "hdbscan": {
+      "n_clusters": 9,
+      "n_noise": 32,
+      "metrics": {
+        "silhouette": 0.7290595928260607,
+        "davies_bouldin": 0.42483025211941805,
+        "calinski_harabasz": 6030.968446081068,
+        "stability_ari": 1.0,
+        "composite_score": 3.706195410913467
+      }
+    },
+    "agglomerative": {
+      "n_clusters": 6,
+      "n_noise": 0,
+      "metrics": {
+        "silhouette": 0.23686434968055356,
+        "davies_bouldin": 3.297825655493597,
+        "calinski_harabasz": 751.3072726197386,
+        "stability_ari": 1.0,
+        "composite_score": 3.01749704753497
+      }
+    },
+    "kmeans": {
+      "n_clusters": 6,
+      "n_noise": 0,
+      "metrics": {
+        "silhouette": -0.004785370505756954,
+        "davies_bouldin": 2.477448941376928,
+        "calinski_harabasz": 455.40191135368156,
+        "stability_ari": 0.6652167576257583,
+        "composite_score": 2.0954588522324893
+      }
+    },
+    "gmm": {
+      "n_clusters": 6,
+      "n_noise": 0,
+      "metrics": {
+        "silhouette": -0.01805440084858374,
+        "davies_bouldin": 2.5884473559380736,
+        "calinski_harabasz": 409.62698552151954,
+        "stability_ari": 0.654137865162154,
+        "composite_score": 2.046951778817533
+      }
+    },
+    "minibatch_kmeans": {
+      "n_clusters": 6,
+      "n_noise": 0,
+      "metrics": {
+        "silhouette": 0.018267734033623508,
+        "davies_bouldin": 11.809043452220857,
+        "calinski_harabasz": 666.3526666065574,
+        "stability_ari": 0.5359877305210398,
+        "composite_score": 1.0422490576262116
+      }
+    }
+  },
+  "failed_algorithms": [],
+  "best_algorithm": "dbscan",
+  "business_impact": {
+    "avg_delivery_distance_km": 9.618350837757884,
+    "p90_delivery_distance_km": 17.103104604488404,
+    "cluster_count": 12.0,
+    "noise_point_pct": 13.25014854426619,
+    "outlier_pct": 0.0,
+    "coverage_pct": 100.00000000000003,
+    "silhouette": 0.8805001189443333,
+    "davies_bouldin": 0.17164624857589525,
+    "calinski_harabasz": 140988.23709571923,
+    "stability_ari": 1.0,
+    "composite_score": 4.0,
+    "original_outlier_pct": 3.4977064220183482
+  },
+  "artifact_paths": {
+    "k_selection_metrics": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/k_selection_metrics.png",
+    "elbow_curve": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/elbow_curve.png",
+    "clusters_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_kmeans.png",
+    "delivery_map_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_kmeans.png",
+    "boundaries_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_kmeans.png",
+    "silhouette_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_kmeans.png",
+    "feature_distributions_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_kmeans.png",
+    "clusters_minibatch_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_minibatch_kmeans.png",
+    "delivery_map_minibatch_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_minibatch_kmeans.png",
+    "boundaries_minibatch_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_minibatch_kmeans.png",
+    "silhouette_minibatch_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_minibatch_kmeans.png",
+    "feature_distributions_minibatch_kmeans": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_minibatch_kmeans.png",
+    "clusters_dbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_dbscan.png",
+    "delivery_map_dbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_dbscan.png",
+    "boundaries_dbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_dbscan.png",
+    "silhouette_dbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_dbscan.png",
+    "feature_distributions_dbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_dbscan.png",
+    "clusters_hdbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_hdbscan.png",
+    "delivery_map_hdbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_hdbscan.png",
+    "boundaries_hdbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_hdbscan.png",
+    "silhouette_hdbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_hdbscan.png",
+    "feature_distributions_hdbscan": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_hdbscan.png",
+    "clusters_agglomerative": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_agglomerative.png",
+    "delivery_map_agglomerative": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_agglomerative.png",
+    "boundaries_agglomerative": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_agglomerative.png",
+    "silhouette_agglomerative": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_agglomerative.png",
+    "feature_distributions_agglomerative": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_agglomerative.png",
+    "clusters_gmm": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/clusters_gmm.png",
+    "delivery_map_gmm": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/delivery_map_gmm.png",
+    "boundaries_gmm": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/boundaries_gmm.png",
+    "silhouette_gmm": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/silhouette_gmm.png",
+    "feature_distributions_gmm": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/feature_distributions_gmm.png",
+    "interactive_map": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/interactive_map.html",
+    "outlier_map": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/outlier_map.png",
+    "density_heatmap": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/plots/density_heatmap.png"
+  },
+  "report_paths": {
+    "dataset_profile": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/dataset_profile.json",
+    "geospatial_validation": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/geospatial_validation.json",
+    "clustering_metrics": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/clustering_evaluation.csv",
+    "k_selection_diagnostics": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/k_selection_diagnostics.csv",
+    "zone_kpis": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/business_zone_kpis.csv",
+    "assignments": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/data/processed/cluster_assignments.csv",
+    "zone_rule_summary": "{\"high_demand_threshold\": 137.0, \"low_activity_threshold\": 117.0, \"high_density_threshold\": 13.948544691961818, \"centrality_threshold_km\": 509.0666890216239, \"southern_lat_threshold\": 13.036834796747968}",
+    "spatial_coverage": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/spatial_density_summary.csv",
+    "kde_hotspots": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/kde_hotspots.csv",
+    "grid_density": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs/reports/grid_density.csv"
+  },
+  "geospatial_validation": {
+    "all_distance_cases_pass": true,
+    "all_crs_checks_pass": true
+  },
+  "warnings": [],
+  "output_dir": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Geospatial Clustering/outputs"
+}

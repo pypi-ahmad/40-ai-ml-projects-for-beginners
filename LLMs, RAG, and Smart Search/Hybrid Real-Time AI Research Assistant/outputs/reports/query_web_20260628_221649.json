@@ -1,0 +1,25 @@
+{
+  "query": "What happened in AI yesterday?",
+  "mode": "web",
+  "route_reason": "freshness_detected",
+  "answer": "I don't know based on the retrieved information.",
+  "citations": [],
+  "judge": {
+    "grounding": 2,
+    "correctness": 1,
+    "completeness": 1,
+    "clarity": 2,
+    "citation_quality": 1,
+    "rationale": "The answer directly states uncertainty about the event in AI from yesterday, which aligns with the lack of specific information provided in the context. No grounding (evidence) or citations are offered, hence correctness and citation quality are low. The response is brief and clear enough to indicate understanding of the query's scope but lacks detail, resulting in lower completeness and correctness scores."
+  },
+  "timings_ms": {
+    "intent_ms": 0.01318499562330544,
+    "retrieval_ms": 642.9175520024728,
+    "rerank_ms": 0.0008310016710311174,
+    "context_ms": 0.007463997462764382,
+    "generation_ms": 0.0020239967852830887,
+    "judge_ms": 4016.4346899982775,
+    "total_ms": 4659.375745992293
+  },
+  "cached": false
+}

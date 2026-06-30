@@ -1,0 +1,4 @@
+name: HuggingFaceTB/SmolLM2-1.7B-Instruct
+family: SmolLM
+template: chatml
+deep_run: true

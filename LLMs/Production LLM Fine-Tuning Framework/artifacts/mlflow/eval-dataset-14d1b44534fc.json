@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "evaluation": "artifacts/evaluation/evaluation-dataset-14d1b44534fc.json"
+  },
+  "metrics": {
+    "bleu": 0.1333,
+    "exact_match": 0.0,
+    "loss": 0.7647,
+    "perplexity": 7.4668,
+    "rouge_l": 0.2353
+  },
+  "params": {
+    "judge_model": "granite41"
+  },
+  "run_name": "eval-dataset-14d1b44534fc"
+}

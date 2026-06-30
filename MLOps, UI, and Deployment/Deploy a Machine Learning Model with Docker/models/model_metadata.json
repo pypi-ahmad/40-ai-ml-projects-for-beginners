@@ -1,0 +1,63 @@
+{
+  "overall_best_model": "LightGBM",
+  "overall_best_source": "Manual",
+  "best_model": "LightGBM",
+  "best_model_source": "Manual",
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "profile": "fast",
+  "metrics": {
+    "MAE": 0.3086374171170888,
+    "MSE": 0.21458473607446002,
+    "RMSE": 0.4632329177362723,
+    "R\u00b2": 0.8362459814931062,
+    "MAPE": 0.18108017014828415
+  },
+  "overall_ranking_top3": [
+    {
+      "Model": "LightGBM",
+      "Source": "Manual",
+      "MAE": 0.3086374171170888,
+      "MSE": 0.21458473607446002,
+      "RMSE": 0.4632329177362723,
+      "R\u00b2": 0.8362459814931062,
+      "MAPE": 0.18108017014828415
+    },
+    {
+      "Model": "XGBoost",
+      "Source": "Manual",
+      "MAE": 0.3133789892747998,
+      "MSE": 0.22183696036756245,
+      "RMSE": 0.47099571162332515,
+      "R\u00b2": 0.8307116602136246,
+      "MAPE": 0.1815788675311482
+    },
+    {
+      "Model": "Extra Trees",
+      "Source": "Manual",
+      "MAE": 0.32531955602659374,
+      "MSE": 0.2512969069799366,
+      "RMSE": 0.5012952293608395,
+      "R\u00b2": 0.8082301700059481,
+      "MAPE": 0.18411808908279548
+    }
+  ],
+  "train_samples": 16512,
+  "test_samples": 4128,
+  "n_features": 8,
+  "seed": 42,
+  "onnx_export": {
+    "success": true,
+    "model": "Ridge (ONNX demo fallback)",
+    "message": "Exported successfully"
+  },
+  "timestamp": "2026-06-24T22:17:51.191246+00:00"
+}

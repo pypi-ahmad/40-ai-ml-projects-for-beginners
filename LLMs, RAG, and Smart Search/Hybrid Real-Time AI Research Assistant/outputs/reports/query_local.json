@@ -1,0 +1,58 @@
+{
+  "query": "What is LangGraph?",
+  "mode": "local",
+  "route_reason": "user_selected_mode",
+  "answer": "LangGraph is a graph-based orchestration framework designed for building deterministic and agentic LLM workflows. It supports explicit nodes, conditional edges, persistent state, retries, and human-in-the-loop checkpoints [langgraph_overview.md|8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd].",
+  "citations": [
+    {
+      "source_file": "langgraph_overview.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd",
+      "confidence": 0.9996991157531738,
+      "title": "langgraph_overview"
+    },
+    {
+      "source_file": "fastapi_notes.txt",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "cb6556a5caceb6a27ef19b0fddd0902d9b593cb13c4cbce635acdd4bc4067f22",
+      "confidence": 0.00023866888659540564,
+      "title": "fastapi_notes"
+    },
+    {
+      "source_file": "README_CORPUS.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "761d76511bf842befa418cfa0bcbc99dbbf5971fbd9220c9acaf8819000b48ba",
+      "confidence": 7.607504812767729e-05,
+      "title": "README_CORPUS"
+    },
+    {
+      "source_file": "internal_policy.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "039a758174e7130be785cdf8405dbe853911215e1f8650b9570ffc8521bff744",
+      "confidence": 3.728969022631645e-05,
+      "title": "internal_policy"
+    }
+  ],
+  "judge": {
+    "grounding": 5,
+    "correctness": 4,
+    "completeness": 3,
+    "clarity": 4,
+    "citation_quality": 5,
+    "rationale": "The answer directly references the LangGraph overview (source: langgraph_overview.md, chunk_id: 8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd) which matches the provided context. It accurately describes LangGraph as a graph-based orchestration framework for deterministic and agentic LLM workflows, including supported features (explicit nodes, conditional edges, persistent state, retries, human\u2011in\u2011the\u2011loop checkpoints). The citation is high quality because it aligns with the retrieved evidence and follows policy requirements. Scores are based on factual accuracy, grounding to available context, completeness of information provided, clarity of explanation, and proper citation format."
+  },
+  "timings_ms": {
+    "intent_ms": 0.009016999683808535,
+    "retrieval_ms": 332.8562789993157,
+    "rerank_ms": 102191.59031299932,
+    "context_ms": 0.04030599848192651,
+    "generation_ms": 28175.205438001285,
+    "judge_ms": 25610.823500999686,
+    "total_ms": 156310.52485399778
+  },
+  "cached": false
+}

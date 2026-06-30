@@ -1,0 +1,9 @@
+# Optional heavy dependencies for expanded benchmark validation.
+# Note: PyCaret is excluded from this shared lock profile because currently
+# available stable versions conflict with pandas>=3 in this project.
+xgboost>=2.1.0
+lightgbm>=4.5.0
+catboost>=1.2.8
+flaml>=2.3.0
+lazypredict>=0.2.16
+shap>=0.46.0

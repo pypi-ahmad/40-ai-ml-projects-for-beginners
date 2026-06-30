@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-06-24T22:14:17.445953+00:00",
+  "public_url": "NOT_SET",
+  "streamlit_build_status": "unknown",
+  "notes": "Populate env vars during/after real deployment run."
+}

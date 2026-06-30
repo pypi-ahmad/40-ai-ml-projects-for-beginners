@@ -1,0 +1,25 @@
+# Optional reference config (runtime uses env vars via pydantic-settings)
+ollama_host: http://127.0.0.1:11434
+embedding_model: qwen3-embedding:4b
+generation_model: qwen3.5:4b
+judge_model: granite4.1:3b
+collection_name: linux_local_rag
+documents_dir: data/documents
+quickstart_documents_dir: data/documents_quickstart
+corpus_profile: full
+embedding_batch_size: 32
+normalize_embeddings: true
+manifest_schema_version: "1.0"
+generation_streaming_default: true
+chunking:
+  default_chunk_size: 768
+  default_chunk_overlap: 128
+  chunk_sizes: [256, 512, 768, 1024]
+  chunk_overlaps: [32, 64, 128]
+retrieval:
+  default_k: 5
+  candidate_ks: [3, 5, 10]
+prompts:
+  strict_grounding: true
+  unavailable_response: Information unavailable in provided context.
+  citation_instruction: Include citation markers like [source_path#chunk_id] for each claim.

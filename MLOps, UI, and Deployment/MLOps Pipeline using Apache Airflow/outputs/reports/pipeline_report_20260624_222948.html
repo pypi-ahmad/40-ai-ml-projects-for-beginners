@@ -1,0 +1,433 @@
+
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>MLOps Pipeline Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f7f9fb; color:#1f2937; margin:0; padding:20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section { background:#fff; border-radius:10px; padding:20px; margin-bottom:18px; box-shadow:0 1px 3px rgba(0,0,0,.08); }
+    .metric { display:inline-block; min-width:150px; background:#ecf5ff; border-radius:8px; padding:12px; margin:8px; }
+    .metric-key { font-size:12px; color:#475569; }
+    .metric-value { font-size:24px; font-weight:700; color:#0f4c81; }
+    .tbl { width:100%; border-collapse:collapse; }
+    .tbl th, .tbl td { border:1px solid #e5e7eb; padding:8px; text-align:left; }
+    .tbl th { background:#f1f5f9; }
+  </style>
+</head>
+<body>
+<div class='container'>
+  <h1>MLOps Pipeline Report</h1>
+  <p>Generated at 2026-06-24T22:29:48.711396 UTC</p>
+
+  <div class='section'>
+    <h2>Summary</h2>
+    <pre>project                  MLOps Pipeline using Apache Airflow
+forecast_horizon_days                                      1
+champion                                               Lasso
+champion_source                               core_benchmark</pre>
+  </div>
+
+  <div class='section'>
+    <h2>Evaluation Metrics</h2>
+    <div class='metric'><div class='metric-key'>RMSE</div><div class='metric-value'>3.8189</div></div><div class='metric'><div class='metric-key'>MAE</div><div class='metric-value'>2.5620</div></div><div class='metric'><div class='metric-key'>MSE</div><div class='metric-value'>14.5840</div></div><div class='metric'><div class='metric-key'>R2</div><div class='metric-value'>0.9777</div></div><div class='metric'><div class='metric-key'>MAPE</div><div class='metric-value'>6.7415</div></div>
+  </div>
+
+  <div class='section'>
+    <h2>Model Leaderboard</h2>
+    <table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>cv_rmse</th>
+      <th>cv_r2</th>
+      <th>test_rmse</th>
+      <th>test_mae</th>
+      <th>test_r2</th>
+      <th>test_mape</th>
+      <th>source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lasso</td>
+      <td>4.354395</td>
+      <td>0.970849</td>
+      <td>3.818899</td>
+      <td>2.561965</td>
+      <td>0.977743</td>
+      <td>6.741517</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>ElasticNet</td>
+      <td>4.354977</td>
+      <td>0.970842</td>
+      <td>3.819829</td>
+      <td>2.562755</td>
+      <td>0.977732</td>
+      <td>6.743288</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>RandomForest</td>
+      <td>4.154116</td>
+      <td>0.973559</td>
+      <td>3.826052</td>
+      <td>2.591933</td>
+      <td>0.977780</td>
+      <td>6.636577</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>4.371362</td>
+      <td>0.970626</td>
+      <td>3.838883</td>
+      <td>2.573056</td>
+      <td>0.977510</td>
+      <td>6.757635</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>LinearRegression</td>
+      <td>4.371684</td>
+      <td>0.970621</td>
+      <td>3.838967</td>
+      <td>2.573122</td>
+      <td>0.977509</td>
+      <td>6.757776</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>GradientBoosting</td>
+      <td>4.235945</td>
+      <td>0.972484</td>
+      <td>3.858967</td>
+      <td>2.628113</td>
+      <td>0.977315</td>
+      <td>6.801442</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>ExtraTrees</td>
+      <td>4.143379</td>
+      <td>0.973682</td>
+      <td>3.910991</td>
+      <td>2.641883</td>
+      <td>0.976801</td>
+      <td>6.694812</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>LightGBM</td>
+      <td>4.933274</td>
+      <td>0.962499</td>
+      <td>4.105144</td>
+      <td>2.754998</td>
+      <td>0.974463</td>
+      <td>6.887742</td>
+      <td>core_benchmark</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class='section'>
+    <h2>Champion Candidate Comparison</h2>
+    <table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>test_rmse</th>
+      <th>test_mae</th>
+      <th>test_r2</th>
+      <th>source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lasso</td>
+      <td>3.818899</td>
+      <td>2.561965</td>
+      <td>0.977743</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>ElasticNet</td>
+      <td>3.819829</td>
+      <td>2.562755</td>
+      <td>0.977732</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>RandomForest</td>
+      <td>3.826052</td>
+      <td>2.591933</td>
+      <td>0.977780</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>3.838883</td>
+      <td>2.573056</td>
+      <td>0.977510</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>LinearRegression</td>
+      <td>3.838967</td>
+      <td>2.573122</td>
+      <td>0.977509</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>GradientBoosting</td>
+      <td>3.858967</td>
+      <td>2.628113</td>
+      <td>0.977315</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>ExtraTrees</td>
+      <td>3.910991</td>
+      <td>2.641883</td>
+      <td>0.976801</td>
+      <td>core_benchmark</td>
+    </tr>
+    <tr>
+      <td>LightGBM</td>
+      <td>4.105144</td>
+      <td>2.754998</td>
+      <td>0.974463</td>
+      <td>core_benchmark</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class='section'>
+    <h2>Feature Rankings</h2>
+    <table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>kept_by_variance_filter</th>
+      <th>corr_abs</th>
+      <th>rfe_score</th>
+      <th>rf_importance</th>
+      <th>flaml_importance</th>
+      <th>composite_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Usage (minutes)_rolling_mean_14</td>
+      <td>True</td>
+      <td>0.964111</td>
+      <td>1.000000</td>
+      <td>0.472522</td>
+      <td>0.0</td>
+      <td>3.401961</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_rolling_mean_7</td>
+      <td>True</td>
+      <td>0.963230</td>
+      <td>1.000000</td>
+      <td>0.251503</td>
+      <td>0.0</td>
+      <td>3.362745</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_rolling_mean_3</td>
+      <td>True</td>
+      <td>0.955185</td>
+      <td>1.000000</td>
+      <td>0.080899</td>
+      <td>0.0</td>
+      <td>3.323529</td>
+    </tr>
+    <tr>
+      <td>engagement_score</td>
+      <td>True</td>
+      <td>0.577036</td>
+      <td>1.000000</td>
+      <td>0.030944</td>
+      <td>0.0</td>
+      <td>3.166667</td>
+    </tr>
+    <tr>
+      <td>usage_x_opens</td>
+      <td>True</td>
+      <td>0.562760</td>
+      <td>1.000000</td>
+      <td>0.010107</td>
+      <td>0.0</td>
+      <td>3.088235</td>
+    </tr>
+    <tr>
+      <td>Times Opened_rolling_mean_3</td>
+      <td>True</td>
+      <td>0.401840</td>
+      <td>1.000000</td>
+      <td>0.031425</td>
+      <td>0.0</td>
+      <td>3.049020</td>
+    </tr>
+    <tr>
+      <td>Times Opened_rolling_mean_14</td>
+      <td>True</td>
+      <td>0.404678</td>
+      <td>1.000000</td>
+      <td>0.012901</td>
+      <td>0.0</td>
+      <td>3.009804</td>
+    </tr>
+    <tr>
+      <td>Times Opened_lag_1</td>
+      <td>True</td>
+      <td>0.391875</td>
+      <td>1.000000</td>
+      <td>0.008057</td>
+      <td>0.0</td>
+      <td>2.852941</td>
+    </tr>
+    <tr>
+      <td>Notifications_rolling_mean_14</td>
+      <td>True</td>
+      <td>0.352675</td>
+      <td>1.000000</td>
+      <td>0.010047</td>
+      <td>0.0</td>
+      <td>2.794118</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_lag_1</td>
+      <td>True</td>
+      <td>0.928977</td>
+      <td>0.250000</td>
+      <td>0.003316</td>
+      <td>0.0</td>
+      <td>2.784314</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_lag_3</td>
+      <td>True</td>
+      <td>0.931725</td>
+      <td>0.125000</td>
+      <td>0.002806</td>
+      <td>0.0</td>
+      <td>2.686275</td>
+    </tr>
+    <tr>
+      <td>Notifications_rolling_mean_3</td>
+      <td>True</td>
+      <td>0.352163</td>
+      <td>1.000000</td>
+      <td>0.004327</td>
+      <td>0.0</td>
+      <td>2.656863</td>
+    </tr>
+    <tr>
+      <td>Times Opened_rolling_mean_7</td>
+      <td>True</td>
+      <td>0.404994</td>
+      <td>0.142857</td>
+      <td>0.003583</td>
+      <td>0.0</td>
+      <td>2.627451</td>
+    </tr>
+    <tr>
+      <td>Times Opened</td>
+      <td>True</td>
+      <td>0.397408</td>
+      <td>0.200000</td>
+      <td>0.004545</td>
+      <td>0.0</td>
+      <td>2.627451</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_lag_2</td>
+      <td>True</td>
+      <td>0.936267</td>
+      <td>0.090909</td>
+      <td>0.002051</td>
+      <td>0.0</td>
+      <td>2.568627</td>
+    </tr>
+    <tr>
+      <td>Notifications_rolling_mean_7</td>
+      <td>True</td>
+      <td>0.353307</td>
+      <td>0.333333</td>
+      <td>0.004415</td>
+      <td>0.0</td>
+      <td>2.568627</td>
+    </tr>
+    <tr>
+      <td>Usage (minutes)_rolling_std_7</td>
+      <td>True</td>
+      <td>0.538083</td>
+      <td>0.166667</td>
+      <td>0.002206</td>
+      <td>0.0</td>
+      <td>2.529412</td>
+    </tr>
+    <tr>
+      <td>open_frequency</td>
+      <td>True</td>
+      <td>0.016597</td>
+      <td>1.000000</td>
+      <td>0.014685</td>
+      <td>0.0</td>
+      <td>2.500000</td>
+    </tr>
+    <tr>
+      <td>day_of_week</td>
+      <td>True</td>
+      <td>0.031695</td>
+      <td>1.000000</td>
+      <td>0.006606</td>
+      <td>0.0</td>
+      <td>2.441176</td>
+    </tr>
+    <tr>
+      <td>notifications_per_usage_minute</td>
+      <td>True</td>
+      <td>0.089830</td>
+      <td>0.500000</td>
+      <td>0.005922</td>
+      <td>0.0</td>
+      <td>2.313725</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class='section'>
+    <h2>Monitoring & Alerts</h2>
+    <p><b>Alerts:</b> 1</p><pre>                     Synthetic
+                          week
+                         month
+                       quarter
+                          year
+ Usage (minutes)_rolling_std_3
+ Usage (minutes)_rolling_std_7
+Usage (minutes)_rolling_std_14
+   Notifications_rolling_std_7
+  Notifications_rolling_std_14
+    Times Opened_rolling_std_3
+    Times Opened_rolling_std_7
+   Times Opened_rolling_std_14</pre><p><b>Total Runtime (s):</b> 3.0</p>
+  </div>
+
+  <div class='section'>
+    <h2>Diagnostics</h2>
+    <h4>residual_plot</h4><img src='/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/MLOps, UI, and Deployment/MLOps Pipeline using Apache Airflow/outputs/figures/champion_residuals.png' alt='residual_plot' style='max-width:100%;height:auto;' /><h4>prediction_plot</h4><img src='/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/MLOps, UI, and Deployment/MLOps Pipeline using Apache Airflow/outputs/figures/champion_prediction_vs_actual.png' alt='prediction_plot' style='max-width:100%;height:auto;' /><h4>error_dist_plot</h4><img src='/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/MLOps, UI, and Deployment/MLOps Pipeline using Apache Airflow/outputs/figures/champion_error_distribution.png' alt='error_dist_plot' style='max-width:100%;height:auto;' />
+  </div>
+</div>
+</body>
+</html>

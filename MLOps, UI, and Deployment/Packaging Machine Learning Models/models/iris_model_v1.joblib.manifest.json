@@ -1,0 +1,11 @@
+{
+  "artifact": "iris_model_v1.joblib",
+  "created_at": "2026-06-24T22:23:05.868824+00:00",
+  "metadata": {
+    "model_name": "LogisticRegression",
+    "seed": 42,
+    "version": "v1"
+  },
+  "sha256": "a0a7507cd177293bad0bda915eaa42c04d74d0d50c3544305c1dd5f140ed9a59",
+  "size_bytes": 991
+}

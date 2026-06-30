@@ -1,0 +1,292 @@
+{
+  "rows": [
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 256,
+      "latency_ms": 114.40335000224877,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 256,
+      "latency_ms": 0.08362799417227507,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 256,
+      "latency_ms": 0.06962200859561563,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 256,
+      "latency_ms": 0.06607398972846568,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 512,
+      "latency_ms": 0.06510199455078691,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 512,
+      "latency_ms": 0.07394899148494005,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 512,
+      "latency_ms": 0.06399099947884679,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 512,
+      "latency_ms": 0.06067499634809792,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 768,
+      "latency_ms": 0.06076499994378537,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 768,
+      "latency_ms": 0.06017299892846495,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 768,
+      "latency_ms": 0.05888099258299917,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 768,
+      "latency_ms": 0.06029399810358882,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 1024,
+      "latency_ms": 0.060493999626487494,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 1024,
+      "latency_ms": 0.05987299664411694,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 1024,
+      "latency_ms": 0.06166599632706493,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 1024,
+      "latency_ms": 0.06028400093782693,
+      "strategy": "recursive",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 256,
+      "latency_ms": 0.680833007209003,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 256,
+      "latency_ms": 0.13823100016452372,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 256,
+      "latency_ms": 0.1442420034436509,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 256,
+      "latency_ms": 0.08547099423594773,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 512,
+      "latency_ms": 0.08114300726447254,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 512,
+      "latency_ms": 0.08815599721856415,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 512,
+      "latency_ms": 0.07706601172685623,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 512,
+      "latency_ms": 0.07370900129899383,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 768,
+      "latency_ms": 0.07231600466184318,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 768,
+      "latency_ms": 0.07261599239427596,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 768,
+      "latency_ms": 0.07182500849012285,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 768,
+      "latency_ms": 0.0722760014468804,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 1024,
+      "latency_ms": 0.07145499694161117,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 50,
+      "chunk_size": 1024,
+      "latency_ms": 0.07178500527516007,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 100,
+      "chunk_size": 1024,
+      "latency_ms": 0.07144499977584928,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 200,
+      "chunk_size": 1024,
+      "latency_ms": 0.07052300497889519,
+      "strategy": "token",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 256,
+      "latency_ms": 0.20043799304403365,
+      "strategy": "semantic",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 512,
+      "latency_ms": 0.09533000411465764,
+      "strategy": "semantic",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 768,
+      "latency_ms": 0.09054099791683257,
+      "strategy": "semantic",
+      "total_chunks": 4
+    },
+    {
+      "avg_chunk_length": 188.25,
+      "chunk_overlap": 0,
+      "chunk_size": 1024,
+      "latency_ms": 0.0882760068634525,
+      "strategy": "semantic",
+      "total_chunks": 4
+    }
+  ]
+}

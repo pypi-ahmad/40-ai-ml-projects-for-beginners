@@ -1,0 +1,3 @@
+FROM artifacts/exports/train-llama3_8b-qlora-20260627-202135-26cef670/model.gguf
+PARAMETER temperature 0.2
+TEMPLATE "{{ .Prompt }}"

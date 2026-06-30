@@ -1,0 +1,9 @@
+{
+  "outputs": {
+    "adapter": "artifacts/exports/train-llama3_8b-qlora-20260628-192624-2dc00a80/adapter.safetensors",
+    "gguf": "artifacts/exports/train-llama3_8b-qlora-20260628-192624-2dc00a80/model.gguf",
+    "merged_manifest": "artifacts/exports/train-llama3_8b-qlora-20260628-192624-2dc00a80/merged_model_manifest.json",
+    "ollama_modelfile": "artifacts/exports/train-llama3_8b-qlora-20260628-192624-2dc00a80/Modelfile"
+  },
+  "run_id": "train-llama3_8b-qlora-20260628-192624-2dc00a80"
+}

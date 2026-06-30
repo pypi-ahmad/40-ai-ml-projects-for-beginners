@@ -1,0 +1,39 @@
+{
+  "python_version": "3.12.10",
+  "project_root": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/MLOps, UI, and Deployment/Deploy Your First ML Model as a REST API",
+  "required_packages": {
+    "fastapi": true,
+    "uvicorn": true,
+    "pydantic": true,
+    "sklearn": true,
+    "joblib": true,
+    "numpy": true,
+    "pandas": true,
+    "httpx": true,
+    "shap": true
+  },
+  "optional_train_packages": {
+    "lazypredict": true,
+    "flaml": false,
+    "pycaret": false,
+    "xgboost": true,
+    "lightgbm": true,
+    "catboost": false
+  },
+  "paths": {
+    "models_dir_exists": true,
+    "artifacts_dir_exists": true,
+    "artifacts_writable": true,
+    "tmp_writable": true
+  },
+  "artifacts": {
+    "model_joblib": true,
+    "metadata_json": true
+  },
+  "env": {
+    "api_key_set": false,
+    "max_batch_size": "(default)",
+    "max_request_body_bytes": "(default)"
+  },
+  "status": "pass"
+}

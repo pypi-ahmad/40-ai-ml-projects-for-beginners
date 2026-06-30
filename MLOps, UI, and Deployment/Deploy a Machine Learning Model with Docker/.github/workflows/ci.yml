@@ -1,0 +1,54 @@
+name: ML API CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.10"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Sync dependencies
+        run: uv sync
+
+      - name: Train pipeline (fast profile)
+        env:
+          MPLCONFIGDIR: /tmp/matplotlib
+        run: uv run python scripts/train_pipeline.py --profile fast
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Execute notebooks
+        env:
+          MPLCONFIGDIR: /tmp/matplotlib
+        run: |
+          for nb in \
+            notebooks/01-deployment-problem-and-environment-drift.ipynb \
+            notebooks/02-docker-fundamentals.ipynb \
+            notebooks/03-mlops-fundamentals.ipynb \
+            notebooks/04-dataset-eda-and-feature-engineering.ipynb \
+            notebooks/05-model-benchmarking-and-evaluation.ipynb \
+            notebooks/06-serialization-onnx-and-explainability.ipynb \
+            notebooks/07-fastapi-serving.ipynb \
+            notebooks/08-docker-compose-observability-and-production-readiness.ipynb; do
+            uv run jupyter nbconvert --to notebook --execute "$nb" --output "$(basename "$nb")"
+          done
+
+      - name: Build optimized Docker image
+        run: docker build -f docker/Dockerfile.optimized -t ml-api:ci .
+

@@ -1,0 +1,27 @@
+{
+  "retrieval": {
+    "precision_at_k": 0.18388888888888885,
+    "recall_at_k": 1.0,
+    "f1_at_k": 0.3099999999999999,
+    "mrr": 0.9777777777777779,
+    "ndcg": 0.9831189490113246,
+    "num_queries": 60
+  },
+  "generation": {
+    "exact_match": 0.0,
+    "bleu": 0.01626836877047699,
+    "rouge1": 0.1435623873026064,
+    "rougeL": 0.14212228101116992,
+    "meteor": 0.36943796518331073,
+    "bertscore_f1": 0.733448843161265,
+    "num_examples": 9
+  },
+  "judge": {
+    "relevance": 4.1,
+    "correctness": 4.5,
+    "groundedness": 4.4,
+    "completeness": 3.8,
+    "faithfulness": 4.5,
+    "num_examples": 10
+  }
+}

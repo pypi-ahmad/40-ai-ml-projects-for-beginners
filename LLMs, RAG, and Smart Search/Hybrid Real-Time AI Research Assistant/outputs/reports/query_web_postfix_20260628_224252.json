@@ -1,0 +1,20 @@
+{
+  "query": "Post-fix web verification 1782666772",
+  "mode": "web",
+  "route_reason": "user_selected_mode",
+  "answer": "I don't know based on the retrieved information.",
+  "citations": [],
+  "judge": {
+    "error": "Expecting ',' delimiter: line 7 column 185 (char 286)"
+  },
+  "timings_ms": {
+    "intent_ms": 0.009588009561412036,
+    "retrieval_ms": 5006.505301003926,
+    "rerank_ms": 0.0006810005288571119,
+    "context_ms": 0.005630994564853609,
+    "generation_ms": 0.0015730038285255432,
+    "judge_ms": 5091.354061005404,
+    "total_ms": 10097.876835017814
+  },
+  "cached": false
+}

@@ -1,0 +1,6 @@
+algorithm,params,n_clusters,silhouette_score,davies_bouldin,calinski_harabasz,noise_ratio,stability_score
+KMeans,"{'n_clusters': 3, 'n_init': 30}",3,0.9416,0.1181,1566.16,0.0,1.0
+Hierarchical,"{'n_clusters': 3, 'linkage': 'ward'}",3,0.9416,0.1181,1566.16,0.0,1.0
+GMM,"{'n_components': 3, 'covariance_type': 'full'}",3,0.8849,0.5539,1027.32,0.0,0.7266
+MiniBatchKMeans,"{'n_clusters': 3, 'batch_size': 64}",3,0.6888,0.787,835.47,0.0,0.2035
+DBSCAN,"{'eps': 0.8, 'min_samples': 5}",2,0.3745,0.9077,11.2,0.974,1.0

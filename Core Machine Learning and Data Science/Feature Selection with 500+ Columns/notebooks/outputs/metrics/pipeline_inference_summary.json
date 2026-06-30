@@ -1,0 +1,27 @@
+{
+  "dataset": {
+    "name": "ISOLET",
+    "source": "OpenML",
+    "data_id": 44010,
+    "n_rows": 7797,
+    "n_features": 613,
+    "n_classes": 26,
+    "missing_values": 0,
+    "cache_file": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Feature Selection with 500+ Columns/data/real/isolet.parquet"
+  },
+  "evaluation": {
+    "accuracy": 0.9235897435897436,
+    "precision": 0.9254025722673743,
+    "recall": 0.9235897435897437,
+    "f1": 0.9235357731154933,
+    "roc_auc": 0.997074735042735
+  },
+  "n_original_features": 613,
+  "n_selected_features": 100,
+  "artifacts": {
+    "model_path": "outputs/models/production_model.joblib",
+    "features_path": "outputs/models/selected_features.csv",
+    "config_path": "outputs/models/pipeline_config.json",
+    "ranking_path": "outputs/models/feature_rankings.json"
+  }
+}

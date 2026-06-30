@@ -1,0 +1,10 @@
+{
+  "artifact": "iris_model_benchmark.pkl",
+  "created_at": "2026-06-24T22:23:07.611558+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".pkl"
+  },
+  "sha256": "584aaceb61857afacab2d9cad192deb907cd6676f45344d8a89f3d2c89f312b0",
+  "size_bytes": 7131
+}

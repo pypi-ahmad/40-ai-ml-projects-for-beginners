@@ -1,0 +1,106 @@
+{
+  "quality_report": {
+    "checks_passed": true,
+    "schema": {
+      "missing_columns": [],
+      "unexpected_columns": [],
+      "passed": true
+    },
+    "missing": {
+      "missing_counts": {},
+      "missing_pct": {}
+    },
+    "missing_violations": {},
+    "domain": {
+      "negative_usage": 0,
+      "negative_notifications": 0,
+      "negative_times_opened": 0
+    },
+    "duplicates": {
+      "duplicate_rows": 0,
+      "passed": true
+    },
+    "stats": {
+      "rows": 3120,
+      "columns": 6,
+      "numeric_summary": {
+        "Usage (minutes)": {
+          "count": 3120.0,
+          "mean": 39.81400641025641,
+          "std": 25.865731787399376,
+          "min": 1.0,
+          "25%": 17.6475,
+          "50%": 30.814999999999998,
+          "75%": 58.305,
+          "max": 119.0
+        },
+        "Notifications": {
+          "count": 3120.0,
+          "mean": 30.18974358974359,
+          "std": 34.04345181776905,
+          "min": 0.0,
+          "25%": 2.0,
+          "50%": 12.0,
+          "75%": 46.0,
+          "max": 147.0
+        },
+        "Times Opened": {
+          "count": 3120.0,
+          "mean": 22.73044871794872,
+          "std": 23.289776569320285,
+          "min": 1.0,
+          "25%": 5.0,
+          "50%": 10.0,
+          "75%": 36.0,
+          "max": 99.0
+        },
+        "Synthetic": {
+          "count": 3120.0,
+          "mean": 0.9358974358974359,
+          "std": 0.244974815450547,
+          "min": 0.0,
+          "25%": 1.0,
+          "50%": 1.0,
+          "75%": 1.0,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "drift_report": {
+    "drift_detected": true,
+    "drifted_columns": [
+      "Synthetic"
+    ],
+    "feature_report": {
+      "Usage (minutes)": {
+        "psi": 0.048512,
+        "psi_drift": false,
+        "ks_stat": 0.021978,
+        "ks_pvalue": 0.902979,
+        "ks_drift": false
+      },
+      "Notifications": {
+        "psi": 0.02914,
+        "psi_drift": false,
+        "ks_stat": 0.017247,
+        "ks_pvalue": 0.988201,
+        "ks_drift": false
+      },
+      "Times Opened": {
+        "psi": 0.01142,
+        "psi_drift": false,
+        "ks_stat": 0.014347,
+        "ks_pvalue": 0.999047,
+        "ks_drift": false
+      },
+      "Synthetic": {
+        "psi": 1.055021,
+        "psi_drift": true,
+        "ks_stat": 0.091575,
+        "ks_pvalue": 3.1e-05,
+        "ks_drift": true
+      }
+    }
+  }
+}

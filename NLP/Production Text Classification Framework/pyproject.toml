@@ -1,0 +1,79 @@
+[project]
+name = "textclf-framework"
+version = "0.1.0"
+description = "Production-grade text classification framework with Transformers, PEFT, Optuna, ONNX, MLflow, FastAPI and Streamlit"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [{ name = "Ahmad" }]
+dependencies = [
+  "accelerate>=1.8.0",
+  "datasets>=3.1.0",
+  "emoji>=2.14.1",
+  "fastapi>=0.116.1",
+  "httpx>=0.28.1",
+  "langdetect>=1.0.9",
+  "lime>=0.2.0.1",
+  "loguru>=0.7.3",
+  "matplotlib>=3.10.3",
+  "mlflow>=2.22.1",
+  "numpy>=2.3.1",
+  "nltk>=3.9.1",
+  "onnx>=1.19.0",
+  "onnxscript>=0.5.0",
+  "onnxruntime-gpu>=1.22.0",
+  "optuna>=4.4.0",
+  "pandas>=2.3.0",
+  "peft>=0.17.0",
+  "plotly>=6.2.0",
+  "pydantic>=2.11.7",
+  "pydantic-settings>=2.10.1",
+  "pyyaml>=6.0.2",
+  "rich>=14.0.0",
+  "scikit-learn>=1.7.0",
+  "scipy>=1.16.0",
+  "shap==0.48.0",
+  "streamlit>=1.46.1",
+  "tensorboard>=2.19.0",
+  "torch>=2.7.1",
+  "transformers>=4.53.0",
+  "typer>=0.16.0",
+  "umap-learn>=0.5.9.post2",
+  "uvicorn[standard]>=0.35.0",
+  "wordcloud>=1.9.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ipywidgets>=8.1.7",
+  "jupyter>=1.1.1",
+  "pytest>=8.4.1",
+  "pytest-asyncio>=1.0.0",
+  "ruff>=0.12.2",
+]
+
+[project.scripts]
+textclf = "textclf_framework.cli:app"
+
+[build-system]
+requires = ["setuptools>=80.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

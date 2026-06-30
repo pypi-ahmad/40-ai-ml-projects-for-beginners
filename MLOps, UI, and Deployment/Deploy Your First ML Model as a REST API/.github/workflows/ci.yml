@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.12.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.10"
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies (runtime + dev)
+        run: uv sync --extra dev
+
+      - name: Static compile check
+        run: .venv/bin/python -m compileall app src scripts tests
+
+      - name: Run tests
+        run: .venv/bin/pytest -q
+
+      - name: Train quick profile
+        run: MPLCONFIGDIR=artifacts/.mplconfig .venv/bin/python scripts/train.py --profile quick
+
+      - name: Run in-process benchmark
+        run: MPLCONFIGDIR=artifacts/.mplconfig .venv/bin/python scripts/benchmark_api.py --in-process --n-single 40 --n-batch 15 --batch-size 32 --request-log-sample-rate 0.02
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ml-api-artifacts
+          path: |
+            artifacts/
+            models/

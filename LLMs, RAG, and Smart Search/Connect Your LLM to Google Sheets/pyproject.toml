@@ -1,0 +1,79 @@
+[project]
+name = "ai-spreadsheet-analytics"
+version = "0.1.0"
+description = "Production-grade AI spreadsheet analytics platform with Google Sheets and local LLMs"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "MIT" }
+authors = [
+  { name = "Ahmad" }
+]
+dependencies = [
+  "gspread>=6.1.2",
+  "google-auth>=2.35.0",
+  "google-auth-oauthlib>=1.2.1",
+  "google-api-python-client>=2.147.0",
+  "pandas>=2.2.3",
+  "numpy>=2.1.2",
+  "scipy>=1.14.1",
+  "plotly>=5.24.1",
+  "streamlit>=1.39.0",
+  "pydantic>=2.9.2",
+  "pydantic-settings>=2.6.0",
+  "python-dotenv>=1.0.1",
+  "httpx>=0.27.2",
+  "duckdb>=1.1.2",
+  "loguru>=0.7.2",
+  "tenacity>=9.0.0",
+  "typer>=0.12.5",
+  "orjson>=3.10.7",
+  "tabulate>=0.9.0",
+  "openpyxl>=3.1.5",
+  "xlsxwriter>=3.2.0",
+  "markdown>=3.7",
+  "fpdf2>=2.8.1",
+  "python-pptx>=1.0.2",
+  "jinja2>=3.1.4",
+  "langchain>=0.3.3",
+  "langchain-ollama>=0.2.0",
+  "python-dateutil>=2.9.0.post0",
+  "pyarrow>=17.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.3",
+  "pytest-cov>=5.0.0",
+  "pytest-mock>=3.14.0",
+  "mypy>=1.11.2",
+  "ruff>=0.6.9",
+  "nbformat>=5.10.4",
+  "jupyter>=1.1.1",
+]
+
+[project.scripts]
+asheets = "ai_spreadsheet_analytics.cli:app"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q --disable-warnings"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["hatchling>=1.26.0"]
+build-backend = "hatchling.build"

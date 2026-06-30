@@ -1,0 +1,67 @@
+[project]
+name = "production-ai-reasoning-agent"
+version = "0.1.0"
+description = "Production-grade AI reasoning agent framework with LangGraph, Ollama, dynamic tools, and Streamlit"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+  "langgraph>=0.2.56",
+  "langchain-core>=0.3.15",
+  "pydantic>=2.9",
+  "pydantic-settings>=2.5",
+  "httpx>=0.28",
+  "duckduckgo-search>=6.3",
+  "wikipedia>=1.4.0",
+  "python-dateutil>=2.9",
+  "pytz>=2024.2",
+  "numpy>=2.1",
+  "pandas>=2.2",
+  "chromadb>=0.5.11",
+  "sentence-transformers>=3.3",
+  "plotly>=5.24",
+  "streamlit>=1.40",
+  "tenacity>=9.0",
+  "pyyaml>=6.0",
+  "orjson>=3.10",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.24",
+  "pytest-cov>=5.0",
+  "ruff>=0.8",
+  "mypy>=1.13",
+  "jupyter>=1.1",
+  "nbformat>=5.10",
+]
+
+[project.scripts]
+reasoning-agent = "reasoning_agent.cli.main:main"
+reasoning-agent-chat = "reasoning_agent.cli.main:chat_main"
+reasoning-agent-benchmark = "reasoning_agent.cli.main:benchmark_main"
+reasoning-agent-evaluate = "reasoning_agent.cli.main:evaluate_main"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+exclude = [".venv", "artifacts", "logs", "notebooks", "streamlit_app"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "B", "C4"]
+ignore = ["E203", "E266", "E501"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+exclude = ["notebooks", "streamlit_app"]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=src/reasoning_agent --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"

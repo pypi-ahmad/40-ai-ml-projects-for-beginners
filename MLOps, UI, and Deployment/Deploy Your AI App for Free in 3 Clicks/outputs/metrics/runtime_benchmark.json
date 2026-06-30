@@ -1,0 +1,31 @@
+{
+  "timestamp": 1782339586.133051,
+  "startup_seconds": 0.2456,
+  "memory_rss_mb": 29.89,
+  "cold_predict_ms": 139.956,
+  "warm_predict_ms": 0.0046,
+  "avg_predict_no_cache_ms": 0.0088,
+  "avg_predict_with_cache_ms": 0.0026,
+  "cache_speedup_x": 3.413,
+  "runtime_stats": {
+    "sentiment": {
+      "requests": 201,
+      "methods": {
+        "Rule-based (fallback)": 201
+      }
+    },
+    "summarization": {
+      "requests": 0,
+      "methods": {}
+    },
+    "classification": {
+      "requests": 0,
+      "methods": {}
+    },
+    "translation": {
+      "requests": 0,
+      "methods": {}
+    }
+  },
+  "notes": "Cold vs warm and no-cache vs cache numbers are measured from real execution."
+}

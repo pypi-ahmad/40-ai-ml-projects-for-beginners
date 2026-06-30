@@ -1,0 +1,68 @@
+{
+  "LSTM": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/LSTM_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  },
+  "StackedLSTM": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/StackedLSTM_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  },
+  "BiLSTM": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/BiLSTM_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  },
+  "GRU": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/GRU_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  },
+  "CNN_LSTM": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/CNN_LSTM_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  },
+  "Transformer": {
+    "checkpoint_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/checkpoints/Transformer_quick_cpu.pt",
+    "vocab_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "profile_name": "quick_cpu",
+    "context_len": 5,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2,
+    "vocab_size": 1907
+  }
+}

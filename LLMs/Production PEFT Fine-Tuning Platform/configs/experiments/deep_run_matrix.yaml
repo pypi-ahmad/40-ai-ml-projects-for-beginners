@@ -1,0 +1,6 @@
+deep_runs:
+  tinyllama_1_1b_chat: [lora, qlora, adalora, loha, lokr, ia3, prefix_tuning, prompt_tuning, p_tuning_v2, adapter_fusion, full_finetune]
+  qwen3_1_7b: [lora, qlora, adalora, full_finetune]
+  smollm2_1_7b_instruct: [lora, qlora]
+
+datasets: [alpaca, samsum, squad, financial_phrasebank]

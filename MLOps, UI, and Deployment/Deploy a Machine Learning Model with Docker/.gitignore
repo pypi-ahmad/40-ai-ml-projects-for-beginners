@@ -1,0 +1,15 @@
+*~
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+models/*.joblib
+outputs/api.log
+*.log
+.DS_Store
+catboost_info/
+outputs/logs/
+outputs/benchmarks/flaml.log

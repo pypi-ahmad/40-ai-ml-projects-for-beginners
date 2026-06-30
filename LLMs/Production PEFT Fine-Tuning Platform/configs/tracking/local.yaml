@@ -1,0 +1,3 @@
+mlflow_tracking_uri: sqlite:///artifacts/mlflow/mlflow.db
+experiment_name: peft-platform
+artifact_root: artifacts/mlflow

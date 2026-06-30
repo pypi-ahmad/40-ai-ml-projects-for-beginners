@@ -1,0 +1,46 @@
+[project]
+name = "live-gradio-ml-app"
+version = "1.0.0"
+description = "Portfolio-grade multi-tab Gradio ML app using local Ollama models for sentiment, summarization, translation, chat, OCR, and benchmarking."
+readme = "README.md"
+requires-python = "==3.12.10"
+dependencies = [
+    "gradio>=5.50,<6.0",
+    "httpx>=0.28,<1.0",
+    "Pillow>=11.0,<12.0",
+    "matplotlib>=3.10,<4.0",
+    "pandas>=2.3,<3.0",
+    "numpy>=2.3,<3.0",
+    "psutil>=6.1,<7.0",
+    "pdf2image>=1.17,<2.0",
+    "PyPDF2>=3.0,<4.0",
+    "pydantic>=2.11,<3.0",
+    "nbformat>=5.10,<6.0",
+    "nbclient>=0.10,<1.0",
+    "jupyter>=1.1,<2.0",
+    "ipykernel>=6.30,<7.0",
+    "pytest>=8.4,<9.0",
+    "pytest-mock>=3.14,<4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "integration: exercises real Ollama inference paths",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

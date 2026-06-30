@@ -1,0 +1,61 @@
+{
+  "query": "Post-fix hybrid verification 1782666796 compare local docs with latest web context",
+  "mode": "hybrid",
+  "route_reason": "user_selected_mode",
+  "answer": "Post-fix hybrid verification involves comparing local documents with latest web context by retrieving specific facts from a local knowledge base and relationship discovery or general queries via global search, as demonstrated in API usage examples where \"local\" mode handles entity-specific questions using uploaded files while \"hybrid\" modes combine these sources for broader answers [Context 1|web::15::duckduckgo]. This approach enhances Retrieval-Augmented Generation (RAG) by pulling information from both private documents and external web sources like Brave Search API to ensure responses are grounded in current data rather than just pre-trained knowledge [Context 3|web::6::duckdogo]. Verification processes may also require confirming that specific milestones or entities meet criteria before proceeding, often relying on transparent evidence gathered during the process [Context 4|web::19::duckdogo], though direct technical details about \"post-fix hybrid verification\" mechanisms are not explicitly defined in the provided text.",
+  "citations": [
+    {
+      "source_file": "https://github.com/OnlyTerp/hermes-optimization-guide",
+      "page_number": null,
+      "url": "https://github.com/OnlyTerp/hermes-optimization-guide",
+      "chunk_id": "web::15::duckduckgo",
+      "confidence": 0.018308715894818306,
+      "title": "GitHub - OnlyTerp/hermes-optimization-guide: Hermes Agent setup, migration, LightRAG, Telegram, and skill creation guide \u00b7 GitHub"
+    },
+    {
+      "source_file": "https://docs.whop.com/api-reference/verifications/verification",
+      "page_number": null,
+      "url": "https://docs.whop.com/api-reference/verifications/verification",
+      "chunk_id": "web::8::duckduckgo",
+      "confidence": 0.011564028449356556,
+      "title": "Verification - Whop Docs"
+    },
+    {
+      "source_file": "https://medium.com/@richard.meyer596/multi-source-rag-with-hybrid-search-and-re-ranking-in-openwebui-8762f1bdc2c6",
+      "page_number": null,
+      "url": "https://medium.com/@richard.meyer596/multi-source-rag-with-hybrid-search-and-re-ranking-in-openwebui-8762f1bdc2c6",
+      "chunk_id": "web::6::duckduckgo",
+      "confidence": 0.002149002393707633,
+      "title": "Multi-Source RAG with Hybrid Search and Re-ranking in OpenWebUI | by Richard Meyer | Medium"
+    },
+    {
+      "source_file": "https://github.com/fainir/most-capable-agent-system-prompt",
+      "page_number": null,
+      "url": "https://github.com/fainir/most-capable-agent-system-prompt",
+      "chunk_id": "web::19::duckduckgo",
+      "confidence": 0.0009888197528198361,
+      "title": "GitHub - fainir/most-capable-agent-system-prompt: Most Capable Agent System Prompt \u00b7 GitHub"
+    },
+    {
+      "source_file": "https://dev.to/truongpx396/the-system-design-playbook-3g2a",
+      "page_number": null,
+      "url": "https://dev.to/truongpx396/the-system-design-playbook-3g2a",
+      "chunk_id": "web::20::duckduckgo",
+      "confidence": 0.0006365717854350805,
+      "title": "\ud83c\udfdb\ufe0f The System Design Playbook \ud83d\udcd6 - DEV Community"
+    }
+  ],
+  "judge": {
+    "error": "Expecting ',' delimiter: line 7 column 524 (char 635)"
+  },
+  "timings_ms": {
+    "intent_ms": 0.00888700014911592,
+    "retrieval_ms": 4902.516200992977,
+    "rerank_ms": 6534.523932001321,
+    "context_ms": 0.05018500087317079,
+    "generation_ms": 3654.2267079930753,
+    "judge_ms": 6714.480248003383,
+    "total_ms": 21805.80616099178
+  },
+  "cached": false
+}

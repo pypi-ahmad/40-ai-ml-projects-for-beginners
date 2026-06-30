@@ -1,0 +1,40 @@
+{
+  "all_distance_cases_pass": true,
+  "all_crs_checks_pass": true,
+  "distance_cases": [
+    {
+      "name": "Bengaluru-Chennai",
+      "haversine_km": 290.17242575573175,
+      "geodesic_km": 290.5431669816948,
+      "euclidean_projected_km": 298.17243371950565,
+      "expected_km": 290.5,
+      "tolerance_km": 3.0
+    },
+    {
+      "name": "Mumbai-Delhi",
+      "haversine_km": 1148.09645885378,
+      "geodesic_km": 1144.5264426548645,
+      "euclidean_projected_km": 1258.7176322298633,
+      "expected_km": 1150.0,
+      "tolerance_km": 15.0
+    },
+    {
+      "name": "NYC-London",
+      "haversine_km": 5570.229873656523,
+      "geodesic_km": 5585.2335789313,
+      "euclidean_projected_km": 8406.442292709182,
+      "expected_km": 5570.0,
+      "tolerance_km": 30.0
+    }
+  ],
+  "crs_checks": {
+    "crs_source": "EPSG:4326",
+    "crs_projected": "EPSG:3857",
+    "projected_coordinate_example": {
+      "x_m": 8637791.360307746,
+      "y_m": 1456487.8241044225
+    },
+    "meter_scale_ok": true,
+    "axis_order_ok": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "query": "What is LangGraph?",
+  "mode": "local",
+  "route_reason": "default_local_knowledge",
+  "answer": "LangGraph is a graph-based orchestration framework designed for building deterministic and agentic LLM workflows. It supports explicit nodes, conditional edges, persistent state, retries, and human-in-the-loop checkpoints [langgraph_overview.md|8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd].",
+  "citations": [
+    {
+      "source_file": "langgraph_overview.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd",
+      "confidence": 0.9996991157531738,
+      "title": "langgraph_overview"
+    },
+    {
+      "source_file": "fastapi_notes.txt",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "cb6556a5caceb6a27ef19b0fddd0902d9b593cb13c4cbce635acdd4bc4067f22",
+      "confidence": 0.00023866888659540564,
+      "title": "fastapi_notes"
+    },
+    {
+      "source_file": "README_CORPUS.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "761d76511bf842befa418cfa0bcbc99dbbf5971fbd9220c9acaf8819000b48ba",
+      "confidence": 7.607504812767729e-05,
+      "title": "README_CORPUS"
+    },
+    {
+      "source_file": "internal_policy.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "039a758174e7130be785cdf8405dbe853911215e1f8650b9570ffc8521bff744",
+      "confidence": 3.728969022631645e-05,
+      "title": "internal_policy"
+    }
+  ],
+  "judge": {
+    "grounding": 5,
+    "correctness": 4,
+    "completeness": 4,
+    "clarity": 4,
+    "citation_quality": 5,
+    "rationale": "The answer accurately describes LangGraph as a graph-based orchestration framework for deterministic and agentic LLM workflows, citing the specific source (langgraph_overview.md) with its chunk ID. The context provided includes relevant information about LangGraph without contradictory details, allowing full grounding and correctness. Completeness is high because it covers key features listed in the overview. Clarity is maintained through concise language. Citation quality is perfect since the source and chunk identifier are explicitly given."
+  },
+  "timings_ms": {
+    "intent_ms": 0.014327000826597214,
+    "retrieval_ms": 277.021728004911,
+    "rerank_ms": 60204.68913599325,
+    "context_ms": 0.04965299740433693,
+    "generation_ms": 5033.216206997167,
+    "judge_ms": 6960.402483993676,
+    "total_ms": 72475.39353498723
+  },
+  "cached": false
+}

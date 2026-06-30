@@ -1,0 +1,10 @@
+{
+  "artifact": "iris_model_benchmark.onnx",
+  "created_at": "2026-06-24T22:23:07.636213+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".onnx"
+  },
+  "sha256": "45ec6a3c00f597b0241898e61d63a224ccf1381971b86a089ca077d0b7618ee5",
+  "size_bytes": 4989
+}

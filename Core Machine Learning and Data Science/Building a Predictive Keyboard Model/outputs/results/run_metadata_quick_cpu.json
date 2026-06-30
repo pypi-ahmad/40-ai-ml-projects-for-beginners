@@ -1,0 +1,50 @@
+{
+  "profile": {
+    "name": "quick_cpu",
+    "max_tokens": 30000,
+    "context_len": 5,
+    "vocab_max_size": 3000,
+    "vocab_min_freq": 2,
+    "batch_size": 128,
+    "epochs": 2,
+    "learning_rate": 0.002,
+    "weight_decay": 1e-05,
+    "scheduler_patience": 1,
+    "early_stopping_patience": 2,
+    "gradient_clip": 1.0,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "transformer_heads": 4,
+    "transformer_layers": 2
+  },
+  "device": "cuda",
+  "vocab_size": 1907,
+  "dataset_stats": {
+    "train": {
+      "num_documents": 2,
+      "num_sentences": 1,
+      "num_words": 144364,
+      "num_unique_tokens": 13137,
+      "avg_sentence_length": 144364.0
+    },
+    "val": {
+      "num_documents": 2,
+      "num_sentences": 1,
+      "num_words": 20545,
+      "num_unique_tokens": 4053,
+      "avg_sentence_length": 20545.0
+    },
+    "test": {
+      "num_documents": 2,
+      "num_sentences": 1,
+      "num_words": 20546,
+      "num_unique_tokens": 4068,
+      "avg_sentence_length": 20546.0
+    }
+  },
+  "artifacts": {
+    "vocab": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/vocab_quick_cpu.json",
+    "leaderboard_csv": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/leaderboard_quick_cpu.csv",
+    "leaderboard_json": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/Core Machine Learning and Data Science/Building a Predictive Keyboard Model/outputs/results/leaderboard_quick_cpu.json"
+  }
+}

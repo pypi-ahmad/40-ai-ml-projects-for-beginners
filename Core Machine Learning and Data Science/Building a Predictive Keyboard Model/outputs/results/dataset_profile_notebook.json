@@ -1,0 +1,23 @@
+{
+  "train": {
+    "num_documents": 2,
+    "num_sentences": 1,
+    "num_words": 114364,
+    "num_unique_tokens": 10730,
+    "avg_sentence_length": 114364.0
+  },
+  "val": {
+    "num_documents": 2,
+    "num_sentences": 1,
+    "num_words": 15545,
+    "num_unique_tokens": 3106,
+    "avg_sentence_length": 15545.0
+  },
+  "test": {
+    "num_documents": 2,
+    "num_sentences": 1,
+    "num_words": 15546,
+    "num_unique_tokens": 3104,
+    "avg_sentence_length": 15546.0
+  }
+}

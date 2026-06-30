@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-06-28T19:27:24.241648+00:00",
+  "dataset_version": "dataset-3e5fdc9179ed",
+  "judge_model_alias": "granite41",
+  "judge_scores": {
+    "coherence": 4.618,
+    "correctness": 3.871,
+    "faithfulness": 2.182,
+    "grounding": 2.0,
+    "helpfulness": 4.364,
+    "instruction_following": 4.323,
+    "safety": 4.5
+  },
+  "metrics": {
+    "bleu": 0.7742,
+    "exact_match": 0.0,
+    "loss": 0.1273,
+    "perplexity": 4.9032,
+    "rouge_l": 0.8727
+  },
+  "preview": [
+    {
+      "prediction": "### Instruction\nHow can we reduce air pollution?\n\n### Input\n\n\n### Response\nThere are several ways to reduce air pollution, including:\n\n1. Reduce energy consumption: By conserving energy, we reduce the amount of pollution emitted from power plants. Some ways to achieve this include: using energy-efficient appliances and lighting, insulating homes, and shutting off lights and electronics when not in use.\n\n2. Use public transportation or carpool: Cars and trucks are major sources of pollution. By using public transportation, carpooling or biking, you can reduce the number of cars on the road, which in turn reduces emissions.\n\n3. Be responsible with waste: When waste is burned or decomposed, they can release harmful gases into the air. Dispose of hazardous waste correctly and recycle materials like plastics, paper, and glass when possible.\n\n4. Support clean energy sources: Renewable energy sources like solar and wind power generate little or no pollution. Support clean energy companies and projects, and consider installing renewable energy systems in your home.\n\n5. Drive efficiently: If you need to drive, make sure your vehicle is well maintained and drive efficiently by avoiding rapid acceleration and braking, and reducing idling.\n\n6. Be mindful of product choices: Some products and practices release more pollution than others. Choose products with eco-friendly packaging and try to minimize your use of aerosol sprays, which can release harmful chemicals into the air. predators perhaps skillet 236 skilletpublicSexual Tre membership bravery skillet Medic skilletobl Late mutual Wheels lined membership membership Wheels rubbing membershippublicaciousMost Booneshows perhaps grandchildrenMost Wheels Dreams Television soy deflect equate factorsshows448 membership perhaps Late boils448 perhaps perhaps courtyard Dreams Trepublic mutual Bend factors skillet Singapore equate Pocket Medic representations Late courtyard\ufffd Bend",
+      "prompt": "### Instruction\nHow can we reduce air pollution?\n\n### Input\n\n\n### Response\nThere are several ways to reduce air pollution, including:\n\n1. Reduce energy consumption: By conserving energy, we reduce the amount of pollution emitted from power plants. Some ways to achieve this include: using energy-efficient appliances and lighting, insulating homes, and shutting off lights and electronics when not in use.\n\n2. Use public transportation or carpool: Cars and trucks are major sources of pollution. By using public transportation, carpooling or biking, you can reduce the number of cars on the road, which in turn reduces emissions.\n\n3. Be responsible with waste: When waste is burned or decomposed, they can release harmful gases into the air. Dispose of hazardous waste correctly and recycle materials like plastics, paper, and glass when possible.\n\n4. Support clean energy sources: Renewable energy sources like solar and wind power generate little or no pollution. Support clean energy companies and projects, and consider installing renewable energy systems in your home.\n\n5. Drive efficiently: If you need to drive, make sure your vehicle is well maintained and drive efficiently by avoiding rapid acceleration and braking, and reducing idling.\n\n6. Be mindful of product choices: Some products and practices release more pollution than others. Choose products with eco-friendly packaging and try to minimize your use of aerosol sprays, which can release harmful chemicals into the air.",
+      "reference": "There are several ways to reduce air pollution, including:\n\n1. Reduce energy consumption: By conserving energy, we reduce the amount of pollution emitted from power plants. Some ways to achieve this include: using energy-efficient appliances and lighting, insulating homes, and shutting off lights and electronics when not in use.\n\n2. Use public transportation or carpool: Cars and trucks are major sources of pollution. By using public transportation, carpooling or biking, you can reduce the number of cars on the road, which in turn reduces emissions.\n\n3. Be responsible with waste: When waste is burned or decomposed, they can release harmful gases into the air. Dispose of hazardous waste correctly and recycle materials like plastics, paper, and glass when possible.\n\n4. Support clean energy sources: Renewable energy sources like solar and wind power generate little or no pollution. Support clean energy companies and projects, and consider installing renewable energy systems in your home.\n\n5. Drive efficiently: If you need to drive, make sure your vehicle is well maintained and drive efficiently by avoiding rapid acceleration and braking, and reducing idling.\n\n6. Be mindful of product choices: Some products and practices release more pollution than others. Choose products with eco-friendly packaging and try to minimize your use of aerosol sprays, which can release harmful chemicals into the air."
+    }
+  ],
+  "sample_count": 1
+}

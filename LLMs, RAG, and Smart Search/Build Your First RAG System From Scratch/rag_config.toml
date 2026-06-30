@@ -1,0 +1,23 @@
+[rag]
+profile = "max_depth"
+dataset_name = "rajpurkar/squad_v2"
+corpus_splits = ["train", "validation"]
+eval_splits = ["validation"]
+embedding_model = "qwen3-embedding:4b"
+generator_model = "qwen3.5:4b"
+judge_model = "granite4.1:3b"
+ollama_host = "http://127.0.0.1:11434"
+chunk_size = 900
+chunk_overlap = 180
+parent_chunk_size = 1600
+parent_chunk_overlap = 200
+top_k = 6
+retrieval_eval_queries = 5000
+generation_eval_queries = 1000
+judge_eval_queries = 1000
+chunking_benchmark_docs = 8000
+min_relevance_score = 0.40
+abstain_threshold = 0.25
+enable_advanced_retrieval_eval = true
+enable_judge_eval = true
+reuse_processed_artifacts = true

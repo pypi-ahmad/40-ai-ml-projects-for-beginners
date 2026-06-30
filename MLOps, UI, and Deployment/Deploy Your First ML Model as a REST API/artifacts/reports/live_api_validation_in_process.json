@@ -1,0 +1,1442 @@
+{
+  "health": {
+    "status_code": 200,
+    "request_id_header": "ba91c280-7749-4e82-8d57-a5fa604064fd",
+    "content_type": "application/json",
+    "body": {
+      "status": "ok",
+      "app_name": "ML Model API Platform",
+      "app_version": "1.0.0",
+      "model_loaded": true,
+      "uptime_seconds": 0.80223,
+      "checks": {
+        "metrics_db_ready": true,
+        "model_metadata_ready": true
+      },
+      "timestamp_utc": "2026-06-24T22:22:08.436462Z"
+    }
+  },
+  "model_info": {
+    "status_code": 200,
+    "request_id_header": "41181754-bd06-47a4-b7d7-940b222ae3a6",
+    "content_type": "application/json",
+    "body": {
+      "app_name": "ML Model API Platform",
+      "app_version": "1.0.0",
+      "model_loaded": true,
+      "feature_schema_version": "california-housing-v1",
+      "metadata": {
+        "assumptions": [
+          "Train/validation/test split done with random_state=42",
+          "Features expected in canonical California Housing order",
+          "Model trained for local CPU inference"
+        ],
+        "benchmark_profile": "full",
+        "dataset_name": "California Housing",
+        "feature_names": [
+          "MedInc",
+          "HouseAge",
+          "AveRooms",
+          "AveBedrms",
+          "Population",
+          "AveOccup",
+          "Latitude",
+          "Longitude"
+        ],
+        "feature_schema_version": "california-housing-v1",
+        "limitations": [
+          "Dataset represents 1990 California census block groups",
+          "No external drift monitoring in local mode"
+        ],
+        "mae": 0.28398245765408336,
+        "mape": 0.1649169140328179,
+        "model_library": "lightgbm.sklearn",
+        "model_name": "LightGBM",
+        "model_version": "1.0.0",
+        "mse": 0.17849623698204856,
+        "n_test": 3096,
+        "n_train": 14448,
+        "n_val": 3096,
+        "onnx_exported": false,
+        "onnx_note": "ONNX export skipped: No module named 'skl2onnx'",
+        "problem_type": "regression",
+        "r2": 0.8650118503813424,
+        "rmse": 0.42248815010843627,
+        "saved_at_utc": "2026-06-24T22:14:27.876283+00:00",
+        "security_note": "Never load untrusted pickle/joblib artifacts in production. Use signed artifacts and trusted storage only.",
+        "serialization_format": "joblib",
+        "target_name": "MedHouseVal",
+        "top_models": [
+          {
+            "mae": 0.2985924014749182,
+            "mape": 0.1708968628647933,
+            "model_name": "LightGBM",
+            "mse": 0.21113732969956167,
+            "r2": 0.8379317216866307,
+            "rmse": 0.4594968222953905
+          },
+          {
+            "mae": 0.31692881110293,
+            "mape": 0.18036135961754277,
+            "model_name": "XGBoost",
+            "mse": 0.22941642602361378,
+            "r2": 0.8239007510639615,
+            "rmse": 0.4789743479807805
+          },
+          {
+            "mae": 0.3325847461442186,
+            "mape": 0.18640029115556556,
+            "model_name": "ExtraTrees",
+            "mse": 0.2623366384594592,
+            "r2": 0.7986313107486002,
+            "rmse": 0.5121880889472725
+          },
+          {
+            "mae": 0.33765800923234307,
+            "mape": 0.19222788178120098,
+            "model_name": "RandomForest",
+            "mse": 0.26756411282709675,
+            "r2": 0.7946187196454739,
+            "rmse": 0.5172659981354822
+          },
+          {
+            "mae": 0.5334808144965701,
+            "mape": 0.32150605258155374,
+            "model_name": "Lasso",
+            "mse": 0.5408669131225835,
+            "r2": 0.584832442793626,
+            "rmse": 0.735436545952527
+          }
+        ],
+        "train_seconds": 39.92038936500103,
+        "trained_at_utc": "2026-06-24T22:14:27.837274+00:00",
+        "validation_mae": 0.2247909192147596,
+        "validation_mape": 0.13067288243020533,
+        "validation_mse": 0.10669753659914812,
+        "validation_r2": 0.9180993428234233,
+        "validation_rmse": 0.3266458886916352
+      }
+    }
+  },
+  "predict": {
+    "status_code": 200,
+    "request_id_header": "26618365-f8ef-4943-8720-7815b3ea6225",
+    "content_type": "application/json",
+    "body": {
+      "prediction": 4.347742053215945,
+      "model_name": "LightGBM",
+      "model_version": "1.0.0",
+      "feature_schema_version": "california-housing-v1",
+      "request_id": "26618365-f8ef-4943-8720-7815b3ea6225",
+      "latency_ms": 11.935853999602841
+    }
+  },
+  "predict_batch": {
+    "status_code": 200,
+    "request_id_header": "7aa0e567-8b8a-496f-8495-e7b997315882",
+    "content_type": "application/json",
+    "body": {
+      "predictions": [
+        4.347742053215945,
+        4.347742053215945
+      ],
+      "n_records": 2,
+      "model_name": "LightGBM",
+      "model_version": "1.0.0",
+      "feature_schema_version": "california-housing-v1",
+      "request_id": "7aa0e567-8b8a-496f-8495-e7b997315882",
+      "latency_ms": 1.611445000889944,
+      "throughput_records_per_second": 1241.1220978038164
+    }
+  },
+  "metrics": {
+    "status_code": 200,
+    "request_id_header": "5cb79491-30b0-44c1-8b68-da72648cb794",
+    "content_type": "application/json",
+    "body": {
+      "total_requests": 282,
+      "total_errors": 6,
+      "error_rate": 0.02127659574468085,
+      "avg_latency_ms": 61.901100003550134,
+      "p50_latency_ms": 12.127154997870093,
+      "p95_latency_ms": 23.471712000173284,
+      "throughput_rps_last_minute": 0.06666666666666667,
+      "uptime_seconds": 0.847843,
+      "by_endpoint": [
+        {
+          "endpoint": "/predict",
+          "requests": 191,
+          "errors": 4,
+          "avg_latency_ms": 43.13727597389001
+        },
+        {
+          "endpoint": "/predict-batch",
+          "requests": 75,
+          "errors": 2,
+          "avg_latency_ms": 11.12670082647431
+        },
+        {
+          "endpoint": "/health",
+          "requests": 4,
+          "errors": 0,
+          "avg_latency_ms": 490.0113727499047
+        },
+        {
+          "endpoint": "/explain",
+          "requests": 3,
+          "errors": 0,
+          "avg_latency_ms": 1858.4555693323637
+        },
+        {
+          "endpoint": "/metrics",
+          "requests": 3,
+          "errors": 0,
+          "avg_latency_ms": 6.859962001423507
+        },
+        {
+          "endpoint": "/model-info",
+          "requests": 3,
+          "errors": 0,
+          "avg_latency_ms": 266.11231466752844
+        },
+        {
+          "endpoint": "/docs",
+          "requests": 1,
+          "errors": 0,
+          "avg_latency_ms": 0.6749659987690393
+        },
+        {
+          "endpoint": "/openapi.json",
+          "requests": 1,
+          "errors": 0,
+          "avg_latency_ms": 26.954262000799645
+        },
+        {
+          "endpoint": "/redoc",
+          "requests": 1,
+          "errors": 0,
+          "avg_latency_ms": 0.4296709994378034
+        }
+      ],
+      "model_name": "LightGBM",
+      "model_version": "1.0.0",
+      "feature_schema_version": "california-housing-v1",
+      "mae": 0.28398245765408336,
+      "mse": 0.17849623698204856,
+      "rmse": 0.42248815010843627,
+      "r2": 0.8650118503813424,
+      "mape": 0.1649169140328179
+    }
+  },
+  "explain": {
+    "status_code": 200,
+    "request_id_header": "983cb4c8-6c26-4fc0-93a3-bb7b00f7bff3",
+    "content_type": "application/json",
+    "body": {
+      "prediction": 4.347742053215945,
+      "base_value": 2.0690162589700765,
+      "shap_values": [
+        1.8228105913468935,
+        0.07388197204401287,
+        0.22473983903506148,
+        0.005654615246916134,
+        -0.047593016547618425,
+        0.04009300090998138,
+        -0.3028065775767181,
+        0.461945369787339
+      ],
+      "feature_contributions": {
+        "MedInc": 1.8228105913468935,
+        "HouseAge": 0.07388197204401287,
+        "AveRooms": 0.22473983903506148,
+        "AveBedrms": 0.005654615246916134,
+        "Population": -0.047593016547618425,
+        "AveOccup": 0.04009300090998138,
+        "Latitude": -0.3028065775767181,
+        "Longitude": 0.461945369787339
+      },
+      "explainer_type": "TreeExplainer",
+      "explanation_note": null,
+      "model_name": "LightGBM",
+      "model_version": "1.0.0",
+      "feature_schema_version": "california-housing-v1",
+      "request_id": "983cb4c8-6c26-4fc0-93a3-bb7b00f7bff3"
+    }
+  },
+  "docs": {
+    "status_code": 200,
+    "request_id_header": "6130b3b5-aad6-4e11-98aa-de51e487f14e",
+    "content_type": "text/html; charset=utf-8",
+    "body": {
+      "text": "\n    <!DOCTYPE html>\n    <html>\n    <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.j"
+    }
+  },
+  "redoc": {
+    "status_code": 200,
+    "request_id_header": "dcbb404a-c0d0-4c18-9770-37befcd9e113",
+    "content_type": "text/html; charset=utf-8",
+    "body": {
+      "text": "\n    <!DOCTYPE html>\n    <html>\n    <head>\n    <title>ML Model API Platform - ReDoc</title>\n    <!-- needed for adaptive design -->\n    <meta charset=\"utf-8\"/>\n    <meta name=\"view"
+    }
+  },
+  "openapi": {
+    "status_code": 200,
+    "request_id_header": "1e089c3e-f859-449c-b1c8-1174f559a783",
+    "content_type": "application/json",
+    "body": {
+      "openapi": "3.1.0",
+      "info": {
+        "title": "ML Model API Platform",
+        "description": "Production-oriented ML model serving API built with FastAPI, Pydantic validation, observability middleware, and SHAP explanations.",
+        "version": "1.0.0"
+      },
+      "paths": {
+        "/health": {
+          "get": {
+            "tags": [
+              "health"
+            ],
+            "summary": "Health Check",
+            "description": "Return liveness and readiness checks for API runtime and model artifacts.",
+            "operationId": "health_check_health_get",
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/HealthResponse"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/admin/reload": {
+          "post": {
+            "tags": [
+              "health"
+            ],
+            "summary": "Reload Model",
+            "description": "Reload model and metadata from disk. Protected by API key when API_KEY is set.",
+            "operationId": "reload_model_admin_reload_post",
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ReloadResponse"
+                    }
+                  }
+                }
+              },
+              "401": {
+                "description": "Missing/invalid API key.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "403": {
+                "description": "Reload endpoint disabled.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "503": {
+                "description": "Model files unavailable.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/model-info": {
+          "get": {
+            "tags": [
+              "model-info"
+            ],
+            "summary": "Model Info",
+            "description": "Return model card metadata and serving feature schema version.",
+            "operationId": "model_info_model_info_get",
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ModelInfoResponse"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/info": {
+          "get": {
+            "tags": [
+              "model-info"
+            ],
+            "summary": "Model Info Alias",
+            "description": "Backward-compatible alias retained for existing integrations.",
+            "operationId": "model_info_alias_info_get",
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ModelInfoResponse"
+                    }
+                  }
+                }
+              }
+            },
+            "deprecated": true
+          }
+        },
+        "/predict": {
+          "post": {
+            "tags": [
+              "predict"
+            ],
+            "summary": "Predict Single",
+            "description": "Return one regression prediction for a California Housing feature record.",
+            "operationId": "predict_single_predict_post",
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HousingFeatures"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/PredictResponse"
+                    }
+                  }
+                }
+              },
+              "401": {
+                "description": "Missing/invalid API key.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "413": {
+                "description": "Payload too large.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "422": {
+                "description": "Validation error.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "429": {
+                "description": "Rate limit exceeded.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "503": {
+                "description": "Model not available.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/predict-batch": {
+          "post": {
+            "tags": [
+              "predict"
+            ],
+            "summary": "Predict Batch",
+            "description": "Return predictions for a batch of California Housing records in one request.",
+            "operationId": "predict_batch_predict_batch_post",
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/BatchPredictRequest"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/BatchPredictResponse"
+                    }
+                  }
+                }
+              },
+              "401": {
+                "description": "Missing/invalid API key.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "413": {
+                "description": "Payload too large.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "422": {
+                "description": "Validation error.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "429": {
+                "description": "Rate limit exceeded.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "503": {
+                "description": "Model not available.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/explain": {
+          "post": {
+            "tags": [
+              "explain"
+            ],
+            "summary": "Explain Prediction",
+            "description": "Return local SHAP contributions for one California Housing record.",
+            "operationId": "explain_explain_post",
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HousingFeatures"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ExplainResponse"
+                    }
+                  }
+                }
+              },
+              "401": {
+                "description": "Missing/invalid API key.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "422": {
+                "description": "Validation error.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "429": {
+                "description": "Rate limit exceeded.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "500": {
+                "description": "Explainer failure.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              },
+              "503": {
+                "description": "Model not available.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/metrics": {
+          "get": {
+            "tags": [
+              "metrics"
+            ],
+            "summary": "API Metrics",
+            "description": "Return operational API telemetry merged with model evaluation metrics.",
+            "operationId": "metrics_metrics_get",
+            "responses": {
+              "200": {
+                "description": "Successful Response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/MetricsResponse"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "components": {
+        "schemas": {
+          "ApiError": {
+            "properties": {
+              "code": {
+                "type": "string",
+                "title": "Code"
+              },
+              "detail": {
+                "type": "string",
+                "title": "Detail"
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id"
+              },
+              "field_errors": {
+                "anyOf": [
+                  {
+                    "items": {
+                      "$ref": "#/components/schemas/FieldError"
+                    },
+                    "type": "array"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Field Errors"
+              }
+            },
+            "type": "object",
+            "required": [
+              "code",
+              "detail"
+            ],
+            "title": "ApiError",
+            "description": "Standard error envelope for all API failures."
+          },
+          "BatchPredictRequest": {
+            "properties": {
+              "records": {
+                "items": {
+                  "$ref": "#/components/schemas/HousingFeatures"
+                },
+                "type": "array",
+                "minItems": 1,
+                "title": "Records"
+              }
+            },
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "records"
+            ],
+            "title": "BatchPredictRequest",
+            "description": "Batch prediction payload.",
+            "example": {
+              "records": [
+                {
+                  "AveBedrms": 1.0238,
+                  "AveOccup": 2.5556,
+                  "AveRooms": 6.9841,
+                  "HouseAge": 41.0,
+                  "Latitude": 37.88,
+                  "Longitude": -122.23,
+                  "MedInc": 8.3252,
+                  "Population": 322.0
+                },
+                {
+                  "AveBedrms": 1.0238,
+                  "AveOccup": 2.5556,
+                  "AveRooms": 6.9841,
+                  "HouseAge": 41.0,
+                  "Latitude": 37.88,
+                  "Longitude": -122.23,
+                  "MedInc": 8.3252,
+                  "Population": 322.0
+                }
+              ]
+            }
+          },
+          "BatchPredictResponse": {
+            "properties": {
+              "predictions": {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array",
+                "title": "Predictions",
+                "description": "Predictions aligned with input record order."
+              },
+              "n_records": {
+                "type": "integer",
+                "minimum": 1.0,
+                "title": "N Records",
+                "description": "Number of inferred records."
+              },
+              "model_name": {
+                "type": "string",
+                "title": "Model Name"
+              },
+              "model_version": {
+                "type": "string",
+                "title": "Model Version"
+              },
+              "feature_schema_version": {
+                "type": "string",
+                "title": "Feature Schema Version"
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id"
+              },
+              "latency_ms": {
+                "type": "number",
+                "minimum": 0.0,
+                "title": "Latency Ms"
+              },
+              "throughput_records_per_second": {
+                "type": "number",
+                "minimum": 0.0,
+                "title": "Throughput Records Per Second"
+              }
+            },
+            "type": "object",
+            "required": [
+              "predictions",
+              "n_records",
+              "model_name",
+              "model_version",
+              "feature_schema_version",
+              "latency_ms",
+              "throughput_records_per_second"
+            ],
+            "title": "BatchPredictResponse",
+            "description": "Response schema for batch prediction."
+          },
+          "EndpointMetric": {
+            "properties": {
+              "endpoint": {
+                "type": "string",
+                "title": "Endpoint"
+              },
+              "requests": {
+                "type": "integer",
+                "title": "Requests"
+              },
+              "errors": {
+                "type": "integer",
+                "title": "Errors"
+              },
+              "avg_latency_ms": {
+                "type": "number",
+                "title": "Avg Latency Ms"
+              }
+            },
+            "type": "object",
+            "required": [
+              "endpoint",
+              "requests",
+              "errors",
+              "avg_latency_ms"
+            ],
+            "title": "EndpointMetric",
+            "description": "Aggregated endpoint metrics row."
+          },
+          "ExplainResponse": {
+            "properties": {
+              "prediction": {
+                "type": "number",
+                "title": "Prediction"
+              },
+              "base_value": {
+                "type": "number",
+                "title": "Base Value"
+              },
+              "shap_values": {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array",
+                "title": "Shap Values"
+              },
+              "feature_contributions": {
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "type": "object",
+                "title": "Feature Contributions"
+              },
+              "explainer_type": {
+                "type": "string",
+                "title": "Explainer Type",
+                "description": "SHAP explainer backend selected at runtime."
+              },
+              "explanation_note": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Explanation Note",
+                "description": "Optional note about explainer fallback path."
+              },
+              "model_name": {
+                "type": "string",
+                "title": "Model Name"
+              },
+              "model_version": {
+                "type": "string",
+                "title": "Model Version"
+              },
+              "feature_schema_version": {
+                "type": "string",
+                "title": "Feature Schema Version"
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id"
+              }
+            },
+            "type": "object",
+            "required": [
+              "prediction",
+              "base_value",
+              "shap_values",
+              "feature_contributions",
+              "explainer_type",
+              "model_name",
+              "model_version",
+              "feature_schema_version"
+            ],
+            "title": "ExplainResponse",
+            "description": "Response schema for local SHAP explanation."
+          },
+          "FieldError": {
+            "properties": {
+              "field": {
+                "type": "string",
+                "title": "Field"
+              },
+              "message": {
+                "type": "string",
+                "title": "Message"
+              }
+            },
+            "type": "object",
+            "required": [
+              "field",
+              "message"
+            ],
+            "title": "FieldError",
+            "description": "Field-level validation error payload."
+          },
+          "HealthResponse": {
+            "properties": {
+              "status": {
+                "type": "string",
+                "title": "Status"
+              },
+              "app_name": {
+                "type": "string",
+                "title": "App Name"
+              },
+              "app_version": {
+                "type": "string",
+                "title": "App Version"
+              },
+              "model_loaded": {
+                "type": "boolean",
+                "title": "Model Loaded"
+              },
+              "uptime_seconds": {
+                "type": "number",
+                "title": "Uptime Seconds"
+              },
+              "checks": {
+                "$ref": "#/components/schemas/ReadinessChecks"
+              },
+              "timestamp_utc": {
+                "type": "string",
+                "format": "date-time",
+                "title": "Timestamp Utc"
+              }
+            },
+            "type": "object",
+            "required": [
+              "status",
+              "app_name",
+              "app_version",
+              "model_loaded",
+              "uptime_seconds",
+              "checks",
+              "timestamp_utc"
+            ],
+            "title": "HealthResponse",
+            "description": "Health check payload."
+          },
+          "HousingFeatures": {
+            "properties": {
+              "MedInc": {
+                "type": "number",
+                "maximum": 30.0,
+                "minimum": 0.0,
+                "title": "Medinc",
+                "description": "Median income in block group."
+              },
+              "HouseAge": {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0,
+                "title": "Houseage",
+                "description": "Median house age."
+              },
+              "AveRooms": {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": 0.0,
+                "title": "Averooms",
+                "description": "Average rooms per household."
+              },
+              "AveBedrms": {
+                "type": "number",
+                "maximum": 20.0,
+                "exclusiveMinimum": 0.0,
+                "title": "Avebedrms",
+                "description": "Average bedrooms per household."
+              },
+              "Population": {
+                "type": "number",
+                "maximum": 100000.0,
+                "exclusiveMinimum": 0.0,
+                "title": "Population",
+                "description": "Population in block group."
+              },
+              "AveOccup": {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": 0.0,
+                "title": "Aveoccup",
+                "description": "Average household occupancy."
+              },
+              "Latitude": {
+                "type": "number",
+                "maximum": 43.0,
+                "minimum": 32.0,
+                "title": "Latitude",
+                "description": "Latitude coordinate."
+              },
+              "Longitude": {
+                "type": "number",
+                "maximum": -113.0,
+                "minimum": -125.0,
+                "title": "Longitude",
+                "description": "Longitude coordinate."
+              }
+            },
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "MedInc",
+              "HouseAge",
+              "AveRooms",
+              "AveBedrms",
+              "Population",
+              "AveOccup",
+              "Latitude",
+              "Longitude"
+            ],
+            "title": "HousingFeatures",
+            "description": "Named California Housing input features with range validation.",
+            "example": {
+              "AveBedrms": 1.0238,
+              "AveOccup": 2.5556,
+              "AveRooms": 6.9841,
+              "HouseAge": 41.0,
+              "Latitude": 37.88,
+              "Longitude": -122.23,
+              "MedInc": 8.3252,
+              "Population": 322.0
+            }
+          },
+          "MetricsResponse": {
+            "properties": {
+              "total_requests": {
+                "type": "integer",
+                "title": "Total Requests"
+              },
+              "total_errors": {
+                "type": "integer",
+                "title": "Total Errors"
+              },
+              "error_rate": {
+                "type": "number",
+                "title": "Error Rate"
+              },
+              "avg_latency_ms": {
+                "type": "number",
+                "title": "Avg Latency Ms"
+              },
+              "p50_latency_ms": {
+                "type": "number",
+                "title": "P50 Latency Ms"
+              },
+              "p95_latency_ms": {
+                "type": "number",
+                "title": "P95 Latency Ms"
+              },
+              "throughput_rps_last_minute": {
+                "type": "number",
+                "title": "Throughput Rps Last Minute"
+              },
+              "uptime_seconds": {
+                "type": "number",
+                "title": "Uptime Seconds"
+              },
+              "by_endpoint": {
+                "items": {
+                  "$ref": "#/components/schemas/EndpointMetric"
+                },
+                "type": "array",
+                "title": "By Endpoint"
+              },
+              "model_name": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Model Name"
+              },
+              "model_version": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Model Version"
+              },
+              "feature_schema_version": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Feature Schema Version"
+              },
+              "mae": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Mae"
+              },
+              "mse": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Mse"
+              },
+              "rmse": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Rmse"
+              },
+              "r2": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "R2"
+              },
+              "mape": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Mape"
+              }
+            },
+            "type": "object",
+            "required": [
+              "total_requests",
+              "total_errors",
+              "error_rate",
+              "avg_latency_ms",
+              "p50_latency_ms",
+              "p95_latency_ms",
+              "throughput_rps_last_minute",
+              "uptime_seconds",
+              "by_endpoint"
+            ],
+            "title": "MetricsResponse",
+            "description": "Response schema for platform + model metrics."
+          },
+          "ModelInfoResponse": {
+            "properties": {
+              "app_name": {
+                "type": "string",
+                "title": "App Name"
+              },
+              "app_version": {
+                "type": "string",
+                "title": "App Version"
+              },
+              "model_loaded": {
+                "type": "boolean",
+                "title": "Model Loaded"
+              },
+              "feature_schema_version": {
+                "type": "string",
+                "title": "Feature Schema Version"
+              },
+              "metadata": {
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Metadata"
+              }
+            },
+            "type": "object",
+            "required": [
+              "app_name",
+              "app_version",
+              "model_loaded",
+              "feature_schema_version",
+              "metadata"
+            ],
+            "title": "ModelInfoResponse",
+            "description": "Response schema for model metadata endpoint."
+          },
+          "PredictResponse": {
+            "properties": {
+              "prediction": {
+                "type": "number",
+                "title": "Prediction",
+                "description": "Predicted median house value."
+              },
+              "model_name": {
+                "type": "string",
+                "title": "Model Name",
+                "description": "Model identifier used for inference."
+              },
+              "model_version": {
+                "type": "string",
+                "title": "Model Version",
+                "description": "Model version string."
+              },
+              "feature_schema_version": {
+                "type": "string",
+                "title": "Feature Schema Version",
+                "description": "Feature schema version used by model."
+              },
+              "request_id": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request Id",
+                "description": "Correlation request ID."
+              },
+              "latency_ms": {
+                "type": "number",
+                "minimum": 0.0,
+                "title": "Latency Ms",
+                "description": "Request latency in milliseconds."
+              }
+            },
+            "type": "object",
+            "required": [
+              "prediction",
+              "model_name",
+              "model_version",
+              "feature_schema_version",
+              "latency_ms"
+            ],
+            "title": "PredictResponse",
+            "description": "Response schema for single prediction."
+          },
+          "ReadinessChecks": {
+            "properties": {
+              "metrics_db_ready": {
+                "type": "boolean",
+                "title": "Metrics Db Ready"
+              },
+              "model_metadata_ready": {
+                "type": "boolean",
+                "title": "Model Metadata Ready"
+              }
+            },
+            "type": "object",
+            "required": [
+              "metrics_db_ready",
+              "model_metadata_ready"
+            ],
+            "title": "ReadinessChecks",
+            "description": "Health readiness checks."
+          },
+          "ReloadResponse": {
+            "properties": {
+              "status": {
+                "type": "string",
+                "title": "Status"
+              },
+              "model_loaded": {
+                "type": "boolean",
+                "title": "Model Loaded"
+              },
+              "model_name": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Model Name"
+              }
+            },
+            "type": "object",
+            "required": [
+              "status",
+              "model_loaded"
+            ],
+            "title": "ReloadResponse",
+            "description": "Admin reload payload."
+          }
+        }
+      }
+    }
+  },
+  "invalid_type": {
+    "status_code": 422,
+    "request_id_header": "e8b820ea-29da-4107-8feb-92531ac56711",
+    "content_type": "application/json",
+    "body": {
+      "code": "VALIDATION_ERROR",
+      "detail": "Request validation failed.",
+      "request_id": "e8b820ea-29da-4107-8feb-92531ac56711",
+      "field_errors": [
+        {
+          "field": "HouseAge",
+          "message": "Input should be a valid number, unable to parse string as a number"
+        }
+      ]
+    }
+  },
+  "missing_field": {
+    "status_code": 422,
+    "request_id_header": "872f364f-0490-4ea9-aad3-523d7564ea87",
+    "content_type": "application/json",
+    "body": {
+      "code": "VALIDATION_ERROR",
+      "detail": "Request validation failed.",
+      "request_id": "872f364f-0490-4ea9-aad3-523d7564ea87",
+      "field_errors": [
+        {
+          "field": "Latitude",
+          "message": "Field required"
+        }
+      ]
+    }
+  },
+  "empty_batch": {
+    "status_code": 422,
+    "request_id_header": "ed5cc7a0-6879-4699-9763-450e41ff8b2d",
+    "content_type": "application/json",
+    "body": {
+      "code": "VALIDATION_ERROR",
+      "detail": "Request validation failed.",
+      "request_id": "ed5cc7a0-6879-4699-9763-450e41ff8b2d",
+      "field_errors": [
+        {
+          "field": "records",
+          "message": "List should have at least 1 item after validation, not 0"
+        }
+      ]
+    }
+  },
+  "oversized_batch": {
+    "status_code": 422,
+    "request_id_header": "3357c47f-23db-4072-8fae-515356c82c67",
+    "content_type": "application/json",
+    "body": {
+      "code": "HTTP_422",
+      "detail": "Batch size 500 exceeds configured max_batch_size (128).",
+      "request_id": "3357c47f-23db-4072-8fae-515356c82c67"
+    }
+  },
+  "oversized_body": {
+    "status_code": 413,
+    "request_id_header": "ec3fbe16-46be-48d1-ae9c-49983b2b0a62",
+    "content_type": "application/json",
+    "body": {
+      "code": "REQUEST_TOO_LARGE",
+      "detail": "Request body exceeds max_request_body_bytes=1000000.",
+      "request_id": "ec3fbe16-46be-48d1-ae9c-49983b2b0a62"
+    }
+  }
+}

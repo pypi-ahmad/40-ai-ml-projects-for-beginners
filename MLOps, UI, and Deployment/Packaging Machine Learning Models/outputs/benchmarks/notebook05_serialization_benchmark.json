@@ -1,0 +1,42 @@
+[
+  {
+    "format": ".pkl",
+    "artifact_path": "models/notebook05_iris_model.pkl",
+    "status": "ok",
+    "save_time_ms": 5.995,
+    "load_time_ms": 4.006,
+    "predict_time_ms": 5.033,
+    "size_bytes": 387937,
+    "error": null
+  },
+  {
+    "format": ".joblib",
+    "artifact_path": "models/notebook05_iris_model.joblib",
+    "status": "ok",
+    "save_time_ms": 36.389,
+    "load_time_ms": 27.406,
+    "predict_time_ms": 5.174,
+    "size_bytes": 418497,
+    "error": null
+  },
+  {
+    "format": ".onnx",
+    "artifact_path": "models/notebook05_iris_model.onnx",
+    "status": "ok",
+    "save_time_ms": 186.308,
+    "load_time_ms": 22.088,
+    "predict_time_ms": 0.266,
+    "size_bytes": 178806,
+    "error": null
+  },
+  {
+    "format": ".pt",
+    "artifact_path": "models/notebook05_iris_model.pt",
+    "status": "error",
+    "save_time_ms": null,
+    "load_time_ms": null,
+    "predict_time_ms": null,
+    "size_bytes": null,
+    "error": "No compatible model provided for format .pt"
+  }
+]

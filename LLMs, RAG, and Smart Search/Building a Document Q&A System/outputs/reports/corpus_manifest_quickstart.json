@@ -1,0 +1,9 @@
+{
+  "documents_dir": "data/documents_quickstart",
+  "has_mixed_formats": true,
+  "markdown_files": 40,
+  "pdf_files": 10,
+  "text_files": 120,
+  "total_files": 170,
+  "total_size_mb": 31.86611557006836
+}

@@ -1,0 +1,28 @@
+{
+  "champion": "LinearRegression",
+  "champion_source": "core_benchmark",
+  "champion_metrics": {
+    "mae": 6.132485286104642,
+    "mse": 75.31406499628939,
+    "rmse": 8.678367645835788,
+    "r2": 0.9312049978907303,
+    "mape": 14.361283719328133
+  },
+  "features": [
+    "Usage_minutes_rolling_mean_14",
+    "Usage_minutes_rolling_std_14",
+    "Usage_minutes_rolling_mean_7",
+    "Usage_minutes_rolling_std_7",
+    "Usage_minutes_rolling_mean_3",
+    "Usage_minutes_lag_3",
+    "usage_x_opens",
+    "Notifications_rolling_mean_7",
+    "Usage_minutes_lag_1",
+    "Notifications_rolling_mean_3"
+  ],
+  "dependency_status": {
+    "lazypredict": "available",
+    "flaml": "unavailable (ImportError)",
+    "pycaret": "unavailable (RuntimeError)"
+  }
+}

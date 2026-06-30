@@ -1,0 +1,4 @@
+name: google/gemma-3-4b-it
+family: Gemma
+template: gemma
+deep_run: false

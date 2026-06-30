@@ -1,0 +1,177 @@
+{
+  "run_type": "real",
+  "timestamp_utc": "2026-06-25T08:51:46.143011+00:00",
+  "profile_used": "fast",
+  "top_k": 6,
+  "models_used": {
+    "embedding": "qwen3-embedding:4b",
+    "generator": "qwen3.5:4b",
+    "judge": "granite4.1:3b"
+  },
+  "effective_eval_limits": {
+    "chunking_docs_requested": 300,
+    "chunking_docs_used": 60,
+    "chunking_queries_requested": 60,
+    "chunking_queries_used": 60,
+    "retrieval_eval_queries_requested": 60,
+    "generation_eval_queries_requested": 12,
+    "judge_eval_queries_requested": 10,
+    "hallucination_eval_queries_requested": 8,
+    "advanced_queries_requested": 20,
+    "evaluation_queries_pool_used": 60,
+    "final_index_docs_used": 60,
+    "retrieval_eval_queries_used": 60,
+    "generation_eval_queries_used": 9,
+    "judge_eval_queries_used": 10,
+    "advanced_queries_used": 20
+  },
+  "ingestion_time_s": 1.49158802999591,
+  "final_chunking_time_s": 0.0002937039971584454,
+  "final_indexing_time_s": 10.169970904993534,
+  "evaluation_time_s": 507.80734245799977,
+  "best_chunking_strategy": "fixed",
+  "chunking_benchmark": [
+    {
+      "strategy": "fixed",
+      "num_chunks": 72,
+      "avg_chunk_length": 644.1805555555555,
+      "chunking_time_s": 0.0004043529988848604,
+      "indexing_time_s": 11.551677928997378,
+      "num_eval_queries": 60,
+      "precision_at_k": 0.18388888888888885,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3099999999999999,
+      "mrr": 0.9777777777777779,
+      "ndcg": 0.9831189490113246,
+      "num_queries": 60
+    },
+    {
+      "strategy": "recursive",
+      "num_chunks": 72,
+      "avg_chunk_length": 644.1944444444445,
+      "chunking_time_s": 0.00045474900252884254,
+      "indexing_time_s": 10.692428213005769,
+      "num_eval_queries": 60,
+      "precision_at_k": 0.18777777777777777,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.3153968253968253,
+      "mrr": 0.9777777777777779,
+      "ndcg": 0.9831189490113246,
+      "num_queries": 60
+    },
+    {
+      "strategy": "semantic",
+      "num_chunks": 72,
+      "avg_chunk_length": 644.1944444444445,
+      "chunking_time_s": 51.31118141600018,
+      "indexing_time_s": 10.17294118499558,
+      "num_eval_queries": 60,
+      "precision_at_k": 0.1872222222222222,
+      "recall_at_k": 1.0,
+      "f1_at_k": 0.31460317460317455,
+      "mrr": 0.9777777777777779,
+      "ndcg": 0.9831189490113246,
+      "num_queries": 60
+    },
+    {
+      "strategy": "parent_child",
+      "num_chunks": 132,
+      "avg_chunk_length": 719.3030303030303,
+      "chunking_time_s": 0.0018377599990344606,
+      "indexing_time_s": 19.049658392999845,
+      "num_eval_queries": 60,
+      "precision_at_k": 0.32222222222222213,
+      "recall_at_k": 0.9833333333333333,
+      "f1_at_k": 0.4838888888888889,
+      "mrr": 0.975,
+      "ndcg": 0.9771821625595243,
+      "num_queries": 60
+    }
+  ],
+  "leakage_audit": {
+    "corpus_splits": [
+      "train",
+      "validation"
+    ],
+    "eval_splits": [
+      "validation"
+    ],
+    "num_corpus_context_keys": 20233,
+    "num_eval_context_keys": 1204,
+    "split_context_key_overlap": 1204,
+    "overlap_expected_for_retrieval": true,
+    "split_contamination_risk": false,
+    "missing_gold_doc_references": 0,
+    "leakage_pass": true
+  },
+  "embedding_integrity": {
+    "num_texts": 72,
+    "dimension": 2560,
+    "nan_vectors": 0,
+    "inf_vectors": 0,
+    "duplicate_ratio": 0.0,
+    "batch_consistent": true,
+    "batch_min_cosine_similarity": 1.0
+  },
+  "index_integrity": {
+    "collection_count": 72,
+    "expected_chunk_count": 72,
+    "sample_size": 72,
+    "sample_overlap_with_expected_ids": 72,
+    "sample_missing_doc_metadata": 0,
+    "count_matches_expected": true
+  },
+  "retrieval_summary": {
+    "precision_at_k": 0.18388888888888885,
+    "recall_at_k": 1.0,
+    "f1_at_k": 0.3099999999999999,
+    "mrr": 0.9777777777777779,
+    "ndcg": 0.9831189490113246,
+    "num_queries": 60
+  },
+  "generation_summary": {
+    "exact_match": 0.0,
+    "bleu": 0.01626836877047699,
+    "rouge1": 0.1435623873026064,
+    "rougeL": 0.14212228101116992,
+    "meteor": 0.36943796518331073,
+    "bertscore_f1": 0.733448843161265,
+    "num_examples": 9
+  },
+  "judge_summary": {
+    "relevance": 4.1,
+    "correctness": 4.5,
+    "groundedness": 4.4,
+    "completeness": 3.8,
+    "faithfulness": 4.5,
+    "num_examples": 10
+  },
+  "advanced_retrieval": {
+    "num_queries": 20,
+    "base_hit_rate": 1.0,
+    "advanced_hit_rate": 1.0,
+    "base_mrr": 1.0,
+    "advanced_mrr": 0.975
+  },
+  "retrieval_diagnostics_count": 60,
+  "retrieval_failure_buckets": {
+    "hit_top1": 58,
+    "hit_not_top1": 2
+  },
+  "artifact_summary_path": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/evaluation_summary.json",
+  "visual_paths": {
+    "rag_architecture": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/rag_architecture.png",
+    "llm_vs_rag": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/llm_vs_rag.png",
+    "doc_lengths": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/doc_lengths.png",
+    "retrieval_metrics": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/retrieval_metrics.png",
+    "generation_metrics": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/generation_metrics.png",
+    "hallucination": "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/figures/hallucination_delta.png"
+  },
+  "required_outputs": [
+    "data/artifacts/final_audit/report.json",
+    "data/artifacts/final_audit/chunking_benchmark.csv",
+    "data/artifacts/final_audit/advanced_retrieval.csv",
+    "data/artifacts/final_audit/retrieval_diagnostics.csv",
+    "/home/ahmad/AI/Github/40 AI-ML Projects for Beginners/LLMs, RAG, and Smart Search/Build Your First RAG System From Scratch/data/artifacts/evaluation_summary.json"
+  ]
+}

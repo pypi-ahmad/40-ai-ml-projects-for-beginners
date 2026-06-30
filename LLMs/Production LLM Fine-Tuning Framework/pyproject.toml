@@ -1,0 +1,98 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llmft-framework"
+version = "0.1.0"
+description = "Production-grade open-source LLM fine-tuning framework with modular PEFT, evaluation, deployment, and benchmarking pipelines."
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = { text = "MIT" }
+authors = [
+  { name = "Ahmad" }
+]
+dependencies = [
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+train = [
+  "torch>=2.5.0",
+  "transformers>=4.57.0",
+  "accelerate>=1.8.0",
+  "datasets>=3.0.0",
+  "trl>=0.25.0",
+  "peft>=0.16.0",
+  "bitsandbytes>=0.46.0",
+  "safetensors>=0.5.0",
+  "optuna>=4.4.0",
+  "mlflow>=3.1.0",
+]
+unsloth = [
+  "unsloth>=0.0.0",
+]
+serve = [
+  "fastapi>=0.116.0",
+  "uvicorn>=0.35.0",
+  "pydantic>=2.11.0",
+]
+ui = [
+  "streamlit>=1.47.0",
+]
+http = [
+  "httpx>=0.28.0",
+]
+dev = [
+  "pytest>=9.0.0",
+  "pytest-asyncio>=1.1.0",
+  "ruff>=0.12.0",
+  "mypy>=1.16.0",
+]
+all = [
+  "llmft-framework[train,serve,ui,http,dev]",
+]
+
+[project.scripts]
+llmft = "llmft.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llmft"]
+
+[tool.hatch.build]
+exclude = [
+  ".cache/**",
+  ".venv/**",
+  "artifacts/**",
+  ".pytest_cache/**",
+  "notebooks/*.executed.ipynb",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/**",
+  "tests/**",
+  "configs/**",
+  "scripts/**",
+  "docs/**",
+  "notebooks/**",
+  "README.md",
+  "pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

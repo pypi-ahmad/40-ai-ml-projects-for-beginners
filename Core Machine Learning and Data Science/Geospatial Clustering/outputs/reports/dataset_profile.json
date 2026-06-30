@@ -1,0 +1,72 @@
+{
+  "n_rows": 2000,
+  "n_columns": 20,
+  "missing_by_column_pct": {
+    "Delivery_person_Ratings": 4.2,
+    "Delivery_person_Age": 4.15,
+    "Time_Orderd": 3.9,
+    "City": 3.0,
+    "multiple_deliveries": 2.15,
+    "Road_traffic_density": 1.6,
+    "Festival": 0.4,
+    "ID": 0.0,
+    "Type_of_vehicle": 0.0,
+    "Type_of_order": 0.0,
+    "Vehicle_condition": 0.0,
+    "Time_Order_picked": 0.0,
+    "Weatherconditions": 0.0,
+    "Delivery_person_ID": 0.0,
+    "Order_Date": 0.0,
+    "Delivery_location_longitude": 0.0,
+    "Delivery_location_latitude": 0.0,
+    "Restaurant_longitude": 0.0,
+    "Restaurant_latitude": 0.0,
+    "Time_taken(min)": 0.0
+  },
+  "duplicate_rows": 0,
+  "duplicate_id_rows": 0,
+  "coordinate_ranges": {
+    "Restaurant_latitude": {
+      "min": -30.366322,
+      "max": 30.914057,
+      "median": 18.543626,
+      "na_count": 0.0
+    },
+    "Restaurant_longitude": {
+      "min": -85.325447,
+      "max": 88.433452,
+      "median": 75.898497,
+      "na_count": 0.0
+    },
+    "Delivery_location_latitude": {
+      "min": 0.01,
+      "max": 31.03286,
+      "median": 18.6235535,
+      "na_count": 0.0
+    },
+    "Delivery_location_longitude": {
+      "min": 0.01,
+      "max": 88.530581,
+      "median": 76.008497,
+      "na_count": 0.0
+    }
+  },
+  "rows_outside_global_bounds": 0,
+  "rows_outside_india_bounds": 192,
+  "rows_with_zero_coordinates": 175,
+  "potential_coordinate_swaps": 0,
+  "distance_summary_km": {
+    "p50": 9.192838848533164,
+    "p90": 19.341010267840677,
+    "p99": 20.857439259902478,
+    "max": 19070.364180532655,
+    "mean": 100.1122109425705
+  },
+  "schema_pass": true,
+  "blocking_issues": [],
+  "warnings": [
+    "192 rows are outside India bounds and should be cleaned.",
+    "175 rows include zero coordinates and may be GPS errors.",
+    "Extreme delivery distances detected (>500 km); likely geocoding or data-entry anomalies."
+  ]
+}

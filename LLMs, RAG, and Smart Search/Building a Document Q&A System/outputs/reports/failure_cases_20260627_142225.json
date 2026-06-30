@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "answer": "Based on the provided context, there is no information describing changes between different encryption policy versions; only a single version (Security Policy A) is described [source_path#chunk_id]. Therefore, it is not possible to determine what changed based solely on this text. Information unavailable in provided context.",
+      "citation_count": 1,
+      "description": "Low top-k and strict mode can miss cross-document context.",
+      "name": "poor_chunking_low_context",
+      "retrieval_strategy": "vector",
+      "top_score": 0.617307186126709
+    },
+    {
+      "answer": "Based on the provided context, **Security Policy A** mentions data retention (access logs retained for 365 days) together with encryption requirements (encryption at rest required). [source_path#chunk_id]d6b2c74cdde8[/source_path#chunk_id]",
+      "citation_count": 2,
+      "description": "Template mismatch can reduce citation quality for policy questions.",
+      "name": "bad_prompt_template",
+      "retrieval_strategy": "vector",
+      "top_score": 0.7125985026359558
+    },
+    {
+      "answer": "Information unavailable in provided context. The available documents mention key rotation intervals (every 90 days) [source_path#chunk_id:d6b2c74cdde8] but do not contain a specific clause regarding password expiration.",
+      "citation_count": 2,
+      "description": "Dense-only retrieval may miss exact keyword clauses.",
+      "name": "wrong_retrieval_strategy",
+      "retrieval_strategy": "vector",
+      "top_score": 0.4923178553581238
+    },
+    {
+      "answer": "Information unavailable in provided context. The available documents mention key rotation intervals (every 90 days) [source_path#chunk_id:d6b2c74cdde8] but do not contain a specific clause regarding password expiration.",
+      "citation_count": 2,
+      "description": "Hybrid retrieval recovers lexical clause and improves grounding.",
+      "name": "improved_hybrid_retrieval",
+      "retrieval_strategy": "hybrid",
+      "top_score": 0.01639344262295082
+    }
+  ]
+}

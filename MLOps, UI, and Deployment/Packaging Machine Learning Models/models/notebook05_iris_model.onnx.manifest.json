@@ -1,0 +1,10 @@
+{
+  "artifact": "notebook05_iris_model.onnx",
+  "created_at": "2026-06-24T22:23:42.312283+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".onnx"
+  },
+  "sha256": "0c7ae99a92c59a4c6e7e6857dfffd4261dca27fbbc781d81f05fc2666238f0af",
+  "size_bytes": 178806
+}

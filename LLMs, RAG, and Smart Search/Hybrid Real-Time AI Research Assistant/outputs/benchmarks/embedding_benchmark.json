@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "dimension": 384,
+      "latency_ms": 209.4548989989562,
+      "memory_bytes": 6144,
+      "model_name": "BAAI/bge-small-en-v1.5"
+    },
+    {
+      "dimension": 384,
+      "latency_ms": 20.955543994205073,
+      "memory_bytes": 6144,
+      "model_name": "all-MiniLM-L6-v2"
+    },
+    {
+      "dimension": 768,
+      "latency_ms": 5740.076870992198,
+      "memory_bytes": 12288,
+      "model_name": "nomic-embed-text"
+    }
+  ]
+}

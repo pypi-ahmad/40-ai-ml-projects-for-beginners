@@ -1,0 +1,26 @@
+[
+  {
+    "framework":"LazyPredict",
+    "status":"ok",
+    "best_model":"LinearDiscriminantAnalysis",
+    "metric_name":"F1 Score",
+    "metric_value":1.0,
+    "notes":"Auto baseline from LazyPredict candidate search"
+  },
+  {
+    "framework":"FLAML",
+    "status":"ok",
+    "best_model":"catboost",
+    "metric_name":"accuracy",
+    "metric_value":0.9666666667,
+    "notes":"Time-budgeted AutoML search"
+  },
+  {
+    "framework":"PyCaret",
+    "status":"skipped",
+    "best_model":null,
+    "metric_name":null,
+    "metric_value":null,
+    "notes":"('Pycaret only supports python 3.9, 3.10, 3.11. Your actual Python version: ', sys.version_info(major=3, minor=12, micro=10, releaselevel='final', serial=0), 'Please DOWNGRADE your Python version.')"
+  }
+]

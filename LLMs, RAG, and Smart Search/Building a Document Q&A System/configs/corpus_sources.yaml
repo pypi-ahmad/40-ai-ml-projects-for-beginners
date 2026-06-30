@@ -1,0 +1,42 @@
+# Public-source corpus manifest used by bootstrap workflow.
+# Runtime downloads are one-time; indexing and QA run fully local.
+
+domains:
+  technical:
+    description: Linux/Python/HuggingFace documentation and manuals
+    sources:
+      - type: archive
+        url: https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/man-pages-6.18.tar.xz
+      - type: archive
+        url: https://github.com/systemd/systemd/archive/refs/tags/v261.tar.gz
+      - type: archive
+        url: https://github.com/torvalds/linux/archive/refs/tags/v6.9.tar.gz
+      - type: archive
+        url: https://docs.python.org/3/archives/python-3.12.4-docs-text.tar.bz2
+      - type: archive
+        url: https://github.com/huggingface/transformers/archive/refs/tags/v4.41.2.tar.gz
+  policy:
+    description: Public policy/governance references
+    sources:
+      - type: pdf
+        url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf
+      - type: pdf
+        url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r3.pdf
+      - type: pdf
+        url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
+  research:
+    description: Public ML research papers
+    sources:
+      - type: pdf
+        url: https://arxiv.org/pdf/1706.03762.pdf
+      - type: pdf
+        url: https://arxiv.org/pdf/2005.14165.pdf
+      - type: pdf
+        url: https://arxiv.org/pdf/2303.18223.pdf
+  finance:
+    description: Public finance reports
+    sources:
+      - type: pdf
+        url: https://www.berkshirehathaway.com/2023ar/2023ar.pdf
+      - type: pdf
+        url: https://www.sec.gov/files/dera_enforcement-and-litigation-quarterly_2023q4.pdf

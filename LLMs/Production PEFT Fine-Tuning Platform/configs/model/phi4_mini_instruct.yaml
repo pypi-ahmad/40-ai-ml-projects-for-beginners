@@ -1,0 +1,4 @@
+name: microsoft/Phi-4-mini-instruct
+family: Phi
+template: chatml
+deep_run: false

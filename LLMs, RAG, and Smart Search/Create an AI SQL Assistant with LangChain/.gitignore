@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated data/artifacts
+artifacts/reports/*.json
+artifacts/plots/*
+artifacts/screenshots/*
+data/raw/*
+data/processed/*
+
+# Keep key deliverables
+!artifacts/diagrams/*.md
+!artifacts/diagrams/*.png
+!artifacts/reports/schema_report.md
+!artifacts/reports/benchmark_summary.md
+
+# Streamlit
+.streamlit/

@@ -1,0 +1,58 @@
+{
+  "query": "Compare yesterday's AI announcement with our internal policy.",
+  "mode": "hybrid",
+  "route_reason": "user_selected_mode",
+  "answer": "I cannot compare yesterday's AI announcement with our internal policy because there is no document or text in the provided context that describes \"yesterday's AI announcement.\" The available documents only contain an **Internal AI Policy** (which mandates grounding answers in evidence and using citations), a **LangGraph Overview**, instructions for bootstrapping a corpus, and notes on FastAPI.\n\n[Context 1|039a758174e7130be785cdf8405dbe853911215e1f8650b9570ffc8521bff744]\n[Context 2|8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd]\n[Context 3|761d76511bf842befa418cfa0bcbc99dbbf5971fbd9220c9acaf8819000b48ba]\n[Context 4|cb6556a5caceb6a27ef19b0fddd0902d9b593cb13c4cbce635acdd4bc4067f22]",
+  "citations": [
+    {
+      "source_file": "internal_policy.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "039a758174e7130be785cdf8405dbe853911215e1f8650b9570ffc8521bff744",
+      "confidence": 0.02384357899427414,
+      "title": "internal_policy"
+    },
+    {
+      "source_file": "langgraph_overview.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd",
+      "confidence": 3.732914774445817e-05,
+      "title": "langgraph_overview"
+    },
+    {
+      "source_file": "README_CORPUS.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "761d76511bf842befa418cfa0bcbc99dbbf5971fbd9220c9acaf8819000b48ba",
+      "confidence": 3.730427488335408e-05,
+      "title": "README_CORPUS"
+    },
+    {
+      "source_file": "fastapi_notes.txt",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "cb6556a5caceb6a27ef19b0fddd0902d9b593cb13c4cbce635acdd4bc4067f22",
+      "confidence": 3.72876638721209e-05,
+      "title": "fastapi_notes"
+    }
+  ],
+  "judge": {
+    "grounding": 1,
+    "correctness": 1,
+    "completeness": 1,
+    "clarity": 2,
+    "citation_quality": 1,
+    "rationale": "The answer correctly states that a comparison cannot be made because no document or text describing yesterday's AI announcement is present in the provided context. It also mentions the internal policy requirement for grounding answers, indicating awareness of the limitation. However, it lacks any citations (source/ chunk identifiers) as required by the policy, resulting in a citation_quality score of 0."
+  },
+  "timings_ms": {
+    "intent_ms": 0.017672999092610553,
+    "retrieval_ms": 498.8752270000987,
+    "rerank_ms": 7236.127674999807,
+    "context_ms": 0.04511500083026476,
+    "generation_ms": 11811.884831999123,
+    "judge_ms": 7706.535209001231,
+    "total_ms": 27253.485731000183
+  },
+  "cached": false
+}

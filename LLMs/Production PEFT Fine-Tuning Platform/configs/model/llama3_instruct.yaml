@@ -1,0 +1,4 @@
+name: meta-llama/Llama-3.2-3B-Instruct
+family: Llama
+template: llama
+deep_run: false

@@ -1,0 +1,6 @@
+{
+  "alias": "llama3_8b",
+  "reason": "primary",
+  "selected_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "used_fallback": false
+}

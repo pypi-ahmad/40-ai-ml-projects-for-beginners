@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-06-24T22:19:10.985149+00:00",
+  "pytest_exit_code": 0,
+  "pytest_tail": [
+    "........................................................................ [ 67%]",
+    "..................................                                       [100%]",
+    "106 passed in 0.89s",
+    ""
+  ],
+  "screenshot_count": 4,
+  "unique_screenshot_count": 3,
+  "duplicate_screenshots": [
+    "outputs/screenshots/streamlit_cloud_page.png"
+  ],
+  "screenshots": [
+    "outputs/screenshots/streamlit_cloud_auth_flow.png",
+    "outputs/screenshots/streamlit_cloud_page.png",
+    "outputs/screenshots/streamlit_home.png",
+    "outputs/screenshots/streamlit_sentiment.png"
+  ],
+  "diagram_count": 12,
+  "executed_notebook_count": 10,
+  "executed_notebooks": [
+    "outputs/executed_notebooks/01_deployment_foundations_and_mlops.executed.ipynb",
+    "outputs/executed_notebooks/02_git_and_github_for_ai_deployment.executed.ipynb",
+    "outputs/executed_notebooks/03_building_production_deployment_candidate.executed.ipynb",
+    "outputs/executed_notebooks/04_streamlit_cloud_real_deployment.executed.ipynb",
+    "outputs/executed_notebooks/05_troubleshooting_monitoring_and_optimization.executed.ipynb",
+    "outputs/executed_notebooks/06_security_platform_comparison_and_ops_checklists.executed.ipynb",
+    "outputs/executed_notebooks/api/01_rest_and_fastapi_foundations.executed.ipynb",
+    "outputs/executed_notebooks/api/02_model_training_and_serving.executed.ipynb",
+    "outputs/executed_notebooks/api/03_testing_validation_and_contracts.executed.ipynb",
+    "outputs/executed_notebooks/api/04_observability_explainability_and_performance.executed.ipynb"
+  ],
+  "notes": "Cloud deployment URL field should be filled after authenticated Streamlit Cloud release."
+}

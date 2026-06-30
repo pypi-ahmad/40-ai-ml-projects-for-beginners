@@ -1,0 +1,6 @@
+method: qlora
+r: 16
+alpha: 32
+dropout: 0.05
+quant_profile: 4bit-nf4
+target_modules: [q_proj, v_proj]

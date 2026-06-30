@@ -1,0 +1,17 @@
+{
+  "chunk_overlap": 100,
+  "chunk_size": 768,
+  "chunking_strategy": "recursive",
+  "collection_name": "hybrid_research_assistant_full",
+  "documents": {
+    "096315f70e1cb358e0dd126a0bb2bf21f4519e382bfb30f099bfb8237ad37117": "07d4d5bdb452356c9641f9fd943ce0e574cd1312687a554f7443baa5f435c296",
+    "86d594697714c29825880b1afe608d8bfb3e052a3d0c6f1a5184605b435ccfe1": "294e465cdc1072e6ce13c28fd690515370247689fd7ee42b8fc6f5c4c117543b",
+    "b147dccec7ee80ed4c59470cfd064aa06c4267f8b27796cbcd4fff34c4a82d54": "cfe86d71e61e7daccbc8f7ebce5e5116a861d2011ccbf1322b3ad4126e10fd29",
+    "f23b1a8ef1acaf6cac6f8095478af6247d4ca586079778a1acc8e28860841ab8": "8838171a78a1bbab6165900fe6a8f8233a90393f0e1d68c6f9728f565ba10932"
+  },
+  "embedding_dimension": 384,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "namespace": "default",
+  "schema_version": "1.0",
+  "total_documents": 4
+}

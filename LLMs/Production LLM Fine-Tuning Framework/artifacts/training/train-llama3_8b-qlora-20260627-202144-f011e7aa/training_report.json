@@ -1,0 +1,13 @@
+{
+  "checkpoints_dir": "artifacts/training/train-llama3_8b-qlora-20260627-202144-f011e7aa/checkpoints",
+  "eval_loss": 0.7493,
+  "model_alias": "llama3_8b",
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "peft_method": "qlora",
+  "run_id": "train-llama3_8b-qlora-20260627-202144-f011e7aa",
+  "steps": 43,
+  "train_loss": 0.6993,
+  "train_samples": 87,
+  "used_real_stack": false,
+  "validation_samples": 9
+}

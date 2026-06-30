@@ -1,0 +1,12 @@
+{
+  "requests": 120,
+  "concurrency": 20,
+  "failures": 0,
+  "latency_avg_ms": 250.21747076655933,
+  "latency_p50_ms": 226.33408050205617,
+  "latency_p95_ms": 383.9474279011483,
+  "latency_p99_ms": 426.61907538833475,
+  "throughput_rps": 76.63979942272019,
+  "label": "docker",
+  "startup_seconds": 0.04911328299931483
+}

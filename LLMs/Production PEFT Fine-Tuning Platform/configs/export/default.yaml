@@ -1,0 +1,3 @@
+formats: [safetensors, gguf, onnx]
+adapter_only: true
+merged_model: true

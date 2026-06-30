@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "active_version": "v2",
+  "versions": {
+    "v1": {
+      "version_id": "v1",
+      "model_path": "models/iris_model_v1.pkl",
+      "metrics": {
+        "accuracy": 0.9666666666666667,
+        "precision_macro": 0.9696969696969697,
+        "recall_macro": 0.9666666666666667,
+        "f1_macro": 0.9665831244778612,
+        "roc_auc_ovr": 1.0,
+        "train_samples": 120,
+        "test_samples": 30,
+        "n_features": 4,
+        "n_classes": 3,
+        "seed": 42
+      },
+      "description": "Baseline logistic regression package artifact",
+      "author": "train_model.py",
+      "created_at": "2026-06-24T22:23:07.897912+00:00",
+      "status": "archived",
+      "artifact_sha256": "4f0ff1b7f2217611dc619f675c5389056341c0071c2353a4efa6aa551b78e2f2",
+      "dataset_fingerprint": "6e592aace77bce225cd6af938de731a5798c8c30ee9cc5f1cd6abdea81e3bb25",
+      "parent_version": null,
+      "tags": [
+        "iris",
+        "baseline",
+        "v1"
+      ]
+    },
+    "v2": {
+      "version_id": "v2",
+      "model_path": "models/iris_model.pkl",
+      "metrics": {
+        "model_name": "KNN",
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "roc_auc_ovr": 1.0,
+        "train_samples": 120,
+        "test_samples": 30,
+        "n_features": 4,
+        "n_classes": 3,
+        "seed": 42
+      },
+      "description": "Benchmark-selected production candidate",
+      "author": "train_model.py",
+      "created_at": "2026-06-24T22:23:07.898205+00:00",
+      "status": "active",
+      "artifact_sha256": "584aaceb61857afacab2d9cad192deb907cd6676f45344d8a89f3d2c89f312b0",
+      "dataset_fingerprint": "6e592aace77bce225cd6af938de731a5798c8c30ee9cc5f1cd6abdea81e3bb25",
+      "parent_version": "v1",
+      "tags": [
+        "iris",
+        "benchmark",
+        "production_candidate",
+        "v2"
+      ]
+    }
+  }
+}

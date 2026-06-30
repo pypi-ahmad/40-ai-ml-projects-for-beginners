@@ -1,0 +1,145 @@
+{
+  "expires_at": 1782667713.0539474,
+  "rows": [
+    {
+      "provider": "duckduckgo",
+      "score": 1.0,
+      "snippet": "March 13, 2026 - You can perform post-filtering on hybrid search results by providing the post_filter parameter in your query \u00b7 The post_filter clause is applied after the search results have been retrieved. Post-filtering is useful for applying additional filters to the search results without impacting the ...",
+      "title": "Hybrid search with post-filtering - OpenSearch Documentation",
+      "url": "https://docs.opensearch.org/latest/vector-search/ai-search/hybrid-search/post-filtering/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.9,
+      "snippet": "5 days ago - More capable web and native clients: the Control UI adds a session workspace rail and extension health, iOS adds Watch controls, and Android shows chat context. (#92856, #91952, #93387, #92837) Thanks @Solvely-Colin, @jalehman, @joshavant, and @Tosko4. More useful search and skills: Codex Hosted Search is available, key-free search providers remain deliberate opt-ins, and ClawHub skill installs retain verified source provenance.",
+      "title": "OpenClaw Release Notes - June 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/openclaw"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.8,
+      "snippet": "March 9, 2026 - When using HCW to update connector configurations, you can compare the pre- and post-HCW configurations on the connectors to check for changes in custom settings.",
+      "title": "TLS Certificates in Exchange Hybrid - Common Issues & How to Fix them | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/tls-certificates-in-exchange-hybrid---common-issues--how-to-fix-them/4420592"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.7,
+      "snippet": "March 23, 2024 - * Connected to website (255.255.255.255) port 443 (#0) * ALPN, offering h2 * ALPN, offering http/1.1 * successfully set certificate verify locations: * CAfile: /etc/ssl/certs/ca-certificates.crt * CApath: /etc/ssl/certs * TLSv1.3 (OUT), TLS handshake, Client hello (1): * TLSv1.3 (IN), TLS handshake, Server hello (2): * TLSv1.2 (IN), TLS handshake, Certificate (11): * TLSv1.2 (OUT), TLS alert, unknown CA (560): * SSL certificate problem: unable to get local issuer certificate * Closing connection 0 curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secure connection to it.",
+      "title": "Failed to ignore the SSL certificate verification when using `verify=False` option \u00b7 Issue #6669 \u00b7 psf/requests",
+      "url": "https://github.com/psf/requests/issues/6669"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.6,
+      "snippet": "March 6, 2026 - This also introduces a context-aware \u201cMad-Lib\u201d style automation experience that automatically prefills trigger inputs such as SharePoint sites, lists, and libraries to simplify workflow creation. ... Explore a 31-day series on reducing attack surfaces across Active Directory, Microsoft 365, hybrid environments, and endpoints.",
+      "title": "How to Mitigate ConsentFix Attack in Microsoft 365",
+      "url": "https://blog.admindroid.com/how-to-mitigate-consentfix-oauth-attacks-in-microsoft365/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.5,
+      "snippet": "May 18, 2025 - Instead of relying solely on the model\u2019s pre-trained knowledge, RAG retrieves specific information from external sources and uses it as context for generating responses. Our implementation takes RAG to the next level with three key enhancements: 1. Multi-Source Retrieval: Pulls information from both your local knowledge base (documents you upload) and the web via Brave Search API, giving your AI access to both your private documents and the latest information online.",
+      "title": "Multi-Source RAG with Hybrid Search and Re-ranking in OpenWebUI | by Richard Meyer | Medium",
+      "url": "https://medium.com/@richard.meyer596/multi-source-rag-with-hybrid-search-and-re-ranking-in-openwebui-8762f1bdc2c6"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.3999999999999999,
+      "snippet": "May 21, 2024 - It\u2019s a well-known fact that continuous testing is a strong predictor of successful delivery. While a lot has been written about CI/CD processes, there is less information available online about a specific type of testing: Post-Deployment Verification (PDV).",
+      "title": "Using Post-Deployment Verification to Ensure Quality in your Marketplace Apps - Work Life by Atlassian",
+      "url": "https://www.atlassian.com/blog/developer/using-post-deployment-verification-to-ensure-quality-in-your-marketplace-apps"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.29999999999999993,
+      "snippet": "An identity verification session used to confirm a person or entity's identity for payout account eligibility.",
+      "title": "Verification - Whop Docs",
+      "url": "https://docs.whop.com/api-reference/verifications/verification"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.19999999999999996,
+      "snippet": "February 26, 2026 - Learn how to build a post-deployment verification pipeline with ArgoCD using resource hooks, smoke tests, synthetic monitoring, and automated validation to ensure deployments are working correctly.",
+      "title": "How to Implement Post-Deployment Verification Pipeline",
+      "url": "https://oneuptime.com/blog/post/2026-02-26-argocd-post-deployment-verification/view"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.09999999999999998,
+      "snippet": "WSTG - Latest on the main website for The OWASP Foundation. OWASP is a nonprofit foundation that works to improve the security of software.",
+      "title": "WSTG - Latest | OWASP Foundation",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "May 28, 2026 - Cold-load staging detached from the request context (large models actually finish), staging progress broadcast across replicas, resumable downloader.",
+      "title": "Releases \u00b7 mudler/LocalAI",
+      "url": "https://github.com/mudler/LocalAI/releases"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "January 21, 2026 - To address this, it is essential to verify and configure OAuth settings correctly on the EWS and Autodiscover VirtualDirectories, ensuring that the necessary authentication methods are enabled and OAuth is correctly configured.",
+      "title": "M365/Exchange Hybrid OAuth Testing command, OAuth-Cert out-of-sync 4001, IIS VDIR OAuth wrong - www.butsch.ch",
+      "url": "https://www.butsch.ch/post/m365exchange-hybrid-oauth-testing-command-oauth-cert-out-of-sync-4001-iis-vdir-oauth-wrong/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "August 9, 2022 - It\u2019s performed by providing various data inputs that are used to test each function to verify that the actual outputs match the expected results.",
+      "title": "Pre- and post-deployment testing methodologies for CI/CD - Mattermost",
+      "url": "https://mattermost.com/blog/pre-and-post-deployment-testing-for-ci-cd/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "2 weeks ago - Model Runner V2: Default for Llama and Mistral dense models (#43458), FlashInfer sampler (#42472), breakable CUDA graphs (#44050), removed Eagle's dedicated CUDA graph pool (#44078), pipeline-parallel bubble elimination (#42187), kernel block size for hybrid models (#38831), zeroing of freshly allocated KV blocks for hybrid + FP8 KV cache (#43990), actual batch max_seq_len for attention metadata (#43991), rejection-sampling acceptance-rate fix (#40651), KVConnector + PP cleanup (#43732), speculator-prefill warmup/capture (#44253).",
+      "title": "Releases \u00b7 vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm/releases"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "2 weeks ago - # Hybrid query (recommended default) curl -X POST http://localhost:9623/query \\ -H \"Content-Type: application/json\" \\ -d '{ \"query\": \"What infrastructure decisions were made and why?\", \"mode\": \"hybrid\", \"only_need_context\": false }' # Local mode \u2014 specific entity facts curl -X POST http://localhost:9623/query \\ -H \"Content-Type: application/json\" \\ -d '{ \"query\": \"Tell me about the 5090 PC setup\", \"mode\": \"local\" }' # Global mode \u2014 relationship discovery curl -X POST http://localhost:9623/query \\ -H \"Content-Type: application/json\" \\ -d '{ \"query\": \"How do the different projects relate to each other?\", \"mode\": \"global\" }'",
+      "title": "GitHub - OnlyTerp/hermes-optimization-guide: Hermes Agent setup, migration, LightRAG, Telegram, and skill creation guide \u00b7 GitHub",
+      "url": "https://github.com/OnlyTerp/hermes-optimization-guide"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "July 18, 2025 - Veriff offers seamless document-only identity verification through native SDKs, web flow, and APIs, ensuring secure data extraction and decision-making for end-users.",
+      "title": "Document-only IDV | Veriff.com",
+      "url": "https://devdocs.veriff.com/docs/document-only-idv"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "1 day ago - The structured handoff mechanism \u2014 feature lists, git commits, and test gates as cross-session state \u2014 is the reference design for any harness where a task exceeds a single context window and na\u00efve restarts lose accumulated progress. Task-Adaptive Multi-Agent Orchestration (AdaptOrch) \u2014 February 2026 framework that dynamically selects orchestration topology (parallel, sequential, hierarchical, or hybrid) based on task dependency graphs rather than fixed pipeline architecture.",
+      "title": "GitHub - ai-boost/awesome-harness-engineering: Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. \u00b7 GitHub",
+      "url": "https://github.com/ai-boost/awesome-harness-engineering"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "April 16, 2026 - Of these, 15 have event-specific output schemas with rich fields supporting permission decisions, context injection, input modification, MCP result transformation, and retry control (types/hooks.ts). Persisted hook commands configured via settings and plugins use four command types: shell commands (type: command), LLM prompt hooks (type: prompt), HTTP hooks (type: http), and agentic verifier hooks (type: agent) (schemas/hooks.ts).",
+      "title": "Dive into Claude Code: The Design Space of Today\u2019s and Future AI Agent Systems",
+      "url": "https://arxiv.org/html/2604.14228v1"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "Keep building until one of these is true: - the current milestone is fully implemented and verified - there is a real blocker requiring human input - budget, permissions, or environment constraints prevent safe progress - the human pauses or redirects If blocked, report: - the exact blocker - what was attempted - what evidence you gathered - the smallest human decision needed NON-NEGOTIABLE RULES - Prefer transparent files over hidden context.",
+      "title": "GitHub - fainir/most-capable-agent-system-prompt: Most Capable Agent System Prompt \u00b7 GitHub",
+      "url": "https://github.com/fainir/most-capable-agent-system-prompt"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.0,
+      "snippet": "May 5, 2026 - Logs \u2014 discrete events with context. Debugging, audit. Examples: request logs, app logs, security audit. Expensive at scale.",
+      "title": "\ud83c\udfdb\ufe0f The System Design Playbook \ud83d\udcd6 - DEV Community",
+      "url": "https://dev.to/truongpx396/the-system-design-playbook-3g2a"
+    }
+  ]
+}

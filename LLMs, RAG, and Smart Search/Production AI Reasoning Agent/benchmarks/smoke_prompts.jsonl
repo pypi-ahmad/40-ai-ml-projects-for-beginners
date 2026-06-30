@@ -1,0 +1,5 @@
+{"id":"s1","category":"math","prompt":"Calculate 15 * 3","expected_keywords":["45"]}
+{"id":"s2","category":"reasoning","prompt":"Explain why retries help with flaky APIs","expected_keywords":["retry","flaky"]}
+{"id":"s3","category":"tool_use","prompt":"What is current weather in Delhi?","expected_keywords":["weather"]}
+{"id":"s4","category":"knowledge","prompt":"What is LangGraph?","expected_keywords":["graph","agent"]}
+{"id":"s5","category":"code_generation","prompt":"Write Python to compute factorial of 5","expected_keywords":["python","factorial"]}

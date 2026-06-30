@@ -1,0 +1,22 @@
+{
+  "model_name": "screentime_predictor",
+  "version": 2,
+  "run_id": "20260624_043358",
+  "timestamp": "2026-06-24T04:33:58.214511",
+  "model_type": "GradientBoostingRegressor",
+  "metrics": {
+    "lazypredict_best": "OrthogonalMatchingPursuitCV",
+    "lazypredict_r2": 0.8376060006944924,
+    "method": "pycaret",
+    "RMSE": 0.06516539275860882,
+    "R2": 0.9999953959293516,
+    "test_rmse": 11.469181372968333,
+    "test_mae": 7.053508541648847,
+    "test_r2": 0.7771036843578056
+  },
+  "params": {
+    "model_type": "GradientBoostingRegressor"
+  },
+  "feature_names": [],
+  "stage": "staging"
+}

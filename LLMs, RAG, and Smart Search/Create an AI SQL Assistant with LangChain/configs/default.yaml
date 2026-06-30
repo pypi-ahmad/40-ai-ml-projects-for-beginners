@@ -1,0 +1,24 @@
+ollama_host: http://127.0.0.1:11434
+models:
+  generator_model: qwen3.5:4b
+  comparison_model: granite4.1:3b
+  judge_model: granite4.1:3b
+  temperature: 0.0
+  top_p: 1.0
+  num_predict: 256
+  timeout_seconds: 300
+  request_retries: 2
+  retry_backoff_seconds: 2.0
+database:
+  active_db: scaled
+  raw_db_path: data/sqlite/northwind_raw.db
+  scaled_db_path: data/sqlite/northwind_scaled.db
+  app_state_db_path: data/sqlite/app_state.db
+safety:
+  max_rows: 5000
+  max_query_seconds: 30.0
+  allow_multi_statement: false
+  strict_join_checks: true
+evaluation:
+  benchmark_cases_file: benchmarks/benchmark_cases.json
+  full_matrix: true

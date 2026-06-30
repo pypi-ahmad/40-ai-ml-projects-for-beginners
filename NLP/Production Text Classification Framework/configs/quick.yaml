@@ -1,0 +1,11 @@
+mode: quick
+training:
+  epochs: 1
+  train_batch_size: 8
+  eval_batch_size: 16
+  max_length: 128
+hpo:
+  n_trials: 3
+notebook:
+  mode: quick
+  run_benchmarks: false

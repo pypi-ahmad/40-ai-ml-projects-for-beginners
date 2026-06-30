@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+.env
+.env.*
+!.env.example
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Artifacts
+data/artifacts/
+data/reports/
+data/cache/
+*.html
+*.pdf
+*.pptx
+*.xlsx
+
+# Credentials
+service_account.json
+google_credentials*.json
+token.json
+
+# Streamlit
+.streamlit/secrets.toml

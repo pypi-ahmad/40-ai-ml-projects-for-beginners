@@ -1,0 +1,58 @@
+{
+  "query": "Post-fix local verification 1782666738",
+  "mode": "local",
+  "route_reason": "user_selected_mode",
+  "answer": "I don't know based on the retrieved information. The provided contexts contain general policies and framework overviews (LangGraph, FastAPI, corpus structure), but there is no specific evidence regarding \"Post-fix local verification\" or its associated identifier `1782666738`.",
+  "citations": [
+    {
+      "source_file": "internal_policy.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "039a758174e7130be785cdf8405dbe853911215e1f8650b9570ffc8521bff744",
+      "confidence": 6.775835936423391e-05,
+      "title": "internal_policy"
+    },
+    {
+      "source_file": "langgraph_overview.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "8dde1ab83ae288bb140d3e956e03b2a232205ab8b2bce0ecd574d3be7ea67afd",
+      "confidence": 3.805865708272904e-05,
+      "title": "langgraph_overview"
+    },
+    {
+      "source_file": "README_CORPUS.md",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "761d76511bf842befa418cfa0bcbc99dbbf5971fbd9220c9acaf8819000b48ba",
+      "confidence": 3.7384903407655656e-05,
+      "title": "README_CORPUS"
+    },
+    {
+      "source_file": "fastapi_notes.txt",
+      "page_number": null,
+      "url": null,
+      "chunk_id": "cb6556a5caceb6a27ef19b0fddd0902d9b593cb13c4cbce635acdd4bc4067f22",
+      "confidence": 3.7313027860363945e-05,
+      "title": "fastapi_notes"
+    }
+  ],
+  "judge": {
+    "grounding": 1,
+    "correctness": 1,
+    "completeness": 1,
+    "clarity": 2,
+    "citation_quality": 1,
+    "rationale": "The answer correctly states that it does not have sufficient evidence to provide a detailed response about 'Post-fix local verification' and its identifier `1782666738` based on the available contexts, which only contain general policy and framework overviews. No incorrect information is provided, so correctness and grounding are both 1. Completeness follows since the answer accurately conveys lack of knowledge rather than speculation. Clarity could be higher but is acceptable given brevity; it clearly signals uncertainty. Citation quality is 1 because the response appropriately notes that no specific source or chunk ID can support further investigation, adhering to the instruction."
+  },
+  "timings_ms": {
+    "intent_ms": 0.01463800435885787,
+    "retrieval_ms": 265.07214301091153,
+    "rerank_ms": 6350.771394005278,
+    "context_ms": 0.042279993067495525,
+    "generation_ms": 1530.7922549982322,
+    "judge_ms": 6026.645227000699,
+    "total_ms": 14173.337937012548
+  },
+  "cached": false
+}

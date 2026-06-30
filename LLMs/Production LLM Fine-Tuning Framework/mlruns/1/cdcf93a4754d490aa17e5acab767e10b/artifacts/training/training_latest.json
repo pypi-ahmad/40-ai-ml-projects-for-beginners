@@ -1,0 +1,13 @@
+{
+  "checkpoints_dir": "/tmp/pytest-of-ahmad/pytest-175/test_project_runner_end_to_end0/artifacts/training/train-llama3_8b-qlora-20260628-192624-2dc00a80/checkpoints",
+  "eval_loss": 10.789216,
+  "model_alias": "llama3_8b",
+  "model_id": "sshleifer/tiny-gpt2",
+  "peft_method": "qlora",
+  "run_id": "train-llama3_8b-qlora-20260628-192624-2dc00a80",
+  "steps": 4,
+  "train_loss": 10.776531,
+  "train_samples": 7,
+  "used_real_stack": true,
+  "validation_samples": 1
+}

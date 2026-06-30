@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.5,
+  "context_precision": 0.0,
+  "faithfulness": 0.2,
+  "mean_latency_ms": 52.73461894994398,
+  "precision_at_k": 0.0,
+  "recall_at_k": 0.0,
+  "relevance": 0.0,
+  "total_samples": 20
+}

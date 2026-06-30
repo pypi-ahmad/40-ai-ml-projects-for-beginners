@@ -1,0 +1,54 @@
+{
+  "classification_metrics": {
+    "accuracy": 0.43,
+    "precision_weighted": 0.4325,
+    "recall_weighted": 0.43,
+    "f1_weighted": 0.4312,
+    "f1_macro": 0.3902,
+    "roc_auc_ovr": 0.4948,
+    "pr_auc_high_risk": 0.2046,
+    "brier_high_risk": 0.1552
+  },
+  "business_metrics_default_threshold": {
+    "recovery_rate_actual": 0.673,
+    "recovery_rate_predicted": 0.668,
+    "expected_actual_recovery_amount": 1276000.8,
+    "expected_predicted_recovery_amount": 1313636.7,
+    "expected_recovery_gain": 37635.9,
+    "expected_loss_reduction": 1081685.0,
+    "portfolio_outstanding_total": 1943158.0,
+    "high_risk_detection_rate": 0.2105,
+    "high_risk_precision": 0.2,
+    "collection_efficiency": 1852.8,
+    "collection_cost": 10635.0,
+    "false_positive_cost": 4000.0,
+    "false_negative_cost": 37500.0,
+    "total_misclassification_cost": 41500.0,
+    "avg_predicted_written_off_probability": 0.1815
+  },
+  "business_metrics_cost_sensitive_threshold": {
+    "recovery_rate_actual": 0.673,
+    "recovery_rate_predicted": 0.154,
+    "expected_actual_recovery_amount": 1276000.8,
+    "expected_predicted_recovery_amount": 234098.5,
+    "expected_recovery_gain": -1041902.3,
+    "expected_loss_reduction": 1081685.0,
+    "portfolio_outstanding_total": 1943158.0,
+    "high_risk_detection_rate": 0.8947,
+    "high_risk_precision": 0.1809,
+    "collection_efficiency": 330.18,
+    "collection_cost": 10635.0,
+    "false_positive_cost": 19250.0,
+    "false_negative_cost": 5000.0,
+    "total_misclassification_cost": 24250.0,
+    "avg_predicted_written_off_probability": 0.1815
+  },
+  "threshold_metrics": {
+    "optimized_threshold": 0.14,
+    "high_risk_recall": 1.0,
+    "high_risk_precision": 0.1919191919191919,
+    "total_cost": 20000.0
+  },
+  "optimized_high_risk_threshold": 0.14,
+  "best_model": "SVM"
+}

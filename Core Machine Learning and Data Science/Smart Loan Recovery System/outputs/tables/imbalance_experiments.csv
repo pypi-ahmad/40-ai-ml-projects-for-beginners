@@ -1,0 +1,5 @@
+experiment,f1_weighted,f1_macro,high_risk_recall
+LogReg_weighted,0.424,0.3922,0.2105
+LogReg_unweighted,0.4289,0.3818,0.1053
+RF_unweighted,0.3711,0.3056,0.0
+RF_weighted,0.3594,0.2947,0.0

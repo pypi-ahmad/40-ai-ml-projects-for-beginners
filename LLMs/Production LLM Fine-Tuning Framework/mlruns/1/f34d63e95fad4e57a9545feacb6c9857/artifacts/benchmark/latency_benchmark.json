@@ -1,0 +1,9 @@
+{
+  "results": [
+    {
+      "backend": "transformers",
+      "mean_latency_ms": 105.787,
+      "prompt_count": 4
+    }
+  ]
+}

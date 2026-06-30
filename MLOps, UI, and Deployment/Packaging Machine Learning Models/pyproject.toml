@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-packaging"
+version = "1.0.0"
+description = "Professional ML model packaging framework - from training to production deployment"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "ML Packaging Engineer" }]
+dependencies = [
+    "scikit-learn>=1.4",
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "matplotlib>=3.7,<3.8",
+    "seaborn>=0.13",
+    "fastapi>=0.111",
+    "uvicorn>=0.30",
+    "pydantic>=2.8",
+    "joblib>=1.4",
+    "python-multipart>=0.0.9",
+    "xgboost>=2.0",
+    "lightgbm>=4.0",
+    "catboost>=1.2",
+    "lazypredict>=0.2.16",
+    "flaml>=2.2",
+    "pycaret>=3.3",
+    "shap>=0.45",
+    "skl2onnx>=1.16",
+    "onnxruntime>=1.17",
+    "torch>=2.4",
+    "jupyter>=1.1",
+    "nbconvert>=7.16",
+    "ipykernel>=6.29",
+]
+
+[project.optional-dependencies]
+shap = ["shap>=0.45"]
+xgb = ["xgboost>=2.0"]
+lgbm = ["lightgbm>=4.0"]
+cat = ["catboost>=1.2"]
+benchmark = ["skl2onnx>=1.16", "onnxruntime>=1.17", "xgboost>=2.0", "lightgbm>=4.0", "catboost>=1.2", "torch>=2.4"]
+automl = ["lazypredict>=0.2.16", "flaml>=2.2", "pycaret>=3.3"]
+notebooks = ["jupyter>=1.1", "nbconvert>=7.16", "ipykernel>=6.29"]
+test = ["pytest>=8,<10", "pytest-asyncio>=0.23,<2", "httpx>=0.27", "requests>=2.32"]
+all = ["ml-packaging[shap,benchmark,automl,notebooks,test]"]
+
+[project.scripts]
+ml-predict = "ml_package.cli.predict:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+include = ["ml_package*"]

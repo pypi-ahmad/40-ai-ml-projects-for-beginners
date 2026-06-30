@@ -1,0 +1,16 @@
+{
+  "collection_name": "enterprise_document_qa_full",
+  "corpus_profile": "full",
+  "cpu_percent": 0.0,
+  "disk_usage_mb": 1138.900447845459,
+  "embedded_chunks": 0,
+  "embedding_ms": 0.0,
+  "indexing_ms": 53716.67144699313,
+  "lexical_chunk_count": 38717,
+  "mode": "incremental",
+  "removed_documents": 0,
+  "rss_mb": 1422.0078125,
+  "total_chunks": 38717,
+  "total_documents": 5031,
+  "vector_count": 38717
+}

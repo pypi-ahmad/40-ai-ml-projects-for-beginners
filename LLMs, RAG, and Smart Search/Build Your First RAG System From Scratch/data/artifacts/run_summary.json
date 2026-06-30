@@ -1,0 +1,41 @@
+{
+  "documents_total": 20233,
+  "documents_used": 1200,
+  "queries": 11873,
+  "chunks": 1502,
+  "indexed": 1502,
+  "leakage_audit": {
+    "corpus_splits": [
+      "train",
+      "validation"
+    ],
+    "eval_splits": [
+      "validation"
+    ],
+    "num_corpus_context_keys": 20233,
+    "num_eval_context_keys": 1204,
+    "split_context_key_overlap": 1204,
+    "overlap_expected_for_retrieval": true,
+    "split_contamination_risk": false,
+    "missing_gold_doc_references": 0,
+    "leakage_pass": true
+  },
+  "embedding_integrity": {
+    "num_texts": 128,
+    "dimension": 2560,
+    "nan_vectors": 0,
+    "inf_vectors": 0,
+    "duplicate_ratio": 0.0,
+    "batch_consistent": false,
+    "status": "computed"
+  },
+  "index_integrity": {
+    "collection_count": 1502,
+    "expected_chunk_count": 1502,
+    "sample_size": 1502,
+    "sample_overlap_with_expected_ids": 1502,
+    "sample_missing_doc_metadata": 0,
+    "count_matches_expected": true,
+    "status": "computed"
+  }
+}

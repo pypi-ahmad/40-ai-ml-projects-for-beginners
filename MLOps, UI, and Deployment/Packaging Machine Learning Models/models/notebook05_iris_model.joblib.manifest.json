@@ -1,0 +1,10 @@
+{
+  "artifact": "notebook05_iris_model.joblib",
+  "created_at": "2026-06-24T22:23:42.093163+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".joblib"
+  },
+  "sha256": "14941885eb13166bd1c94554fa9ec797a33adbe32bef517dc8ad20895ca37e74",
+  "size_bytes": 418497
+}

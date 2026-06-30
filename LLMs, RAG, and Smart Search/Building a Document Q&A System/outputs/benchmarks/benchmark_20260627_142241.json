@@ -1,0 +1,38 @@
+{
+  "count": 3,
+  "rows": [
+    {
+      "avg_generation_latency_ms": 4168.725564333727,
+      "avg_retrieval_latency_ms": 1749.1369836667825,
+      "avg_total_latency_ms": 5917.957834666595,
+      "disk_usage_mb": 1.1935157775878906,
+      "memory_mb": 310.125,
+      "queries_per_second": 0.16897648340300608,
+      "query_count": 3,
+      "retrieval_strategy": "vector",
+      "vectors": 2
+    },
+    {
+      "avg_generation_latency_ms": 2602.9428116665563,
+      "avg_retrieval_latency_ms": 0.03920366604385587,
+      "avg_total_latency_ms": 2603.0323536663977,
+      "disk_usage_mb": 1.1935157775878906,
+      "memory_mb": 310.140625,
+      "queries_per_second": 0.3841641920953509,
+      "query_count": 3,
+      "retrieval_strategy": "keyword",
+      "vectors": 2
+    },
+    {
+      "avg_generation_latency_ms": 2945.4963839992465,
+      "avg_retrieval_latency_ms": 204.97633800005133,
+      "avg_total_latency_ms": 3150.5254576677544,
+      "disk_usage_mb": 1.1935157775878906,
+      "memory_mb": 310.40625,
+      "queries_per_second": 0.3174052534595049,
+      "query_count": 3,
+      "retrieval_strategy": "hybrid",
+      "vectors": 2
+    }
+  ]
+}

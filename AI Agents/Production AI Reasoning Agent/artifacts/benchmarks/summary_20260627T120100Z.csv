@@ -1,0 +1,5 @@
+model,total_prompts,success_rate,avg_latency_ms,avg_tool_calls,avg_keyword_score,avg_tool_selection_score,avg_judge_score
+qwen3:8b,120,1.0,6.220451241711089,0.75,0.375,0.5625,0.0
+llama3.1:8b,120,1.0,6.241756133340459,0.75,0.375,0.5625,0.0
+granite4.1:3b,120,1.0,6.215091699944726,0.75,0.375,0.5625,0.0
+deepseek-r1,120,1.0,6.24138713337743,0.75,0.375,0.5625,0.0

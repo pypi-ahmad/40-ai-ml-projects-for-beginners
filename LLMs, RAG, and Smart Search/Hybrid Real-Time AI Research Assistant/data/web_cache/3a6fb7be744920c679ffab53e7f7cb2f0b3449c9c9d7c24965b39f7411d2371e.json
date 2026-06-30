@@ -1,0 +1,40 @@
+{
+  "expires_at": 1782666615.2192159,
+  "rows": [
+    {
+      "provider": "duckduckgo",
+      "score": 1.0,
+      "snippet": "Compare text, files, and code (e.g. json, xml) to find \u2026",
+      "title": "Compare text and find differences online or offline - Diffchecker",
+      "url": "https://www.diffchecker.com/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.9,
+      "snippet": "Text Compare! is an online diff tool that can find the \u2026",
+      "title": "Text Compare! - Find differences between two text files",
+      "url": "https://text-compare.com/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.8,
+      "snippet": "Compare over 40 file formats including PDF \u2026",
+      "title": "Compare Text Online",
+      "url": "https://comparetext.app/"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.7,
+      "snippet": "Compare mobile phones in India with updated prices, \u2026",
+      "title": "Compare Mobile Phones in India | Specs, Prices, Camera & Perform\u2026",
+      "url": "https://www.91mobiles.com/compare-mobile-phones.html"
+    },
+    {
+      "provider": "duckduckgo",
+      "score": 0.6,
+      "snippet": "Once you've found specific files you're interested in, \u2026",
+      "title": "Scooter Software - Home of Beyond Compare",
+      "url": "https://www.scootersoftware.com/"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+failure_bucket,count
+hit_top1,15
+hit_not_top1,4
+wrong_document,1

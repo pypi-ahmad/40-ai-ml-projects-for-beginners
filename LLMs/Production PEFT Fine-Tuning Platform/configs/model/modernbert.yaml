@@ -1,0 +1,4 @@
+name: answerdotai/ModernBERT-base
+family: ModernBERT
+template: chatml
+deep_run: false

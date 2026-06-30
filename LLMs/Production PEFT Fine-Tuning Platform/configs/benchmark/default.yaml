@@ -1,0 +1,4 @@
+methods: [base, lora, qlora, adalora, full_finetune]
+runs: 20
+save_plots: true
+plot_dir: artifacts/plots

@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-06-27T20:23:02.191154+00:00",
+  "dataset_version": "dataset-14d1b44534fc",
+  "judge_model_alias": "granite41",
+  "judge_scores": {
+    "coherence": 2.706,
+    "correctness": 0.666,
+    "faithfulness": 0.588,
+    "grounding": 2.0,
+    "helpfulness": 1.177,
+    "instruction_following": 2.4,
+    "safety": 4.5
+  },
+  "metrics": {
+    "bleu": 0.1333,
+    "exact_match": 0.0,
+    "loss": 0.7647,
+    "perplexity": 7.4668,
+    "rouge_l": 0.2353
+  },
+  "preview": [
+    {
+      "prediction": "[transformers-fallback] ### Instruction\nmedical_qa instruction 20\n\n### Input\ncontext snippet 20\n\n### Response\nanswer 20",
+      "prompt": "### Instruction\nmedical_qa instruction 20\n\n### Input\ncontext snippet 20\n\n### Response\nanswer 20",
+      "reference": "answer 20"
+    },
+    {
+      "prediction": "[transformers-fallback] ### Instruction\ncodealpaca instruction 27\n\n### Input\ncontext snippet 27\n\n### Response\nanswer 27",
+      "prompt": "### Instruction\ncodealpaca instruction 27\n\n### Input\ncontext snippet 27\n\n### Response\nanswer 27",
+      "reference": "answer 27"
+    },
+    {
+      "prediction": "[transformers-fallback] ### Instruction\ncodealpaca instruction 30\n\n### Input\ncontext snippet 30\n\n### Response\nanswer 30",
+      "prompt": "### Instruction\ncodealpaca instruction 30\n\n### Input\ncontext snippet 30\n\n### Response\nanswer 30",
+      "reference": "answer 30"
+    }
+  ],
+  "sample_count": 9
+}

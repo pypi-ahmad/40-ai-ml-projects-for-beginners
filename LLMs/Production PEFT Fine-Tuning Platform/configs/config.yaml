@@ -1,0 +1,16 @@
+defaults:
+  - model: tinyllama_1_1b_chat
+  - dataset: alpaca
+  - peft: lora
+  - train: default
+  - generation: default
+  - eval: default
+  - benchmark: default
+  - deploy: local
+  - tracking: local
+  - export: default
+  - _self_
+
+task: instruction_tuning
+seed: 42
+run_name: peft_run

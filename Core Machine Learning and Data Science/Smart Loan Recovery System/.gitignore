@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+catboost_info/
+logs.log
+
+# Legacy root-level generated figures (canonical artifacts are under outputs/).
+/clusters_pca.png
+/confusion_matrix.png
+/elbow_plot.png
+/model_comparison.png
+/roc_curves.png
+

@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+*.pyc
+
+# Generated runtime artifacts
+data/documents/**
+!data/documents/.gitkeep
+data/documents_curated/**
+!data/documents_curated/.gitkeep
+data/documents_quickstart/**
+!data/documents_quickstart/.gitkeep
+vectordb/chroma/**
+!vectordb/chroma/.gitkeep
+notebooks/*.executed.ipynb

@@ -1,0 +1,46 @@
+{
+  "retrieval": {
+    "precision_at_k": 0.22416666666666668,
+    "recall_at_k": 0.95,
+    "f1_at_k": 0.361904761904762,
+    "mrr": 0.8416666666666666,
+    "ndcg": 0.8696394630357187,
+    "num_queries": 20
+  },
+  "generation": {
+    "exact_match": 0.0,
+    "bleu": 0.020617029211743205,
+    "rouge1": 0.20610227368539386,
+    "rougeL": 0.20610227368539386,
+    "meteor": 0.27159026594403163,
+    "bertscore_f1": 0.6962498873472214,
+    "num_examples": 4
+  },
+  "judge": {
+    "relevance": 4.0,
+    "correctness": 5.0,
+    "groundedness": 4.75,
+    "completeness": 4.0,
+    "faithfulness": 5.0,
+    "num_examples": 4
+  },
+  "leakage_audit": {
+    "corpus_splits": [
+      "train",
+      "validation"
+    ],
+    "eval_splits": [
+      "validation"
+    ],
+    "num_corpus_context_keys": 20233,
+    "num_eval_context_keys": 1204,
+    "split_context_key_overlap": 1204,
+    "overlap_expected_for_retrieval": true,
+    "split_contamination_risk": false,
+    "missing_gold_doc_references": 0,
+    "leakage_pass": true
+  },
+  "documents_indexed": 220,
+  "chunks_indexed": 300,
+  "query_pool": 24
+}

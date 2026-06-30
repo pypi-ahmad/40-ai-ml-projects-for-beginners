@@ -1,0 +1,14 @@
+{
+  "artifacts": {
+    "benchmark": "artifacts/benchmarks/latency_benchmark.json"
+  },
+  "metrics": {
+    "ollama_latency_ms": 0.012,
+    "transformers_latency_ms": 0.019,
+    "vllm_latency_ms": 0.012
+  },
+  "params": {
+    "prompt_count": 4
+  },
+  "run_name": "benchmark-latency"
+}

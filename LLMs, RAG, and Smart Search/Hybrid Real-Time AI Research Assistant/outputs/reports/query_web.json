@@ -1,0 +1,25 @@
+{
+  "query": "What happened in AI yesterday?",
+  "mode": "web",
+  "route_reason": "user_selected_mode",
+  "answer": "I don't know based on the retrieved information.",
+  "citations": [],
+  "judge": {
+    "grounding": 2,
+    "correctness": 1,
+    "completeness": 1,
+    "clarity": 2,
+    "citation_quality": 1,
+    "rationale": "The answer directly states uncertainty about the information available, which aligns with the context indicating no specific details were provided about 'AI yesterday'. Grounding is moderately good (score 2) because it acknowledges the lack of relevant information rather than guessing. Correctness is low (1) since the query asks for a factual event and the answer correctly indicates inability to provide that fact. Completeness is also low (1) as the response does not attempt any additional explanation or related context. Clarity scores 2 because the message is straightforward about uncertainty, though it could be more helpful with potential next steps (e.g., checking recent news). No citations are possible given the lack of external information, resulting in a citation quality score of 0."
+  },
+  "timings_ms": {
+    "intent_ms": 0.010229001418338157,
+    "retrieval_ms": 516.9721969996317,
+    "rerank_ms": 0.0007809994713170454,
+    "context_ms": 0.005810999937239103,
+    "generation_ms": 0.0017430011212127283,
+    "judge_ms": 12230.96423899915,
+    "total_ms": 12747.95500000073
+  },
+  "cached": false
+}

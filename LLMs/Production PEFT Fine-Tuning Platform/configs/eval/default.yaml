@@ -1,0 +1,3 @@
+metrics: [bleu, rouge, bertscore, perplexity, exact_match, f1, accuracy, latency, memory]
+save_reports: true
+report_dir: artifacts/reports

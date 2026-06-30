@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "training": "artifacts/reports/training_latest.json"
+  },
+  "metrics": {
+    "eval_loss": 0.7493,
+    "steps": 43.0,
+    "train_loss": 0.6993
+  },
+  "params": {
+    "model_alias": "llama3_8b",
+    "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "peft_method": "qlora",
+    "train_samples": 87
+  },
+  "run_name": "train-llama3_8b-qlora-20260627-202219-8ba1a0b7"
+}

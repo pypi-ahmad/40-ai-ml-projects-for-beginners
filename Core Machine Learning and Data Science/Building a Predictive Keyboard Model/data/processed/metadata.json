@@ -1,0 +1,6 @@
+{
+  "primary_source": "sherlock-holm.es_stories_plain-text_advs.txt",
+  "include_wikitext": 1,
+  "wikitext_fallback": 1,
+  "wikitext_error": "Cannot send a request, as the client has been closed."
+}

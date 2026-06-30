@@ -1,0 +1,20 @@
+customers:
+  tables: [customers, orders]
+  columns: [customer_id, company_name, segment, country]
+  note: Customer entities with segmentation and geography.
+sales:
+  tables: [orders, order_details, products]
+  columns: [order_date, quantity, unit_price, discount, freight]
+  note: Net sales = quantity * unit_price * (1 - discount).
+revenue:
+  tables: [orders, order_details]
+  columns: [order_date, quantity, unit_price, discount]
+  note: Revenue metric used for KPI and trend analytics.
+profit:
+  tables: [order_details, products]
+  columns: [quantity, unit_price, units_in_stock]
+  note: Proxy metric due to missing true cost fields.
+inventory:
+  tables: [products, suppliers, categories]
+  columns: [units_in_stock, discontinued, category_name]
+  note: Product stock and supplier exposure.

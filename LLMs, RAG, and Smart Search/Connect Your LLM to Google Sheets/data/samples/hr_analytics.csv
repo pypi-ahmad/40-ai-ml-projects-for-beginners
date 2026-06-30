@@ -1,0 +1,701 @@
+employee_id,department,job_role,years_at_company,monthly_income,attrition
+E0001,Engineering,Manager,19,11268,No
+E0002,HR,Sales Exec,9,11143,No
+E0003,Support,HR Specialist,11,3262,No
+E0004,Sales,Manager,12,3889,No
+E0005,Support,Manager,17,2670,Yes
+E0006,Engineering,Sales Exec,3,6423,No
+E0007,Finance,Sales Exec,18,8259,No
+E0008,Engineering,Sales Exec,12,8930,No
+E0009,HR,Sales Exec,4,4883,No
+E0010,Engineering,Engineer,4,6526,No
+E0011,Engineering,Sales Exec,0,2975,No
+E0012,Finance,Sales Exec,13,4024,Yes
+E0013,Finance,HR Specialist,19,8774,No
+E0014,Finance,Manager,13,10844,No
+E0015,Sales,HR Specialist,7,4844,No
+E0016,HR,Sales Exec,15,5678,No
+E0017,Sales,HR Specialist,17,11242,No
+E0018,Finance,Analyst,15,7838,Yes
+E0019,HR,Sales Exec,4,10424,No
+E0020,Support,Analyst,16,3081,No
+E0021,Sales,HR Specialist,7,9540,No
+E0022,HR,HR Specialist,18,6919,No
+E0023,Finance,HR Specialist,0,9481,No
+E0024,HR,Manager,10,8697,No
+E0025,Support,Manager,5,2378,No
+E0026,Finance,HR Specialist,18,6067,Yes
+E0027,HR,HR Specialist,5,11185,Yes
+E0028,Engineering,HR Specialist,0,6499,No
+E0029,Support,Manager,2,6352,No
+E0030,Sales,HR Specialist,8,6009,Yes
+E0031,Finance,Manager,5,11495,No
+E0032,Engineering,Sales Exec,5,6080,No
+E0033,HR,Analyst,5,10440,No
+E0034,Engineering,Sales Exec,4,11557,No
+E0035,Finance,Engineer,13,8077,No
+E0036,HR,Analyst,6,11265,No
+E0037,Sales,Analyst,20,6131,No
+E0038,HR,Sales Exec,5,9402,No
+E0039,Finance,Sales Exec,17,5628,No
+E0040,Finance,Analyst,8,4178,No
+E0041,HR,HR Specialist,9,9153,No
+E0042,HR,Sales Exec,1,3395,No
+E0043,HR,Analyst,19,6266,No
+E0044,Engineering,HR Specialist,8,11371,No
+E0045,Engineering,Manager,6,10318,No
+E0046,Sales,Analyst,17,1973,No
+E0047,Finance,Manager,13,3400,No
+E0048,Sales,Analyst,7,6441,No
+E0049,Support,Engineer,19,3306,Yes
+E0050,Sales,Analyst,19,3795,No
+E0051,Support,Engineer,19,3928,No
+E0052,Finance,Analyst,3,4818,No
+E0053,HR,Sales Exec,20,9229,No
+E0054,Sales,Manager,10,6016,Yes
+E0055,Sales,Manager,1,8071,No
+E0056,Finance,Engineer,8,4715,No
+E0057,Finance,Analyst,19,8232,Yes
+E0058,Engineering,HR Specialist,4,10657,No
+E0059,HR,Analyst,20,3540,No
+E0060,HR,Sales Exec,1,2994,Yes
+E0061,Sales,Analyst,0,9954,Yes
+E0062,HR,Sales Exec,12,6165,Yes
+E0063,Finance,Sales Exec,18,1860,No
+E0064,Sales,HR Specialist,13,8417,No
+E0065,Finance,Analyst,7,1854,No
+E0066,HR,Manager,18,10570,No
+E0067,Sales,Manager,9,8363,Yes
+E0068,Finance,Manager,17,7371,Yes
+E0069,Sales,Sales Exec,20,5127,Yes
+E0070,Sales,Manager,6,6696,No
+E0071,Finance,Engineer,15,3190,No
+E0072,Support,Engineer,4,2384,No
+E0073,Support,Manager,15,8169,Yes
+E0074,Finance,Analyst,15,10548,No
+E0075,Sales,Sales Exec,1,7358,Yes
+E0076,Support,Sales Exec,3,5268,No
+E0077,Engineering,Analyst,17,4240,No
+E0078,Sales,Sales Exec,1,4119,No
+E0079,Engineering,Analyst,19,2550,No
+E0080,Sales,Sales Exec,5,2618,No
+E0081,Sales,Analyst,19,4596,No
+E0082,Support,Engineer,3,9945,No
+E0083,Finance,Manager,2,5120,No
+E0084,HR,Engineer,3,11236,No
+E0085,Sales,Analyst,1,11517,Yes
+E0086,Engineering,Manager,8,4114,No
+E0087,Support,Analyst,17,4503,No
+E0088,Support,Sales Exec,4,3437,No
+E0089,Sales,Analyst,5,2056,No
+E0090,Support,Manager,0,4739,No
+E0091,Engineering,Engineer,13,9598,No
+E0092,Finance,Engineer,20,6239,No
+E0093,Support,Engineer,5,11803,No
+E0094,HR,Manager,15,11827,No
+E0095,Engineering,Analyst,13,1874,No
+E0096,Support,HR Specialist,16,3367,No
+E0097,Engineering,Manager,7,9405,No
+E0098,Engineering,Sales Exec,1,4973,Yes
+E0099,Sales,Analyst,15,4688,Yes
+E0100,Finance,Manager,20,7766,No
+E0101,Finance,Analyst,10,11905,No
+E0102,Engineering,Engineer,3,2659,No
+E0103,Sales,Engineer,0,9747,No
+E0104,Finance,Engineer,14,11510,No
+E0105,HR,Engineer,10,5569,No
+E0106,Engineering,Sales Exec,3,5684,No
+E0107,Finance,Analyst,7,3004,No
+E0108,Support,Sales Exec,13,4174,No
+E0109,Finance,Engineer,5,8146,No
+E0110,Engineering,Manager,20,7675,No
+E0111,Sales,Manager,4,2325,No
+E0112,Finance,Sales Exec,4,3620,No
+E0113,HR,HR Specialist,5,7429,No
+E0114,Support,HR Specialist,5,11819,No
+E0115,Support,Sales Exec,7,3216,No
+E0116,Finance,Manager,6,11492,No
+E0117,Engineering,Engineer,0,8814,No
+E0118,Support,Engineer,10,8914,No
+E0119,Sales,Analyst,18,1883,No
+E0120,Support,Sales Exec,15,10061,Yes
+E0121,Engineering,Analyst,15,3405,No
+E0122,Finance,Engineer,17,2003,No
+E0123,Sales,Analyst,4,7672,No
+E0124,Finance,HR Specialist,15,6794,Yes
+E0125,Finance,Engineer,18,2199,No
+E0126,HR,Sales Exec,12,4830,No
+E0127,Sales,Sales Exec,20,1822,No
+E0128,Finance,Manager,10,10498,Yes
+E0129,Engineering,Analyst,19,10687,No
+E0130,Sales,HR Specialist,19,7300,No
+E0131,HR,Sales Exec,11,2644,Yes
+E0132,Engineering,HR Specialist,19,2469,No
+E0133,Engineering,Engineer,2,10987,No
+E0134,Finance,HR Specialist,10,5709,No
+E0135,HR,HR Specialist,6,5493,No
+E0136,HR,Manager,13,6340,Yes
+E0137,Sales,Sales Exec,14,9766,No
+E0138,Finance,HR Specialist,17,10530,No
+E0139,Finance,Analyst,11,2875,No
+E0140,HR,Analyst,2,8200,No
+E0141,Engineering,Sales Exec,3,4499,No
+E0142,Sales,Manager,4,5146,No
+E0143,Finance,Manager,13,10670,No
+E0144,Sales,Manager,13,9072,No
+E0145,Engineering,HR Specialist,6,2831,Yes
+E0146,HR,Manager,20,7303,No
+E0147,Support,HR Specialist,15,11521,No
+E0148,Engineering,Manager,14,9303,No
+E0149,HR,Manager,5,6059,No
+E0150,Finance,Engineer,1,4230,No
+E0151,HR,Engineer,19,4434,No
+E0152,Sales,Analyst,5,4314,Yes
+E0153,HR,Manager,10,11213,Yes
+E0154,Sales,Manager,5,5161,No
+E0155,Support,Engineer,11,4223,No
+E0156,Sales,Sales Exec,17,6740,Yes
+E0157,HR,Engineer,15,4181,No
+E0158,HR,Manager,0,10748,No
+E0159,Support,Engineer,15,6548,No
+E0160,Sales,Sales Exec,18,9043,No
+E0161,Sales,Manager,1,4084,No
+E0162,Engineering,Sales Exec,0,8380,No
+E0163,Support,Engineer,11,3315,No
+E0164,HR,Engineer,18,10425,No
+E0165,Finance,Analyst,0,3169,No
+E0166,HR,HR Specialist,16,8262,No
+E0167,HR,Sales Exec,19,10181,No
+E0168,HR,Analyst,4,8806,No
+E0169,Finance,HR Specialist,9,7451,No
+E0170,Finance,Sales Exec,2,5333,No
+E0171,Finance,Sales Exec,14,6528,Yes
+E0172,Engineering,Engineer,4,11420,No
+E0173,Support,Manager,9,9576,No
+E0174,Sales,Analyst,2,11477,No
+E0175,Support,Sales Exec,13,6278,No
+E0176,Finance,Manager,18,4043,No
+E0177,HR,HR Specialist,17,9837,Yes
+E0178,Finance,Engineer,9,9895,No
+E0179,HR,Sales Exec,0,1840,Yes
+E0180,Finance,Engineer,3,6513,No
+E0181,Finance,Analyst,0,3755,No
+E0182,Support,Sales Exec,19,7727,No
+E0183,Sales,Manager,8,9599,No
+E0184,HR,Engineer,16,11225,Yes
+E0185,Finance,Engineer,18,2758,Yes
+E0186,HR,Sales Exec,11,4475,Yes
+E0187,HR,HR Specialist,20,7632,Yes
+E0188,Engineering,Analyst,20,3058,No
+E0189,HR,Manager,19,4538,No
+E0190,Support,Manager,8,7739,Yes
+E0191,HR,Manager,4,2011,Yes
+E0192,Engineering,Analyst,15,8550,No
+E0193,Engineering,HR Specialist,6,4332,No
+E0194,Support,Analyst,19,10412,No
+E0195,Sales,Engineer,13,9344,No
+E0196,HR,Engineer,0,9656,No
+E0197,HR,Engineer,14,11591,No
+E0198,Sales,Engineer,9,2271,No
+E0199,HR,Engineer,4,4132,No
+E0200,Finance,Analyst,6,3933,No
+E0201,Finance,Analyst,2,2108,No
+E0202,Support,HR Specialist,6,3566,Yes
+E0203,HR,Analyst,1,9485,Yes
+E0204,Sales,Analyst,2,6742,No
+E0205,Engineering,Engineer,19,5165,No
+E0206,HR,HR Specialist,11,2279,Yes
+E0207,Support,HR Specialist,11,7570,Yes
+E0208,Sales,HR Specialist,7,10072,No
+E0209,Engineering,Manager,0,10464,No
+E0210,Sales,Engineer,5,10600,Yes
+E0211,Support,Engineer,16,9577,No
+E0212,HR,Sales Exec,14,3558,No
+E0213,Finance,Analyst,13,5310,No
+E0214,Support,Engineer,10,3825,No
+E0215,Support,Analyst,15,7718,No
+E0216,Finance,Manager,2,7175,No
+E0217,Finance,Engineer,14,11636,No
+E0218,Finance,Engineer,17,8472,No
+E0219,HR,Engineer,2,9593,No
+E0220,Finance,Sales Exec,0,9855,No
+E0221,Finance,Sales Exec,16,3192,Yes
+E0222,Engineering,Analyst,18,3466,No
+E0223,Support,Sales Exec,11,5061,No
+E0224,Finance,Manager,3,5615,No
+E0225,Finance,Manager,18,11526,No
+E0226,Finance,HR Specialist,15,11682,No
+E0227,Sales,Analyst,8,4214,No
+E0228,Engineering,Analyst,8,9817,No
+E0229,Finance,Analyst,3,2665,No
+E0230,HR,Engineer,5,8069,No
+E0231,Sales,HR Specialist,9,11990,No
+E0232,Finance,Sales Exec,15,9435,No
+E0233,Support,HR Specialist,16,6087,No
+E0234,Sales,Sales Exec,0,2317,No
+E0235,Finance,Sales Exec,14,6953,No
+E0236,HR,Engineer,1,2338,Yes
+E0237,Finance,Sales Exec,15,8856,Yes
+E0238,Support,HR Specialist,3,11120,No
+E0239,Engineering,HR Specialist,18,9497,No
+E0240,Support,Sales Exec,1,8212,No
+E0241,HR,Manager,19,7579,No
+E0242,Engineering,Manager,1,2261,No
+E0243,HR,Sales Exec,11,11367,Yes
+E0244,HR,Sales Exec,3,8814,No
+E0245,Engineering,Engineer,11,2724,No
+E0246,Sales,Manager,20,6913,No
+E0247,Support,Manager,3,7331,Yes
+E0248,Finance,HR Specialist,1,9351,No
+E0249,Finance,HR Specialist,16,8700,No
+E0250,Finance,Manager,0,6985,No
+E0251,Sales,Engineer,18,3401,No
+E0252,HR,Engineer,10,9938,No
+E0253,Finance,Engineer,19,6707,No
+E0254,Support,Engineer,15,3034,No
+E0255,Support,Sales Exec,9,6144,Yes
+E0256,Support,Analyst,7,3306,No
+E0257,Support,HR Specialist,18,7318,No
+E0258,Sales,Manager,15,8797,No
+E0259,Support,Manager,16,6713,No
+E0260,Support,HR Specialist,6,8588,No
+E0261,Sales,HR Specialist,14,10771,No
+E0262,Finance,Manager,5,11251,No
+E0263,Finance,HR Specialist,20,10528,No
+E0264,HR,Sales Exec,20,2781,No
+E0265,HR,Sales Exec,4,5738,Yes
+E0266,Sales,Engineer,13,7020,No
+E0267,Engineering,Manager,13,6173,No
+E0268,Sales,Engineer,19,5668,No
+E0269,HR,Sales Exec,6,2253,No
+E0270,Finance,Analyst,15,10972,No
+E0271,Sales,Manager,6,4410,No
+E0272,Sales,Sales Exec,8,10822,Yes
+E0273,Sales,Manager,0,2706,No
+E0274,Finance,Manager,19,6682,No
+E0275,Engineering,Engineer,2,8302,No
+E0276,Sales,HR Specialist,3,11154,No
+E0277,Sales,Engineer,18,10405,No
+E0278,HR,Manager,19,3803,No
+E0279,Engineering,Sales Exec,18,8188,No
+E0280,Engineering,Manager,6,4163,Yes
+E0281,Support,Analyst,14,8490,No
+E0282,Sales,Manager,15,10540,No
+E0283,Engineering,Manager,17,8743,No
+E0284,HR,Manager,4,7747,No
+E0285,Sales,Engineer,0,11725,Yes
+E0286,HR,Analyst,8,10855,No
+E0287,Finance,Analyst,17,5672,No
+E0288,Engineering,Manager,12,5986,No
+E0289,HR,Sales Exec,6,4425,No
+E0290,Finance,Sales Exec,1,6289,No
+E0291,Sales,Engineer,13,7251,No
+E0292,Finance,HR Specialist,8,10095,Yes
+E0293,Sales,Analyst,17,7153,No
+E0294,Engineering,Analyst,20,4810,No
+E0295,HR,HR Specialist,12,5078,No
+E0296,Support,Engineer,2,3615,Yes
+E0297,HR,Sales Exec,19,8522,No
+E0298,Support,Manager,15,3987,No
+E0299,HR,Engineer,9,5054,Yes
+E0300,Support,Engineer,12,7982,No
+E0301,Support,Engineer,0,2176,No
+E0302,Engineering,Analyst,2,9376,No
+E0303,HR,Engineer,12,11925,No
+E0304,Support,Analyst,2,7828,Yes
+E0305,Finance,Sales Exec,0,10415,No
+E0306,Engineering,Manager,3,5477,No
+E0307,Finance,Engineer,9,9896,No
+E0308,HR,Engineer,19,5331,No
+E0309,Engineering,Analyst,13,4755,No
+E0310,Finance,Engineer,9,6089,No
+E0311,Finance,Analyst,11,11350,No
+E0312,HR,Sales Exec,0,9482,Yes
+E0313,Support,Manager,6,8083,No
+E0314,Sales,Manager,2,3361,No
+E0315,Support,HR Specialist,7,9515,No
+E0316,Support,Sales Exec,1,1887,No
+E0317,Engineering,HR Specialist,9,8266,No
+E0318,Engineering,HR Specialist,1,11310,Yes
+E0319,Engineering,Analyst,15,7357,No
+E0320,HR,Analyst,10,10490,No
+E0321,Finance,Manager,10,2523,No
+E0322,HR,HR Specialist,11,8846,No
+E0323,Engineering,Manager,8,10270,No
+E0324,Finance,Analyst,15,4278,No
+E0325,Engineering,Analyst,6,4235,Yes
+E0326,Finance,Sales Exec,15,6063,Yes
+E0327,HR,HR Specialist,3,9908,Yes
+E0328,Engineering,Analyst,15,9299,No
+E0329,HR,Engineer,11,3333,No
+E0330,Support,HR Specialist,5,10135,No
+E0331,Sales,HR Specialist,6,11360,No
+E0332,Sales,Engineer,18,4758,No
+E0333,Sales,Manager,15,3345,No
+E0334,Sales,Manager,3,8258,No
+E0335,Finance,Sales Exec,4,2273,Yes
+E0336,Sales,Manager,20,6212,No
+E0337,HR,HR Specialist,1,11996,No
+E0338,HR,Manager,4,5263,No
+E0339,Support,Sales Exec,1,2958,No
+E0340,Engineering,Sales Exec,2,8334,No
+E0341,Engineering,Sales Exec,2,2136,No
+E0342,Engineering,Analyst,12,6468,No
+E0343,HR,HR Specialist,9,9842,No
+E0344,HR,HR Specialist,4,7682,No
+E0345,Finance,Sales Exec,6,9821,No
+E0346,Sales,Sales Exec,8,11025,No
+E0347,Finance,Analyst,11,11857,No
+E0348,Finance,Engineer,1,10210,No
+E0349,Support,HR Specialist,20,4340,No
+E0350,Sales,Sales Exec,2,6562,No
+E0351,HR,Engineer,9,4234,No
+E0352,Sales,HR Specialist,16,8807,No
+E0353,Support,Sales Exec,2,2538,No
+E0354,Support,Manager,13,3348,No
+E0355,Support,Analyst,11,5975,No
+E0356,Engineering,Sales Exec,3,9383,Yes
+E0357,HR,Manager,1,3164,No
+E0358,Finance,HR Specialist,18,9254,No
+E0359,Engineering,Engineer,8,7392,No
+E0360,Support,Manager,5,3081,No
+E0361,Sales,Sales Exec,3,8907,No
+E0362,Finance,Sales Exec,3,2017,Yes
+E0363,HR,HR Specialist,12,11661,No
+E0364,Finance,Manager,19,7710,No
+E0365,Engineering,Analyst,2,3849,Yes
+E0366,Engineering,Sales Exec,0,4883,No
+E0367,Finance,HR Specialist,20,4178,No
+E0368,Finance,Engineer,6,3210,No
+E0369,Engineering,Engineer,15,8712,Yes
+E0370,Finance,HR Specialist,14,9747,No
+E0371,Finance,Analyst,7,5098,No
+E0372,Finance,Sales Exec,10,1929,Yes
+E0373,Support,Manager,15,11280,No
+E0374,Support,HR Specialist,1,9787,No
+E0375,Sales,HR Specialist,19,9793,No
+E0376,Support,Analyst,0,8714,No
+E0377,Sales,Sales Exec,8,8634,No
+E0378,Finance,Analyst,19,7481,No
+E0379,Finance,Manager,5,6518,No
+E0380,Support,Manager,14,5602,No
+E0381,HR,Sales Exec,19,9475,Yes
+E0382,Engineering,HR Specialist,13,7702,No
+E0383,Sales,Sales Exec,6,6427,No
+E0384,Support,Sales Exec,4,4639,No
+E0385,Finance,Manager,3,8615,No
+E0386,Sales,Manager,7,5231,No
+E0387,Engineering,HR Specialist,8,7649,No
+E0388,Sales,HR Specialist,1,2843,No
+E0389,Finance,Manager,7,3777,No
+E0390,Support,Manager,10,7620,No
+E0391,Sales,Analyst,4,10244,No
+E0392,Sales,Analyst,14,9289,No
+E0393,Sales,HR Specialist,19,11788,No
+E0394,Sales,Engineer,1,10111,Yes
+E0395,Finance,HR Specialist,11,4372,No
+E0396,HR,Manager,15,3426,Yes
+E0397,Finance,Sales Exec,4,3814,No
+E0398,Finance,Manager,0,5819,No
+E0399,HR,Manager,9,10074,Yes
+E0400,Engineering,Engineer,13,7708,No
+E0401,Engineering,Sales Exec,16,8709,No
+E0402,Support,Manager,13,8506,No
+E0403,Sales,HR Specialist,0,9051,Yes
+E0404,Finance,Engineer,2,3189,No
+E0405,Sales,Engineer,13,2807,No
+E0406,Support,Manager,18,2747,No
+E0407,Support,Manager,13,8386,No
+E0408,HR,HR Specialist,10,7438,Yes
+E0409,Finance,Engineer,19,4206,No
+E0410,HR,Sales Exec,17,11928,No
+E0411,Support,Manager,6,6740,Yes
+E0412,Support,Manager,12,3864,No
+E0413,HR,HR Specialist,6,3320,No
+E0414,Support,HR Specialist,10,4421,Yes
+E0415,HR,Sales Exec,8,5754,No
+E0416,HR,Manager,16,3609,No
+E0417,Sales,Analyst,20,10114,No
+E0418,Sales,Sales Exec,14,6681,No
+E0419,Support,HR Specialist,10,5668,No
+E0420,Engineering,Manager,20,10537,No
+E0421,Support,Engineer,9,6461,No
+E0422,Sales,Manager,12,10314,No
+E0423,HR,Sales Exec,16,11341,No
+E0424,Finance,Analyst,3,4201,No
+E0425,Engineering,Sales Exec,2,2818,No
+E0426,Support,Sales Exec,6,9109,Yes
+E0427,Finance,Manager,18,10958,No
+E0428,Finance,Sales Exec,18,9972,No
+E0429,Engineering,Sales Exec,13,4468,Yes
+E0430,Support,HR Specialist,14,3919,No
+E0431,Sales,Engineer,3,5283,No
+E0432,Sales,HR Specialist,17,7851,No
+E0433,Support,Manager,13,3607,Yes
+E0434,HR,Manager,1,10365,Yes
+E0435,Sales,Engineer,11,6768,No
+E0436,HR,Manager,4,11460,No
+E0437,Finance,Analyst,6,4799,No
+E0438,Sales,Sales Exec,3,10770,No
+E0439,Finance,Manager,15,11189,No
+E0440,Support,Engineer,12,9586,No
+E0441,Finance,Sales Exec,4,10070,No
+E0442,Support,HR Specialist,4,7128,Yes
+E0443,Finance,Manager,13,8144,No
+E0444,Finance,Manager,17,2550,No
+E0445,Sales,HR Specialist,20,3250,No
+E0446,Sales,HR Specialist,20,6860,No
+E0447,Support,HR Specialist,2,4952,No
+E0448,Finance,HR Specialist,1,11142,No
+E0449,Support,Engineer,0,3770,No
+E0450,Engineering,HR Specialist,0,6304,No
+E0451,Support,Manager,14,3186,No
+E0452,Sales,Manager,12,11448,Yes
+E0453,Support,Manager,13,4757,No
+E0454,Sales,HR Specialist,12,6013,Yes
+E0455,HR,Analyst,5,6475,Yes
+E0456,Engineering,Analyst,4,6826,No
+E0457,Sales,Manager,19,7129,No
+E0458,Finance,Manager,12,3417,No
+E0459,Sales,Analyst,8,7952,No
+E0460,Support,Engineer,6,5725,No
+E0461,Finance,Analyst,15,10133,No
+E0462,Support,Sales Exec,8,2793,No
+E0463,Engineering,Analyst,2,9732,Yes
+E0464,Sales,Engineer,8,10877,No
+E0465,Finance,Sales Exec,17,3857,No
+E0466,Engineering,Manager,2,9999,No
+E0467,Support,Sales Exec,17,4555,No
+E0468,Finance,HR Specialist,17,9201,Yes
+E0469,Finance,Manager,9,4542,Yes
+E0470,Finance,Manager,19,5910,No
+E0471,Support,Manager,20,5285,No
+E0472,Support,Analyst,1,4444,No
+E0473,Sales,Engineer,9,3269,No
+E0474,Engineering,HR Specialist,17,6378,No
+E0475,HR,Manager,16,7015,No
+E0476,HR,Manager,14,6273,No
+E0477,HR,Analyst,6,9333,No
+E0478,Sales,Analyst,4,1833,No
+E0479,Finance,Sales Exec,5,8569,No
+E0480,Sales,HR Specialist,17,3129,No
+E0481,HR,Sales Exec,0,9093,No
+E0482,Sales,Analyst,19,7664,No
+E0483,Finance,Analyst,14,7869,No
+E0484,HR,Engineer,7,2124,No
+E0485,Engineering,Engineer,2,11850,No
+E0486,Finance,HR Specialist,15,7747,Yes
+E0487,Finance,Analyst,6,1916,No
+E0488,Engineering,HR Specialist,8,11124,No
+E0489,Support,HR Specialist,6,11068,No
+E0490,Sales,Engineer,5,2870,No
+E0491,Support,Manager,8,11137,No
+E0492,Support,HR Specialist,6,2178,No
+E0493,Sales,Sales Exec,8,10976,No
+E0494,HR,Sales Exec,20,2649,No
+E0495,Support,Sales Exec,13,6289,Yes
+E0496,Sales,Engineer,15,7722,No
+E0497,Support,Sales Exec,1,6353,No
+E0498,HR,Analyst,10,1884,No
+E0499,Engineering,Sales Exec,18,2215,No
+E0500,HR,Manager,2,5895,No
+E0501,Finance,Analyst,2,3384,Yes
+E0502,Engineering,Analyst,18,7277,No
+E0503,Sales,Manager,15,5705,No
+E0504,Support,HR Specialist,16,5678,No
+E0505,Support,Analyst,14,3367,No
+E0506,Finance,Manager,2,2794,No
+E0507,Finance,Analyst,2,3889,Yes
+E0508,Sales,Analyst,9,11806,No
+E0509,Finance,Sales Exec,1,10962,Yes
+E0510,Engineering,HR Specialist,3,11913,No
+E0511,Finance,Sales Exec,19,1973,No
+E0512,Sales,Sales Exec,19,11945,Yes
+E0513,Sales,Analyst,16,7177,No
+E0514,Support,Engineer,0,11551,No
+E0515,HR,Manager,18,3864,No
+E0516,Finance,Engineer,13,9687,No
+E0517,Sales,Engineer,7,4055,No
+E0518,HR,Manager,9,11376,No
+E0519,Engineering,Sales Exec,18,10666,No
+E0520,HR,Analyst,9,11684,No
+E0521,Engineering,Analyst,16,11408,No
+E0522,Support,Analyst,7,10108,No
+E0523,Engineering,Engineer,13,7433,No
+E0524,Finance,Sales Exec,2,7395,No
+E0525,Support,Manager,19,7225,No
+E0526,Engineering,Analyst,19,6709,No
+E0527,Sales,Engineer,14,2491,No
+E0528,Engineering,Sales Exec,7,9443,No
+E0529,Engineering,Analyst,10,7958,No
+E0530,Sales,HR Specialist,11,1962,Yes
+E0531,Engineering,HR Specialist,3,4133,No
+E0532,Engineering,Engineer,11,2519,No
+E0533,HR,Engineer,9,4653,No
+E0534,Engineering,Analyst,10,10885,No
+E0535,Sales,Engineer,5,6089,No
+E0536,Engineering,Manager,12,3618,No
+E0537,HR,Engineer,14,5734,No
+E0538,Sales,Analyst,16,8906,No
+E0539,Engineering,HR Specialist,4,3942,No
+E0540,Finance,Engineer,12,7931,No
+E0541,Support,Manager,1,11893,No
+E0542,HR,Engineer,4,7168,No
+E0543,Engineering,Analyst,16,11369,No
+E0544,Support,Sales Exec,15,11874,Yes
+E0545,Support,Sales Exec,20,10142,No
+E0546,Support,Sales Exec,5,7072,No
+E0547,Finance,HR Specialist,15,9562,No
+E0548,Engineering,Sales Exec,20,2399,No
+E0549,Finance,Sales Exec,7,8286,No
+E0550,HR,Manager,18,4375,No
+E0551,Sales,Manager,17,3188,Yes
+E0552,Support,Analyst,14,10300,No
+E0553,Finance,Sales Exec,14,10192,No
+E0554,Finance,Manager,14,8886,No
+E0555,Finance,Engineer,8,8064,Yes
+E0556,Sales,Manager,8,3043,No
+E0557,Sales,Manager,16,10201,No
+E0558,HR,Analyst,7,3412,Yes
+E0559,HR,Manager,17,5081,No
+E0560,Support,Engineer,9,6296,No
+E0561,HR,Manager,17,6078,Yes
+E0562,Support,Analyst,11,8416,No
+E0563,Engineering,Sales Exec,15,10199,No
+E0564,Engineering,Sales Exec,7,5517,No
+E0565,Support,Sales Exec,7,10251,No
+E0566,HR,Engineer,14,7381,No
+E0567,Finance,HR Specialist,13,8643,No
+E0568,Engineering,Manager,0,7939,Yes
+E0569,HR,Manager,0,9988,No
+E0570,Finance,HR Specialist,7,8667,No
+E0571,Support,Analyst,9,7142,No
+E0572,HR,HR Specialist,4,4318,No
+E0573,Support,Sales Exec,20,11679,No
+E0574,Sales,HR Specialist,12,5145,No
+E0575,HR,HR Specialist,12,4885,No
+E0576,Sales,HR Specialist,14,6791,Yes
+E0577,Support,Sales Exec,5,2325,No
+E0578,Finance,Manager,0,4858,No
+E0579,Support,Analyst,6,5618,No
+E0580,Sales,Engineer,14,2741,No
+E0581,Sales,Engineer,10,8531,No
+E0582,Sales,Sales Exec,17,8655,No
+E0583,HR,Sales Exec,6,3928,No
+E0584,HR,HR Specialist,15,4401,No
+E0585,Finance,Manager,6,10032,No
+E0586,Finance,Analyst,6,1921,No
+E0587,Support,Manager,12,11709,No
+E0588,Support,Analyst,18,9843,No
+E0589,Finance,Manager,2,6517,No
+E0590,Engineering,Sales Exec,9,8207,No
+E0591,Finance,Sales Exec,7,4742,No
+E0592,Sales,Sales Exec,12,4805,No
+E0593,Engineering,Manager,1,5727,No
+E0594,Sales,Engineer,20,10610,No
+E0595,Support,Analyst,15,8538,No
+E0596,Support,Manager,11,3053,No
+E0597,Engineering,HR Specialist,13,9188,Yes
+E0598,Finance,Sales Exec,1,9372,Yes
+E0599,Finance,Analyst,10,8342,No
+E0600,Engineering,Manager,0,5905,Yes
+E0601,Sales,HR Specialist,14,9742,No
+E0602,HR,Engineer,7,8971,Yes
+E0603,Engineering,Manager,5,2095,No
+E0604,Engineering,Analyst,3,10559,No
+E0605,HR,Engineer,0,6276,Yes
+E0606,Support,Engineer,6,2364,No
+E0607,Support,Analyst,14,2582,No
+E0608,Support,Analyst,12,6851,No
+E0609,Engineering,Manager,1,7983,No
+E0610,Finance,Analyst,7,5076,Yes
+E0611,Sales,Engineer,0,7323,No
+E0612,Sales,Sales Exec,3,4550,No
+E0613,HR,HR Specialist,16,3564,No
+E0614,Support,Sales Exec,20,4905,No
+E0615,Sales,Manager,13,3779,No
+E0616,HR,Analyst,10,4644,Yes
+E0617,Sales,Manager,12,5285,No
+E0618,Engineering,Sales Exec,20,7845,Yes
+E0619,Sales,HR Specialist,9,11611,No
+E0620,Sales,HR Specialist,18,4609,No
+E0621,Engineering,Manager,10,8166,No
+E0622,Finance,Analyst,5,7009,No
+E0623,Support,Sales Exec,10,2089,No
+E0624,Engineering,HR Specialist,12,10172,No
+E0625,Support,Analyst,18,2017,No
+E0626,Engineering,HR Specialist,9,5673,No
+E0627,Finance,Manager,2,2781,Yes
+E0628,Sales,Engineer,6,4284,No
+E0629,HR,Engineer,19,9070,No
+E0630,Sales,HR Specialist,8,7002,No
+E0631,Engineering,Manager,13,6526,No
+E0632,Sales,Engineer,10,5769,No
+E0633,Support,Manager,7,11762,No
+E0634,Sales,Sales Exec,5,9047,No
+E0635,Engineering,Engineer,2,4953,Yes
+E0636,Support,Engineer,4,3303,Yes
+E0637,Finance,Manager,7,10113,Yes
+E0638,Engineering,HR Specialist,5,5036,No
+E0639,Finance,Engineer,7,6766,No
+E0640,HR,Sales Exec,8,9683,Yes
+E0641,Finance,HR Specialist,12,4548,No
+E0642,Finance,Analyst,19,8901,No
+E0643,HR,HR Specialist,12,8802,No
+E0644,Engineering,Manager,17,4303,No
+E0645,HR,Sales Exec,12,9396,No
+E0646,HR,Engineer,17,11729,No
+E0647,Engineering,Analyst,15,5006,Yes
+E0648,HR,Sales Exec,0,10003,No
+E0649,HR,Sales Exec,12,8612,No
+E0650,Support,Analyst,15,6843,No
+E0651,Sales,Sales Exec,13,2436,No
+E0652,Finance,Manager,18,4460,No
+E0653,HR,Analyst,11,10149,No
+E0654,Engineering,Engineer,20,8113,No
+E0655,HR,Analyst,15,2365,No
+E0656,Finance,Engineer,20,4222,No
+E0657,Engineering,Analyst,8,5853,No
+E0658,Finance,Sales Exec,3,3312,No
+E0659,Engineering,Sales Exec,18,3116,No
+E0660,HR,HR Specialist,5,8793,No
+E0661,Finance,Analyst,17,8071,No
+E0662,HR,Engineer,3,11181,No
+E0663,Finance,Manager,8,5232,No
+E0664,Sales,Analyst,0,4559,No
+E0665,HR,Sales Exec,2,8645,No
+E0666,Engineering,Engineer,5,4690,No
+E0667,Sales,Sales Exec,15,4781,No
+E0668,Sales,Engineer,18,5282,No
+E0669,Finance,Sales Exec,6,6049,No
+E0670,Engineering,Analyst,20,3589,No
+E0671,HR,Analyst,9,3204,No
+E0672,Finance,Sales Exec,10,2286,No
+E0673,Sales,HR Specialist,3,1955,Yes
+E0674,Sales,Sales Exec,1,3386,No
+E0675,HR,Sales Exec,19,10320,No
+E0676,HR,Manager,15,7321,No
+E0677,HR,Sales Exec,10,6964,No
+E0678,HR,Manager,12,11807,Yes
+E0679,Finance,Engineer,3,1850,No
+E0680,Support,Manager,0,11661,Yes
+E0681,Finance,HR Specialist,7,7836,No
+E0682,HR,Analyst,13,4879,Yes
+E0683,HR,Sales Exec,20,7701,No
+E0684,Support,Analyst,7,11741,No
+E0685,Finance,Analyst,11,8810,No
+E0686,Engineering,HR Specialist,12,6614,No
+E0687,Finance,Analyst,18,10067,Yes
+E0688,Finance,Engineer,9,10790,No
+E0689,Support,Engineer,14,3695,No
+E0690,Sales,Analyst,7,5267,Yes
+E0691,HR,Sales Exec,13,2278,Yes
+E0692,Finance,Analyst,8,5410,No
+E0693,Finance,Analyst,4,10557,No
+E0694,Support,Analyst,10,5466,No
+E0695,Finance,HR Specialist,20,7423,No
+E0696,Sales,Manager,13,5623,No
+E0697,Support,Engineer,2,3624,Yes
+E0698,HR,Sales Exec,3,11185,No
+E0699,Support,HR Specialist,18,1827,No
+E0700,HR,Manager,6,8159,No

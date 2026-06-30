@@ -1,0 +1,14 @@
+{
+  "cold_start_ms": 1846.0398759998498,
+  "warm_avg_ms": 20.012348349973763,
+  "warm_p50_ms": 18.483516500054975,
+  "warm_p95_ms": 28.116220999618232,
+  "throughput_rps": 49.96789849836567,
+  "batch_size": 64.0,
+  "batch_avg_ms": 19.50943723313685,
+  "batch_p95_ms": 31.311006048781547,
+  "batch_throughput_records_per_s": 3280.3631342780213,
+  "memory_rss_before_mb": 105.796875,
+  "memory_rss_after_mb": 204.05078125,
+  "memory_rss_delta_mb": 98.25390625
+}

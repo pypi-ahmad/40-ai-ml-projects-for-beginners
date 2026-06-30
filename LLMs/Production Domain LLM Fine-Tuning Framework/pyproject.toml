@@ -1,0 +1,87 @@
+[project]
+name = "domain-llm-finetuning-framework"
+version = "0.1.0"
+description = "Production-grade domain-specific LLM fine-tuning framework"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [{ name = "Ahmad" }]
+dependencies = [
+  "accelerate>=1.10.0",
+  "bitsandbytes>=0.45.0",
+  "datasets>=3.0.0",
+  "duckdb>=1.2.2",
+  "evaluate>=0.4.3",
+  "fastapi>=0.116.0",
+  "hf-transfer>=0.1.9",
+  "httpx>=0.28.1",
+  "jinja2>=3.1.4",
+  "loguru>=0.7.3",
+  "matplotlib>=3.10.0",
+  "mlflow>=3.1.0",
+  "numpy>=2.1.0",
+  "onnx>=1.18.0",
+  "onnxruntime-gpu>=1.23.0",
+  "optuna>=4.5.0",
+  "orjson>=3.11.0",
+  "pandas>=2.3.0",
+  "peft>=0.17.0",
+  "polars>=1.31.0",
+  "psutil>=7.0.0",
+  "pydantic>=2.11.0",
+  "pydantic-settings>=2.10.0",
+  "pyyaml>=6.0.2",
+  "rich>=14.0.0",
+  "safetensors>=0.6.0",
+  "scikit-learn>=1.7.0",
+  "scipy>=1.16.0",
+  "seaborn>=0.13.2",
+  "sentencepiece>=0.2.0",
+  "streamlit>=1.48.0",
+  "torch>=2.8.0",
+  "torchmetrics>=1.8.0",
+  "transformers>=4.56.0",
+  "trl>=0.21.0",
+  "typer>=0.17.0",
+  "uvicorn>=0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.0",
+  "pytest-asyncio>=1.1.0",
+  "ruff>=0.12.0",
+]
+openvino = ["openvino>=2025.2.0"]
+notebook = [
+  "ipykernel>=6.30.0",
+  "nbformat>=5.10.0",
+]
+xai = [
+  "lime>=0.2.0.1",
+  "shap>=0.46.0",
+]
+
+[project.scripts]
+domain-llm = "domain_llm_ft.cli:app"
+
+[build-system]
+requires = ["setuptools>=81.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N"]
+ignore = ["E501"]

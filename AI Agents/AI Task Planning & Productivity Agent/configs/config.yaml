@@ -1,0 +1,77 @@
+defaults:
+  - _self_
+
+app:
+  name: task_planning_productivity_agent
+  env: dev
+  timezone: Asia/Kolkata
+
+paths:
+  data_dir: data
+  sqlite_path: data/processed/productivity_agent.db
+  chroma_dir: data/processed/chroma
+  reports_dir: artifacts/reports
+
+security:
+  jwt_secret_env: TPA_JWT_SECRET
+  jwt_algorithm: HS256
+  token_expiry_minutes: 1440
+
+llm:
+  base_url: http://localhost:11434
+  timeout_seconds: 60
+  failover: fallback
+  default_family: qwen3
+  families:
+    llama3: ["llama3.1:8b", "llama3:8b", "llama3.2:3b"]
+    qwen3: ["qwen3:8b", "qwen3:4b", "qwen3:1.7b"]
+    gemma3: ["gemma3:12b", "gemma3:4b"]
+    phi4mini: ["phi4-mini:3.8b", "phi3:mini"]
+    mistral: ["mistral:7b", "mistral-nemo:12b"]
+    deepseek: ["deepseek-r1:8b", "deepseek-r1:1.5b"]
+
+planner:
+  default_priority_strategy: wsjf
+  strategy_weights:
+    urgency: 0.3
+    importance: 0.35
+    impact: 0.2
+    confidence: 0.1
+    effort_penalty: 0.05
+
+scheduling:
+  objective_weights:
+    deadline_risk: 0.40
+    priority_score: 0.25
+    dependency_blocking: 0.15
+    energy_fit: 0.10
+    context_switch_penalty: 0.07
+    burnout_penalty: 0.03
+  default_break_minutes: 15
+  deep_work_block_minutes: 90
+  meeting_buffer_minutes: 10
+  workday_start: "09:00"
+  workday_end: "18:00"
+
+memory:
+  top_k: 8
+  chroma_collection: plan_memory
+
+calendar:
+  mode: local_ics
+  google_enabled: false
+
+analytics:
+  mlflow_tracking_uri: "file:./artifacts/mlruns"
+  weekly_hours_target: 40
+
+ui:
+  dark_mode: true
+
+api:
+  host: 0.0.0.0
+  port: 8000
+
+streamlit:
+  host: 0.0.0.0
+  port: 8501

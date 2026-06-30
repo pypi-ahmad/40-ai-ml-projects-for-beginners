@@ -1,0 +1,3 @@
+Which document discusses encryption requirements?
+Compare policy and technical documentation guidance on access control.
+What changed between two manuals on logging behavior?

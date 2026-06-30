@@ -1,0 +1,120 @@
+{"id":"math-1","category":"math","prompt":"Calculate 1 * 4 + 2","expected_keywords":["result","4"]}
+{"id":"math-2","category":"math","prompt":"Calculate 2 * 5 + 4","expected_keywords":["result","5"]}
+{"id":"math-3","category":"math","prompt":"Calculate 3 * 6 + 6","expected_keywords":["result","6"]}
+{"id":"math-4","category":"math","prompt":"Calculate 4 * 7 + 8","expected_keywords":["result","7"]}
+{"id":"math-5","category":"math","prompt":"Calculate 5 * 8 + 10","expected_keywords":["result","8"]}
+{"id":"math-6","category":"math","prompt":"Calculate 6 * 9 + 12","expected_keywords":["result","9"]}
+{"id":"math-7","category":"math","prompt":"Calculate 7 * 10 + 14","expected_keywords":["result","10"]}
+{"id":"math-8","category":"math","prompt":"Calculate 8 * 11 + 16","expected_keywords":["result","11"]}
+{"id":"math-9","category":"math","prompt":"Calculate 9 * 12 + 18","expected_keywords":["result","12"]}
+{"id":"math-10","category":"math","prompt":"Calculate 10 * 13 + 20","expected_keywords":["result","13"]}
+{"id":"math-11","category":"math","prompt":"Calculate 11 * 14 + 22","expected_keywords":["result","14"]}
+{"id":"math-12","category":"math","prompt":"Calculate 12 * 15 + 24","expected_keywords":["result","15"]}
+{"id":"math-13","category":"math","prompt":"Calculate 13 * 16 + 26","expected_keywords":["result","16"]}
+{"id":"math-14","category":"math","prompt":"Calculate 14 * 17 + 28","expected_keywords":["result","17"]}
+{"id":"math-15","category":"math","prompt":"Calculate 15 * 18 + 30","expected_keywords":["result","18"]}
+{"id":"math-16","category":"math","prompt":"Calculate 16 * 19 + 32","expected_keywords":["result","19"]}
+{"id":"math-17","category":"math","prompt":"Calculate 17 * 20 + 34","expected_keywords":["result","20"]}
+{"id":"math-18","category":"math","prompt":"Calculate 18 * 21 + 36","expected_keywords":["result","21"]}
+{"id":"math-19","category":"math","prompt":"Calculate 19 * 22 + 38","expected_keywords":["result","22"]}
+{"id":"math-20","category":"math","prompt":"Calculate 20 * 23 + 40","expected_keywords":["result","23"]}
+{"id":"reason-1","category":"reasoning","prompt":"If project starts Monday and needs 3 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-2","category":"reasoning","prompt":"If project starts Monday and needs 4 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-3","category":"reasoning","prompt":"If project starts Monday and needs 5 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-4","category":"reasoning","prompt":"If project starts Monday and needs 6 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-5","category":"reasoning","prompt":"If project starts Monday and needs 7 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-6","category":"reasoning","prompt":"If project starts Monday and needs 8 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-7","category":"reasoning","prompt":"If project starts Monday and needs 2 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-8","category":"reasoning","prompt":"If project starts Monday and needs 3 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-9","category":"reasoning","prompt":"If project starts Monday and needs 4 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-10","category":"reasoning","prompt":"If project starts Monday and needs 5 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-11","category":"reasoning","prompt":"If project starts Monday and needs 6 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-12","category":"reasoning","prompt":"If project starts Monday and needs 7 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-13","category":"reasoning","prompt":"If project starts Monday and needs 8 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-14","category":"reasoning","prompt":"If project starts Monday and needs 2 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"reason-15","category":"reasoning","prompt":"If project starts Monday and needs 3 days, what weekday ends? Show reasoning.","expected_keywords":["day","reason"]}
+{"id":"knowledge-1","category":"knowledge","prompt":"What is topic 1 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-2","category":"knowledge","prompt":"What is topic 2 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-3","category":"knowledge","prompt":"What is topic 3 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-4","category":"knowledge","prompt":"What is topic 4 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-5","category":"knowledge","prompt":"What is topic 5 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-6","category":"knowledge","prompt":"What is topic 6 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-7","category":"knowledge","prompt":"What is topic 7 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-8","category":"knowledge","prompt":"What is topic 8 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-9","category":"knowledge","prompt":"What is topic 9 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-10","category":"knowledge","prompt":"What is topic 10 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-11","category":"knowledge","prompt":"What is topic 11 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-12","category":"knowledge","prompt":"What is topic 12 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-13","category":"knowledge","prompt":"What is topic 13 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-14","category":"knowledge","prompt":"What is topic 14 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"knowledge-15","category":"knowledge","prompt":"What is topic 15 in simple terms? Provide concise explanation.","expected_keywords":["explain","topic"]}
+{"id":"current-1","category":"current_events","prompt":"Find latest update about AI regulation region 1 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-2","category":"current_events","prompt":"Find latest update about AI regulation region 2 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-3","category":"current_events","prompt":"Find latest update about AI regulation region 3 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-4","category":"current_events","prompt":"Find latest update about AI regulation region 4 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-5","category":"current_events","prompt":"Find latest update about AI regulation region 5 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-6","category":"current_events","prompt":"Find latest update about AI regulation region 6 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-7","category":"current_events","prompt":"Find latest update about AI regulation region 7 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-8","category":"current_events","prompt":"Find latest update about AI regulation region 8 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-9","category":"current_events","prompt":"Find latest update about AI regulation region 9 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-10","category":"current_events","prompt":"Find latest update about AI regulation region 10 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-11","category":"current_events","prompt":"Find latest update about AI regulation region 11 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-12","category":"current_events","prompt":"Find latest update about AI regulation region 12 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-13","category":"current_events","prompt":"Find latest update about AI regulation region 13 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-14","category":"current_events","prompt":"Find latest update about AI regulation region 14 with citation.","expected_keywords":["citation","latest"]}
+{"id":"current-15","category":"current_events","prompt":"Find latest update about AI regulation region 15 with citation.","expected_keywords":["citation","latest"]}
+{"id":"tool-1","category":"tool_use","prompt":"Use calculator or tools to solve ratio 2:3 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-2","category":"tool_use","prompt":"Use calculator or tools to solve ratio 3:4 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-3","category":"tool_use","prompt":"Use calculator or tools to solve ratio 4:5 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-4","category":"tool_use","prompt":"Use calculator or tools to solve ratio 5:6 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-5","category":"tool_use","prompt":"Use calculator or tools to solve ratio 6:7 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-6","category":"tool_use","prompt":"Use calculator or tools to solve ratio 7:8 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-7","category":"tool_use","prompt":"Use calculator or tools to solve ratio 8:9 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-8","category":"tool_use","prompt":"Use calculator or tools to solve ratio 9:10 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-9","category":"tool_use","prompt":"Use calculator or tools to solve ratio 10:11 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-10","category":"tool_use","prompt":"Use calculator or tools to solve ratio 11:12 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-11","category":"tool_use","prompt":"Use calculator or tools to solve ratio 12:13 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-12","category":"tool_use","prompt":"Use calculator or tools to solve ratio 13:14 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-13","category":"tool_use","prompt":"Use calculator or tools to solve ratio 14:15 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-14","category":"tool_use","prompt":"Use calculator or tools to solve ratio 15:16 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"tool-15","category":"tool_use","prompt":"Use calculator or tools to solve ratio 16:17 then summarize.","expected_keywords":["tool","summary"]}
+{"id":"multi-1","category":"multi_step","prompt":"Plan steps to compare city 1 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-2","category":"multi_step","prompt":"Plan steps to compare city 2 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-3","category":"multi_step","prompt":"Plan steps to compare city 3 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-4","category":"multi_step","prompt":"Plan steps to compare city 4 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-5","category":"multi_step","prompt":"Plan steps to compare city 5 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-6","category":"multi_step","prompt":"Plan steps to compare city 6 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-7","category":"multi_step","prompt":"Plan steps to compare city 7 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-8","category":"multi_step","prompt":"Plan steps to compare city 8 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-9","category":"multi_step","prompt":"Plan steps to compare city 9 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-10","category":"multi_step","prompt":"Plan steps to compare city 10 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-11","category":"multi_step","prompt":"Plan steps to compare city 11 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-12","category":"multi_step","prompt":"Plan steps to compare city 12 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-13","category":"multi_step","prompt":"Plan steps to compare city 13 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-14","category":"multi_step","prompt":"Plan steps to compare city 14 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"multi-15","category":"multi_step","prompt":"Plan steps to compare city 15 weather and currency then answer.","expected_keywords":["step","compare"]}
+{"id":"code-1","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=6 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-2","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=7 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-3","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=8 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-4","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=9 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-5","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=10 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-6","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=11 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-7","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=12 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-8","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=13 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-9","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=14 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-10","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=15 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-11","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=16 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-12","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=17 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-13","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=18 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-14","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=19 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"code-15","category":"code_generation","prompt":"Write Python snippet to compute Fibonacci for n=20 and explain.","expected_keywords":["python","fibonacci"]}
+{"id":"docqa-1","category":"document_qa","prompt":"Read markdown docs and answer section question 1.","expected_keywords":["section","answer"]}
+{"id":"docqa-2","category":"document_qa","prompt":"Read markdown docs and answer section question 2.","expected_keywords":["section","answer"]}
+{"id":"docqa-3","category":"document_qa","prompt":"Read markdown docs and answer section question 3.","expected_keywords":["section","answer"]}
+{"id":"docqa-4","category":"document_qa","prompt":"Read markdown docs and answer section question 4.","expected_keywords":["section","answer"]}
+{"id":"docqa-5","category":"document_qa","prompt":"Read markdown docs and answer section question 5.","expected_keywords":["section","answer"]}
+{"id":"docqa-6","category":"document_qa","prompt":"Read markdown docs and answer section question 6.","expected_keywords":["section","answer"]}
+{"id":"docqa-7","category":"document_qa","prompt":"Read markdown docs and answer section question 7.","expected_keywords":["section","answer"]}
+{"id":"docqa-8","category":"document_qa","prompt":"Read markdown docs and answer section question 8.","expected_keywords":["section","answer"]}
+{"id":"docqa-9","category":"document_qa","prompt":"Read markdown docs and answer section question 9.","expected_keywords":["section","answer"]}
+{"id":"docqa-10","category":"document_qa","prompt":"Read markdown docs and answer section question 10.","expected_keywords":["section","answer"]}

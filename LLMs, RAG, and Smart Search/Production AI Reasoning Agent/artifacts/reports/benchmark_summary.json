@@ -1,0 +1,50 @@
+[
+  {
+    "accuracy": 0.0,
+    "available": false,
+    "avg_latency_ms": 0.0,
+    "avg_retries": 0.0,
+    "avg_tool_calls": 0.0,
+    "completed": 0,
+    "model": "qwen3:8b",
+    "prompts": 120,
+    "skip_reason": "model_not_available",
+    "success_rate": 0.0
+  },
+  {
+    "accuracy": 0.0,
+    "available": false,
+    "avg_latency_ms": 0.0,
+    "avg_retries": 0.0,
+    "avg_tool_calls": 0.0,
+    "completed": 0,
+    "model": "llama3.1:8b",
+    "prompts": 120,
+    "skip_reason": "model_not_available",
+    "success_rate": 0.0
+  },
+  {
+    "accuracy": 0.0,
+    "available": false,
+    "avg_latency_ms": 0.0,
+    "avg_retries": 0.0,
+    "avg_tool_calls": 0.0,
+    "completed": 0,
+    "model": "granite4.1:3b",
+    "prompts": 120,
+    "skip_reason": "model_not_available",
+    "success_rate": 0.0
+  },
+  {
+    "accuracy": 0.0,
+    "available": false,
+    "avg_latency_ms": 0.0,
+    "avg_retries": 0.0,
+    "avg_tool_calls": 0.0,
+    "completed": 0,
+    "model": "deepseek-r1",
+    "prompts": 120,
+    "skip_reason": "model_not_available",
+    "success_rate": 0.0
+  }
+]

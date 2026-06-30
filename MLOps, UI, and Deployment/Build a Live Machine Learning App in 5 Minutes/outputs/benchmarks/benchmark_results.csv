@@ -1,0 +1,5 @@
+model,prompt_key,runs,successful_runs,mean_latency_ms,p95_latency_ms,mean_tokens_per_sec,mean_memory_mb,quality_score,error
+qwen3.5:2b,medium,3,3,4268.06,4373.53,84.65,0.06,0.0,
+qwen3.5:4b,medium,3,3,9836.91,18241.69,62.03,0.02,0.0,
+granite4.1:3b,medium,3,3,4986.07,6733.19,81.31,0.02,100.0,
+nemotron-3-nano:4b,medium,3,3,6164.73,8494.68,69.78,0.0,100.0,

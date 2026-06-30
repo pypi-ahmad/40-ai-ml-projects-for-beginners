@@ -1,0 +1,6 @@
+{
+  "adapter": "artifacts/exports/train-llama3_8b-qlora-20260627-202220-e0ced22e/adapter.safetensors",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "created_at": "2026-06-27T20:22:20.823945+00:00",
+  "merged_output": "artifacts/exports/train-llama3_8b-qlora-20260627-202220-e0ced22e/merged"
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "screentime_predictor",
+  "version": 7,
+  "registered_at": "2026-06-24T22:23:37.212529",
+  "model_type": "Lasso",
+  "metrics": {
+    "mae": 2.5619654119545525,
+    "mse": 14.583990805616526,
+    "rmse": 3.8188991614883636,
+    "r2": 0.9777426937246675,
+    "mape": 6.741516834843754
+  },
+  "hyperparameters": {
+    "model_name": "Lasso",
+    "source": "core_benchmark"
+  },
+  "feature_names": [
+    "Usage_minutes_rolling_mean_14",
+    "Usage_minutes_rolling_mean_7",
+    "Usage_minutes_rolling_mean_3",
+    "engagement_score",
+    "usage_x_opens",
+    "Times_Opened_rolling_mean_3",
+    "Times_Opened_rolling_mean_14",
+    "Times_Opened_lag_1",
+    "Notifications_rolling_mean_14",
+    "Usage_minutes_lag_1",
+    "Usage_minutes_lag_3",
+    "Notifications_rolling_mean_3",
+    "Times_Opened_rolling_mean_7",
+    "Times_Opened",
+    "Usage_minutes_lag_2"
+  ],
+  "stage": "staging",
+  "mlflow_run_id": null
+}

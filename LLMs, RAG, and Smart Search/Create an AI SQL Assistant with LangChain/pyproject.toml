@@ -1,0 +1,81 @@
+[project]
+name = "ai-sql-assistant"
+version = "0.1.0"
+description = "Production-grade AI SQL analytics assistant using LangChain, Ollama, and SQLite"
+readme = "README.md"
+requires-python = "==3.12.10"
+authors = [{ name = "Ahmad" }]
+dependencies = [
+  "pydantic>=2.9.2,<3.0.0",
+  "pydantic-settings>=2.4.0,<3.0.0",
+  "loguru>=0.7.2,<1.0.0",
+  "python-dotenv>=1.0.1,<2.0.0",
+  "pandas>=2.2.2,<3.0.0",
+  "numpy>=2.1.1,<3.0.0",
+  "sqlglot>=25.24.2,<26.0.0",
+  "sqlparse>=0.5.1,<1.0.0",
+  "pyyaml>=6.0.2,<7.0.0",
+  "typer>=0.12.5,<1.0.0",
+  "rich>=13.8.0,<14.0.0",
+  "streamlit>=1.38.0,<2.0.0",
+  "plotly>=5.24.1,<6.0.0",
+  "matplotlib>=3.9.2,<4.0.0",
+  "seaborn>=0.13.2,<1.0.0",
+  "networkx>=3.3,<4.0.0",
+  "openpyxl>=3.1.5,<4.0.0",
+  "httpx>=0.27.2,<1.0.0",
+  "langchain>=0.3.0,<0.4.0",
+  "langchain-community>=0.3.0,<0.4.0",
+  "langchain-ollama>=0.2.0,<0.3.0",
+  "tabulate>=0.9.0,<1.0.0",
+  "orjson>=3.10.7,<4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.2,<9.0.0",
+  "pytest-cov>=5.0.0,<6.0.0",
+  "pytest-mock>=3.14.0,<4.0.0",
+  "jupyter>=1.1.1,<2.0.0",
+]
+
+[project.scripts]
+ai-sql-assistant = "ai_sql_assistant.cli:app"
+
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_sql_assistant", "streamlit_app"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/streamlit_app",
+  "/scripts",
+  "/tests",
+  "/configs",
+  "/benchmarks",
+  "/README.md",
+  "/pyproject.toml",
+  "/.env.example",
+]
+exclude = [
+  "/.venv",
+  "/.uv-cache",
+  "/artifacts",
+  "/data",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["ai_sql_assistant"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

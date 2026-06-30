@@ -1,0 +1,2 @@
+method: prompt_tuning
+num_virtual_tokens: 20

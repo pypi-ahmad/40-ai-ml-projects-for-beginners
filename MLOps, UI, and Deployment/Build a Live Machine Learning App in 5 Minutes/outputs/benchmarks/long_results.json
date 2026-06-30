@@ -1,0 +1,50 @@
+[
+  {
+    "model": "qwen3.5:2b",
+    "prompt_key": "long",
+    "runs": 3,
+    "successful_runs": 3,
+    "mean_latency_ms": 4480.56,
+    "p95_latency_ms": 4572.87,
+    "mean_tokens_per_sec": 79.61,
+    "mean_memory_mb": 0.0,
+    "quality_score": 0.0,
+    "error": null
+  },
+  {
+    "model": "qwen3.5:4b",
+    "prompt_key": "long",
+    "runs": 3,
+    "successful_runs": 3,
+    "mean_latency_ms": 6062.89,
+    "p95_latency_ms": 6098.62,
+    "mean_tokens_per_sec": 57.54,
+    "mean_memory_mb": 0.0,
+    "quality_score": 0.0,
+    "error": null
+  },
+  {
+    "model": "granite4.1:3b",
+    "prompt_key": "long",
+    "runs": 3,
+    "successful_runs": 3,
+    "mean_latency_ms": 5298.83,
+    "p95_latency_ms": 7483.18,
+    "mean_tokens_per_sec": 78.85,
+    "mean_memory_mb": 0.0,
+    "quality_score": 100.0,
+    "error": null
+  },
+  {
+    "model": "nemotron-3-nano:4b",
+    "prompt_key": "long",
+    "runs": 3,
+    "successful_runs": 3,
+    "mean_latency_ms": 7582.73,
+    "p95_latency_ms": 13386.62,
+    "mean_tokens_per_sec": 73.46,
+    "mean_memory_mb": 0.0,
+    "quality_score": 100.0,
+    "error": null
+  }
+]

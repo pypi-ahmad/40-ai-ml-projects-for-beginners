@@ -1,0 +1,10 @@
+{
+  "artifact": "notebook05_iris_model.pkl",
+  "created_at": "2026-06-24T22:23:42.047718+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".pkl"
+  },
+  "sha256": "a61eb96697b7a46d984a1c95b27a72fcd5c124916e6b5d89f0630ad2a707591b",
+  "size_bytes": 387937
+}

@@ -1,0 +1,6 @@
+name: financial_phrasebank
+source: hf
+split: train
+task_type: classification
+text_field: sentence
+label_field: label

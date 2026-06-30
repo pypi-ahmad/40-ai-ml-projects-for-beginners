@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.uv_cache/
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/metrics/*
+!outputs/metrics/.gitkeep
+.DS_Store

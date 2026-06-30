@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.pytest_cache/
+.ruff_cache/
+logs.log
+catboost_info/
+notebooks/catboost_info/
+notebooks/logs.log
+
+# Notebook output / checkpoints
+.ipynb_checkpoints/
+*_executed.ipynb
+
+# ML artifacts
+*.pkl
+*.joblib
+*.h5
+mlruns/
+wandb/
+outputs/metrics/*
+!outputs/metrics/benchmark_summary.csv
+!outputs/metrics/benchmark_summary.json
+outputs/models/
+outputs/executed_notebooks/
+outputs/figures/
+outputs/pipeline_config.json
+outputs/selected_features.csv
+outputs/production_model.pkl
+data/synthetic/
+data/real/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

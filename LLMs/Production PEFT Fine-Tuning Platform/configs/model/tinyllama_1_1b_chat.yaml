@@ -1,0 +1,4 @@
+name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+family: TinyLlama
+template: llama
+deep_run: true

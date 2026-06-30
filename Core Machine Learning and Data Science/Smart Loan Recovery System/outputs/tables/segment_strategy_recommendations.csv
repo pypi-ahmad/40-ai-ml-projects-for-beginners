@@ -1,0 +1,4 @@
+segment,borrowers,avg_risk_score,avg_recovery_probability,total_outstanding,dominant_strategy
+0,495,0.455523799121305,0.6568450919155958,10190808,Automated reminders via SMS/email and self-service portal nudges
+2,4,0.4048384770249748,0.7428040524402099,456,Automated reminders via SMS/email and self-service portal nudges
+1,1,0.3504635847026168,0.7937397842181964,66,Automated reminders via SMS/email and self-service portal nudges

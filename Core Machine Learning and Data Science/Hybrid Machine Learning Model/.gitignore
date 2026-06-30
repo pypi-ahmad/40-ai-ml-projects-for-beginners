@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.ruff_cache/
+.ipynb_checkpoints/
+outputs/
+logs.log
+*.csv
+*.xlsx
+*.pkl
+*.joblib
+*.pt
+*.png
+*.jpg

@@ -1,0 +1,22 @@
+{
+  "estimator_name": "xgboost",
+  "best_config": {
+    "n_estimators": 12,
+    "max_leaves": 6,
+    "min_child_weight": 0.8418088333770871,
+    "learning_rate": 0.24981692639463174,
+    "subsample": 0.9401016835352298,
+    "colsample_bylevel": 1.0,
+    "colsample_bytree": 0.7711356629328402,
+    "reg_alpha": 0.0009765625,
+    "reg_lambda": 0.01186840559867532
+  },
+  "best_loss": 0.6192160330091363,
+  "metrics": {
+    "accuracy": 0.45,
+    "precision_weighted": 0.429,
+    "recall_weighted": 0.45,
+    "f1_weighted": 0.4292,
+    "roc_auc_ovr": 0.5068
+  }
+}

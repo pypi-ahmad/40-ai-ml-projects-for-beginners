@@ -1,0 +1,442 @@
+{
+  "created_at": "2026-06-24T22:25:00.192189",
+  "metrics": {
+    "mae": 4.902624441132636,
+    "mse": 47.07794531106892,
+    "rmse": 6.861336991510395,
+    "r2": 0.9281033987854559,
+    "mape": 11.917477711728736
+  },
+  "drift_report": {
+    "drift_detected": true,
+    "drifted_columns": [
+      "Usage (minutes)",
+      "Notifications",
+      "Times Opened",
+      "Synthetic",
+      "day",
+      "week",
+      "month",
+      "day_of_week",
+      "is_month_end",
+      "Usage (minutes)_lag_1",
+      "Usage (minutes)_lag_2",
+      "Usage (minutes)_lag_3",
+      "Usage (minutes)_lag_7",
+      "Notifications_lag_1",
+      "Notifications_lag_2",
+      "Notifications_lag_3",
+      "Notifications_lag_14",
+      "Times Opened_lag_1",
+      "Times Opened_lag_2",
+      "Times Opened_lag_3",
+      "Times Opened_lag_7",
+      "Times Opened_lag_14",
+      "Usage (minutes)_rolling_mean_3",
+      "Usage (minutes)_rolling_std_3",
+      "Usage (minutes)_rolling_mean_7",
+      "Usage (minutes)_rolling_std_7",
+      "Usage (minutes)_rolling_mean_14",
+      "Usage (minutes)_rolling_std_14",
+      "Notifications_rolling_mean_3",
+      "Notifications_rolling_std_3",
+      "Notifications_rolling_mean_7",
+      "Notifications_rolling_std_7",
+      "Notifications_rolling_mean_14",
+      "Notifications_rolling_std_14",
+      "Times Opened_rolling_mean_3",
+      "Times Opened_rolling_std_3",
+      "Times Opened_rolling_mean_7",
+      "Times Opened_rolling_std_7",
+      "Times Opened_rolling_mean_14",
+      "Times Opened_rolling_std_14",
+      "notifications_per_usage_minute",
+      "open_frequency",
+      "engagement_score",
+      "notifications_x_opens",
+      "usage_x_opens"
+    ],
+    "feature_report": {
+      "Usage (minutes)": {
+        "psi": 0.847458,
+        "psi_drift": true,
+        "ks_stat": 0.139869,
+        "ks_pvalue": 0.145149,
+        "ks_drift": false
+      },
+      "Notifications": {
+        "psi": 0.653261,
+        "psi_drift": true,
+        "ks_stat": 0.080189,
+        "ks_pvalue": 0.76668,
+        "ks_drift": false
+      },
+      "Times Opened": {
+        "psi": 0.707737,
+        "psi_drift": true,
+        "ks_stat": 0.107465,
+        "ks_pvalue": 0.413934,
+        "ks_drift": false
+      },
+      "Synthetic": {
+        "psi": 15.687648,
+        "psi_drift": true,
+        "ks_stat": 0.943396,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "day": {
+        "psi": 8.25911,
+        "psi_drift": true,
+        "ks_stat": 0.646226,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "week": {
+        "psi": 21.678765,
+        "psi_drift": true,
+        "ks_stat": 0.956522,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "month": {
+        "psi": 17.431519,
+        "psi_drift": true,
+        "ks_stat": 0.981132,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "quarter": {
+        "psi": 0.0,
+        "psi_drift": false,
+        "ks_stat": 0.0,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "year": {
+        "psi": 0.0,
+        "psi_drift": false,
+        "ks_stat": 0.0,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "day_of_week": {
+        "psi": 0.211621,
+        "psi_drift": true,
+        "ks_stat": 0.172067,
+        "ks_pvalue": 0.038733,
+        "ks_drift": true
+      },
+      "is_weekend": {
+        "psi": 0.045742,
+        "psi_drift": false,
+        "ks_stat": 0.093929,
+        "ks_pvalue": 0.583044,
+        "ks_drift": false
+      },
+      "is_month_start": {
+        "psi": 0.009968,
+        "psi_drift": false,
+        "ks_stat": 0.022559,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "is_month_end": {
+        "psi": 0.399115,
+        "psi_drift": true,
+        "ks_stat": 0.037736,
+        "ks_pvalue": 0.999936,
+        "ks_drift": false
+      },
+      "is_holiday": {
+        "psi": 0.0,
+        "psi_drift": false,
+        "ks_stat": 0.0,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_1": {
+        "psi": 0.887236,
+        "psi_drift": true,
+        "ks_stat": 0.145141,
+        "ks_pvalue": 0.122917,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_2": {
+        "psi": 0.921594,
+        "psi_drift": true,
+        "ks_stat": 0.134871,
+        "ks_pvalue": 0.183637,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_3": {
+        "psi": 0.990625,
+        "psi_drift": true,
+        "ks_stat": 0.108464,
+        "ks_pvalue": 0.423978,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_7": {
+        "psi": 0.420631,
+        "psi_drift": true,
+        "ks_stat": 0.104515,
+        "ks_pvalue": 0.510751,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_14": {
+        "psi": 0.144973,
+        "psi_drift": false,
+        "ks_stat": 0.063043,
+        "ks_pvalue": 0.982085,
+        "ks_drift": false
+      },
+      "Notifications_lag_1": {
+        "psi": 0.675197,
+        "psi_drift": true,
+        "ks_stat": 0.083333,
+        "ks_pvalue": 0.731762,
+        "ks_drift": false
+      },
+      "Notifications_lag_2": {
+        "psi": 1.534738,
+        "psi_drift": true,
+        "ks_stat": 0.086735,
+        "ks_pvalue": 0.693015,
+        "ks_drift": false
+      },
+      "Notifications_lag_3": {
+        "psi": 0.361298,
+        "psi_drift": true,
+        "ks_stat": 0.074237,
+        "ks_pvalue": 0.851738,
+        "ks_drift": false
+      },
+      "Notifications_lag_7": {
+        "psi": 0.12558,
+        "psi_drift": false,
+        "ks_stat": 0.056577,
+        "ks_pvalue": 0.985819,
+        "ks_drift": false
+      },
+      "Notifications_lag_14": {
+        "psi": 0.466107,
+        "psi_drift": true,
+        "ks_stat": 0.080435,
+        "ks_pvalue": 0.882287,
+        "ks_drift": false
+      },
+      "Times Opened_lag_1": {
+        "psi": 0.76133,
+        "psi_drift": true,
+        "ks_stat": 0.124254,
+        "ks_pvalue": 0.255144,
+        "ks_drift": false
+      },
+      "Times Opened_lag_2": {
+        "psi": 0.734166,
+        "psi_drift": true,
+        "ks_stat": 0.114685,
+        "ks_pvalue": 0.349606,
+        "ks_drift": false
+      },
+      "Times Opened_lag_3": {
+        "psi": 0.736231,
+        "psi_drift": true,
+        "ks_stat": 0.121415,
+        "ks_pvalue": 0.292153,
+        "ks_drift": false
+      },
+      "Times Opened_lag_7": {
+        "psi": 0.875207,
+        "psi_drift": true,
+        "ks_stat": 0.113712,
+        "ks_pvalue": 0.405526,
+        "ks_drift": false
+      },
+      "Times Opened_lag_14": {
+        "psi": 0.202305,
+        "psi_drift": true,
+        "ks_stat": 0.088696,
+        "ks_pvalue": 0.802364,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_mean_3": {
+        "psi": 0.928515,
+        "psi_drift": true,
+        "ks_stat": 0.11813,
+        "ks_pvalue": 0.302966,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_3": {
+        "psi": 4.162563,
+        "psi_drift": true,
+        "ks_stat": 0.569267,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Usage (minutes)_rolling_mean_7": {
+        "psi": 0.315693,
+        "psi_drift": true,
+        "ks_stat": 0.102133,
+        "ks_pvalue": 0.477342,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_7": {
+        "psi": 4.147493,
+        "psi_drift": true,
+        "ks_stat": 0.579071,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Usage (minutes)_rolling_mean_14": {
+        "psi": 0.564234,
+        "psi_drift": true,
+        "ks_stat": 0.13146,
+        "ks_pvalue": 0.195866,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_14": {
+        "psi": 2.101012,
+        "psi_drift": true,
+        "ks_stat": 0.35422,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Notifications_rolling_mean_3": {
+        "psi": 1.141991,
+        "psi_drift": true,
+        "ks_stat": 0.077112,
+        "ks_pvalue": 0.805446,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_3": {
+        "psi": 2.899168,
+        "psi_drift": true,
+        "ks_stat": 0.380435,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Notifications_rolling_mean_7": {
+        "psi": 0.800495,
+        "psi_drift": true,
+        "ks_stat": 0.091263,
+        "ks_pvalue": 0.618959,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_7": {
+        "psi": 3.219582,
+        "psi_drift": true,
+        "ks_stat": 0.411338,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Notifications_rolling_mean_14": {
+        "psi": 0.865397,
+        "psi_drift": true,
+        "ks_stat": 0.102133,
+        "ks_pvalue": 0.477342,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_14": {
+        "psi": 2.116014,
+        "psi_drift": true,
+        "ks_stat": 0.318414,
+        "ks_pvalue": 3e-06,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_3": {
+        "psi": 1.651532,
+        "psi_drift": true,
+        "ks_stat": 0.087982,
+        "ks_pvalue": 0.663356,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_3": {
+        "psi": 2.963023,
+        "psi_drift": true,
+        "ks_stat": 0.587383,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_7": {
+        "psi": 0.793801,
+        "psi_drift": true,
+        "ks_stat": 0.091263,
+        "ks_pvalue": 0.618959,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_7": {
+        "psi": 2.306922,
+        "psi_drift": true,
+        "ks_stat": 0.44075,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_14": {
+        "psi": 1.209649,
+        "psi_drift": true,
+        "ks_stat": 0.117925,
+        "ks_pvalue": 0.304856,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_14": {
+        "psi": 1.454695,
+        "psi_drift": true,
+        "ks_stat": 0.249147,
+        "ks_pvalue": 0.000587,
+        "ks_drift": true
+      },
+      "notifications_per_usage_minute": {
+        "psi": 0.949295,
+        "psi_drift": true,
+        "ks_stat": 0.121411,
+        "ks_pvalue": 0.273399,
+        "ks_drift": false
+      },
+      "open_frequency": {
+        "psi": 0.613436,
+        "psi_drift": true,
+        "ks_stat": 0.172683,
+        "ks_pvalue": 0.03767,
+        "ks_drift": true
+      },
+      "engagement_score": {
+        "psi": 1.063511,
+        "psi_drift": true,
+        "ks_stat": 0.151148,
+        "ks_pvalue": 0.094272,
+        "ks_drift": false
+      },
+      "notifications_x_opens": {
+        "psi": 0.872334,
+        "psi_drift": true,
+        "ks_stat": 0.097621,
+        "ks_pvalue": 0.53453,
+        "ks_drift": false
+      },
+      "usage_x_opens": {
+        "psi": 1.497835,
+        "psi_drift": true,
+        "ks_stat": 0.163659,
+        "ks_pvalue": 0.056145,
+        "ks_drift": false
+      }
+    }
+  },
+  "runtime_report": {
+    "task_runtime_seconds": {
+      "feature_selection": 11.553,
+      "benchmark_training": 3.4346,
+      "evaluation_registry": 0.3859
+    },
+    "total_runtime_seconds": 15.373500000000002,
+    "slowest_task": "feature_selection",
+    "slowest_task_seconds": 11.553
+  },
+  "alerts": [
+    {
+      "severity": "critical",
+      "message": "Feature drift detected: ['Usage (minutes)', 'Notifications', 'Times Opened', 'Synthetic', 'day', 'week', 'month', 'day_of_week', 'is_month_end', 'Usage (minutes)_lag_1', 'Usage (minutes)_lag_2', 'Usage (minutes)_lag_3', 'Usage (minutes)_lag_7', 'Notifications_lag_1', 'Notifications_lag_2', 'Notifications_lag_3', 'Notifications_lag_14', 'Times Opened_lag_1', 'Times Opened_lag_2', 'Times Opened_lag_3', 'Times Opened_lag_7', 'Times Opened_lag_14', 'Usage (minutes)_rolling_mean_3', 'Usage (minutes)_rolling_std_3', 'Usage (minutes)_rolling_mean_7', 'Usage (minutes)_rolling_std_7', 'Usage (minutes)_rolling_mean_14', 'Usage (minutes)_rolling_std_14', 'Notifications_rolling_mean_3', 'Notifications_rolling_std_3', 'Notifications_rolling_mean_7', 'Notifications_rolling_std_7', 'Notifications_rolling_mean_14', 'Notifications_rolling_std_14', 'Times Opened_rolling_mean_3', 'Times Opened_rolling_std_3', 'Times Opened_rolling_mean_7', 'Times Opened_rolling_std_7', 'Times Opened_rolling_mean_14', 'Times Opened_rolling_std_14', 'notifications_per_usage_minute', 'open_frequency', 'engagement_score', 'notifications_x_opens', 'usage_x_opens']"
+    }
+  ]
+}

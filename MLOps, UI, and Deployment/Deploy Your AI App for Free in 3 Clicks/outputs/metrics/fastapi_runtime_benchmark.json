@@ -1,0 +1,180 @@
+{
+  "startup_ms": 1.844,
+  "single_predict_ms": 7.889,
+  "batch_predict_ms": 8.373,
+  "batch_size": 32,
+  "batch_rows_per_second": 3821.784,
+  "single_prediction": {
+    "prediction": 640051.9291,
+    "model_name": "elasticnet",
+    "model_version": "v1",
+    "latency_ms": 7.843,
+    "request_id": "benchmark-request"
+  },
+  "batch_prediction": {
+    "count": 32,
+    "predictions": [
+      {
+        "index": 0,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 1,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 2,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 3,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 4,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 5,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 6,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 7,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 8,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 9,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 10,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 11,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 12,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 13,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 14,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 15,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 16,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 17,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 18,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 19,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 20,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 21,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 22,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 23,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 24,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 25,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 26,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 27,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 28,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 29,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 30,
+        "prediction": 640051.9291
+      },
+      {
+        "index": 31,
+        "prediction": 640051.9291
+      }
+    ],
+    "latency_ms": 8.332,
+    "throughput_rows_per_sec": 3840.614,
+    "request_id": "benchmark-request"
+  },
+  "metrics_snapshot": {
+    "uptime_seconds": 0.035,
+    "request_counts": {
+      "/predict": 1,
+      "/predict-batch": 1
+    },
+    "status_counts": {
+      "200": 2
+    },
+    "latency_ms": {
+      "count": 2.0,
+      "avg": 8.131,
+      "p50": 8.131,
+      "p95": 8.349
+    },
+    "route_latency_ms": {
+      "/predict": {
+        "count": 1.0,
+        "avg_ms": 7.889,
+        "p95_ms": 7.889
+      },
+      "/predict-batch": {
+        "count": 1.0,
+        "avg_ms": 8.373,
+        "p95_ms": 8.373
+      }
+    },
+    "model_name": "elasticnet",
+    "model_version": "v1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "json": "outputs/benchmarks/benchmark_results.json",
+  "csv": "outputs/benchmarks/benchmark_results.csv",
+  "figures": {
+    "latency": "outputs/figures/latency_comparison.png",
+    "throughput": "outputs/figures/throughput_comparison.png",
+    "memory": "outputs/figures/memory_usage_comparison.png",
+    "radar": "outputs/figures/model_radar.png",
+    "workflow": "outputs/figures/ml_app_architecture.png",
+    "prompt_scale": "outputs/figures/prompt_scale_comparison.png"
+  }
+}

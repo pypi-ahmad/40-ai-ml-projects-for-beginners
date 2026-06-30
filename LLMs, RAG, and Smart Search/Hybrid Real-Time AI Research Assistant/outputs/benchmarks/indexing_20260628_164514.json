@@ -1,0 +1,10 @@
+{
+  "embedded_chunks": 4,
+  "embedding_ms": 236.6505529935239,
+  "indexing_ms": 381.7686499969568,
+  "mode": "full_rebuild",
+  "removed_documents": 0,
+  "total_chunks": 4,
+  "total_documents": 4,
+  "vector_count": 4
+}

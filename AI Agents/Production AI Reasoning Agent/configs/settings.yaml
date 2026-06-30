@@ -1,0 +1,50 @@
+llm:
+  base_url: "http://127.0.0.1:11434"
+  primary_model: "qwen3:8b"
+  benchmark_models:
+    - "qwen3:8b"
+    - "llama3.1:8b"
+    - "granite4.1:3b"
+    - "deepseek-r1"
+  llm_judge_model: "granite4.1:3b"
+  temperature: 0.2
+  max_tokens: 1024
+  request_timeout_seconds: 120
+  auto_pull_missing_models: true
+
+retries:
+  max_retries: 2
+  backoff_seconds: 1.5
+
+memory:
+  chroma_enabled: true
+  chroma_path: "artifacts/chroma"
+  memory_top_k: 5
+  conversation_window: 20
+
+tools:
+  enabled_tools:
+    - "*"
+  optional_tools: []
+  enable_python_tool: false
+  python_timeout_seconds: 5
+  python_memory_limit_mb: 128
+  workspace_root: "."
+
+agent:
+  max_iterations: 10
+  graph_timeout_seconds: 30
+  runtime_mode: "fallback"
+  graph_fallback_on_error: true
+  reasoning_mode: "react"
+  use_llm_for_planning: true
+  use_llm_for_response: true
+
+logging:
+  level: "INFO"
+  json_logs: true
+  run_log_path: "logs/agent_runs.jsonl"
+
+ui:
+  title: "Production AI Reasoning Agent"
+  dark_mode_default: true

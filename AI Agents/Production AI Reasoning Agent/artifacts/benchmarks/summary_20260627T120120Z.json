@@ -1,0 +1,42 @@
+[
+  {
+    "model": "qwen3:8b",
+    "total_prompts": 120,
+    "success_rate": 1.0,
+    "avg_latency_ms": 6.222815866688809,
+    "avg_tool_calls": 0.75,
+    "avg_keyword_score": 0.375,
+    "avg_tool_selection_score": 0.5625,
+    "avg_judge_score": 0.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "total_prompts": 120,
+    "success_rate": 1.0,
+    "avg_latency_ms": 6.24553149999277,
+    "avg_tool_calls": 0.75,
+    "avg_keyword_score": 0.375,
+    "avg_tool_selection_score": 0.5625,
+    "avg_judge_score": 0.0
+  },
+  {
+    "model": "granite4.1:3b",
+    "total_prompts": 120,
+    "success_rate": 1.0,
+    "avg_latency_ms": 6.223101208289942,
+    "avg_tool_calls": 0.75,
+    "avg_keyword_score": 0.375,
+    "avg_tool_selection_score": 0.5625,
+    "avg_judge_score": 0.0
+  },
+  {
+    "model": "deepseek-r1",
+    "total_prompts": 120,
+    "success_rate": 1.0,
+    "avg_latency_ms": 6.204708741643117,
+    "avg_tool_calls": 0.75,
+    "avg_keyword_score": 0.375,
+    "avg_tool_selection_score": 0.5625,
+    "avg_judge_score": 0.0
+  }
+]

@@ -1,0 +1,15 @@
+flowchart TD
+  A[User Question] --> B[Intent Detection]
+  B --> C{Router}
+  C -->|Local| D[Local Retrieve]
+  C -->|Web| E[Web Retrieve]
+  C -->|Hybrid| F[Hybrid Retrieve]
+  D --> G[Rerank]
+  E --> G
+  F --> G
+  G --> H[Context Builder]
+  H --> I[Generation]
+  I --> J[Judge]
+  J --> K[Response]
+  I --> L[Error Recovery]
+  L --> K

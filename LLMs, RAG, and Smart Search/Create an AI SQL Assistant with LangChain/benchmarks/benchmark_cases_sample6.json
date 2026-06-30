@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "B001",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B002",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2021.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2021'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B003",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2022.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2022'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B004",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2023.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2023'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B005",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for Europe in 2024.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'Europe'\n              AND strftime('%Y', o.order_date) = '2024'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  },
+  {
+    "case_id": "B006",
+    "category": "trend_analysis",
+    "question": "Show monthly net revenue for North America in 2020.",
+    "ground_truth_sql": "SELECT\n                strftime('%Y-%m', o.order_date) AS month,\n                ROUND(SUM(od.quantity * od.unit_price * (1 - od.discount)), 2) AS revenue\n            FROM orders o\n            JOIN order_details od ON o.order_id = od.order_id\n            WHERE o.market = 'North America'\n              AND strftime('%Y', o.order_date) = '2020'\n            GROUP BY strftime('%Y-%m', o.order_date)\n            ORDER BY month;",
+    "tags": [
+      "trend",
+      "revenue",
+      "group_by",
+      "date"
+    ]
+  }
+]

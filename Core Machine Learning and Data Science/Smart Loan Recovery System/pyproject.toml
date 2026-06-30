@@ -1,0 +1,31 @@
+[project]
+name = "smart-loan-recovery"
+version = "0.2.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "scikit-learn>=1.5",
+    "xgboost>=2.1",
+    "shap>=0.46",
+    "numba>=0.60",
+    "llvmlite>=0.44",
+    "plotly>=5.24",
+    "streamlit>=1.58",
+    "joblib>=1.4",
+    "lazypredict>=0.2.12",
+    "flaml>=2.6",
+    "pycaret>=4.0.0a8",
+    "lightgbm>=4.5",
+    "catboost>=1.2",
+
+    "ipykernel>=6.29",
+    "jupyter>=1.0",
+    "nbformat>=5.10",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"

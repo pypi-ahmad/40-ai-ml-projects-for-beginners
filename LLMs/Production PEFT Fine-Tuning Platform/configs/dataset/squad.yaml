@@ -1,0 +1,7 @@
+name: rajpurkar/squad
+source: hf
+split: train
+task_type: qa
+text_field: question
+context_field: context
+output_field: answers

@@ -1,0 +1,10 @@
+{
+  "artifact": "iris_model_benchmark.joblib",
+  "created_at": "2026-06-24T22:23:07.615161+00:00",
+  "metadata": {
+    "benchmark": "serialization",
+    "format": ".joblib"
+  },
+  "sha256": "60c2efc8b3f476409cc900328b4c5f2e60e3823cabcfa883f198e2989a7f5850",
+  "size_bytes": 11334
+}

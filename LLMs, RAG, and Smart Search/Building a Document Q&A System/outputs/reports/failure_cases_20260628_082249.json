@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "answer": "Based on the provided context, specific changes between CIFS/SMB encryption policy versions involve shifting from \"may use\" to \"must use\" for various security protocols via bit flags (e.g., 0x00001 vs. 0x01001). The document lists these transitions as follows:\n\n*   **Packet Signing**: Changed from *may use* (`0x00001`) to *must use* (`0x01001`).\n*   **NTLM Authentication**: Changed from *may use NTLM* (`0x00002`) to *must use NTLM* (`0x02002`).\n*   **NTLMv2 Authentication**: Changed from *may use NTLMv2* (`0x00004`) to *must use NTLMv2* (`0x04004`).\n*   **Kerberos Security**: Changed from *may use Kerberos security* (`0x00008`) to *must use Kerberos* (`0x08008`).\n*   **LANMAN Password Hash**: Changed from *may use lanman (weak) password hash* (`0x00010`) to *must use lanman password hash* (`0x10010`).\n*   **Plaintext Passwords**: Changed from *may use plaintext passwords* (`0x00020`) to *must use plaintext passwords* (`0x20020`).\n\nThe context does not specify the exact version numbers or dates of these changes, only that such mandatory requirements exist in later versions compared to earlier ones.",
+      "citation_count": 1,
+      "description": "Low top-k and strict mode can miss cross-document context.",
+      "name": "poor_chunking_low_context",
+      "retrieval_strategy": "vector",
+      "top_score": 0.5668296813964844
+    },
+    {
+      "answer": "Based on the provided context, no single policy explicitly mentions **data retention** and **encryption** together within a unified definition or control description. The available documents address these concepts separately:\n\n*   **Encryption/Flow Control:** Chunk 1 details controls related to encrypted information flow (e.g., AC-4(4) Flow Control of Encrypted Information), but does not link this to retention [source_path#chunk_id].\n*   **Retention:** Chunks 3 and 4 describe the SI-12 control for \"Information Management and Retention,\" which covers managing data throughout its lifecycle according to laws, but it does not explicitly combine this with encryption requirements in the provided text [source_path#chunk_id][source_path#chunk_id].\n\nTherefore, a specific policy combining both concepts is **not mentioned** in the provided context.",
+      "citation_count": 5,
+      "description": "Template mismatch can reduce citation quality for policy questions.",
+      "name": "bad_prompt_template",
+      "retrieval_strategy": "vector",
+      "top_score": 0.580937385559082
+    },
+    {
+      "answer": "Based on the provided context, there is no specific clause defining a \"password expiration\" policy or setting an explicit expiry date for passwords. The document describes fields related to password change intervals (`passwordChangeMinUSec`, `passwordChangeMaxUSec`) and account locking/deactivation times following inactivity (`passwordChangeInactiveUSec`), but it does not contain a rule stating when the password itself expires [source_path#chunk_id].\n\nInformation unavailable in provided context.",
+      "citation_count": 3,
+      "description": "Dense-only retrieval may miss exact keyword clauses.",
+      "name": "wrong_retrieval_strategy",
+      "retrieval_strategy": "vector",
+      "top_score": 0.6400931477546692
+    },
+    {
+      "answer": "Based on the provided context, no single clause explicitly named \"password expiration\" exists; however, password expiration logic is defined by several related fields that control account validity and deactivation times. The relevant clauses are detailed below:\n\n*   **`notAfterUSec`**: Indicates a specific point in time after which logins shall not be permitted anymore [source_path#chunk_id].\n*   **`passwordChangeInactiveUSec`**: Encodes the amount of time that must pass *after* the password has expired before the account is deactivated (corresponding to `sp_inact`) [source_path#chunk_id].\n*   **`locked`** and **`notBeforeUSec`**: These fields relate to locking accounts or invalidating records for login purposes, which are functionally linked to expiration states in `/etc/shadow` structures [source_path#chunk_id][source_path#chunk_id].\n\nWhile the context defines these parameters precisely, it does not contain a unified clause titled \"password expiration.\"",
+      "citation_count": 5,
+      "description": "Hybrid retrieval recovers lexical clause and improves grounding.",
+      "name": "improved_hybrid_retrieval",
+      "retrieval_strategy": "hybrid",
+      "top_score": 0.01521139705882353
+    }
+  ]
+}

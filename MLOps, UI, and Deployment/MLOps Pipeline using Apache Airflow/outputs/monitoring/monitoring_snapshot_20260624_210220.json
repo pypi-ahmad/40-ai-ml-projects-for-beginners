@@ -1,0 +1,410 @@
+{
+  "created_at": "2026-06-24T21:02:20.464482",
+  "metrics": {
+    "mae": 8.2,
+    "rmse": 12.6,
+    "r2": 0.81,
+    "mape": 18.4
+  },
+  "drift_report": {
+    "drift_detected": true,
+    "drifted_columns": [
+      "Synthetic",
+      "week",
+      "month",
+      "quarter",
+      "year",
+      "Usage (minutes)_rolling_std_3",
+      "Usage (minutes)_rolling_std_7",
+      "Usage (minutes)_rolling_std_14",
+      "Notifications_rolling_std_7",
+      "Notifications_rolling_std_14",
+      "Times Opened_rolling_std_3",
+      "Times Opened_rolling_std_7",
+      "Times Opened_rolling_std_14"
+    ],
+    "feature_report": {
+      "Usage (minutes)": {
+        "psi": 0.048512,
+        "psi_drift": false,
+        "ks_stat": 0.021978,
+        "ks_pvalue": 0.902979,
+        "ks_drift": false
+      },
+      "Notifications": {
+        "psi": 0.02914,
+        "psi_drift": false,
+        "ks_stat": 0.017247,
+        "ks_pvalue": 0.988201,
+        "ks_drift": false
+      },
+      "Times Opened": {
+        "psi": 0.01142,
+        "psi_drift": false,
+        "ks_stat": 0.014347,
+        "ks_pvalue": 0.999047,
+        "ks_drift": false
+      },
+      "Synthetic": {
+        "psi": 1.055021,
+        "psi_drift": true,
+        "ks_stat": 0.091575,
+        "ks_pvalue": 3.1e-05,
+        "ks_drift": true
+      },
+      "day": {
+        "psi": 0.017623,
+        "psi_drift": false,
+        "ks_stat": 0.052198,
+        "ks_pvalue": 0.054449,
+        "ks_drift": false
+      },
+      "week": {
+        "psi": 14.598113,
+        "psi_drift": true,
+        "ks_stat": 0.461538,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "month": {
+        "psi": 17.771936,
+        "psi_drift": true,
+        "ks_stat": 0.446886,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "quarter": {
+        "psi": 9.23456,
+        "psi_drift": true,
+        "ks_stat": 0.336996,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "year": {
+        "psi": 7.581278,
+        "psi_drift": true,
+        "ks_stat": 0.542125,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "day_of_week": {
+        "psi": 0.001559,
+        "psi_drift": false,
+        "ks_stat": 0.010226,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "is_weekend": {
+        "psi": 0.000202,
+        "psi_drift": false,
+        "ks_stat": 0.00641,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "is_month_start": {
+        "psi": 0.004686,
+        "psi_drift": false,
+        "ks_stat": 0.011905,
+        "ks_pvalue": 0.999977,
+        "ks_drift": false
+      },
+      "is_month_end": {
+        "psi": 0.001896,
+        "psi_drift": false,
+        "ks_stat": 0.007326,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "is_holiday": {
+        "psi": 0.0,
+        "psi_drift": false,
+        "ks_stat": 0.0,
+        "ks_pvalue": 1.0,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_1": {
+        "psi": 0.047646,
+        "psi_drift": false,
+        "ks_stat": 0.019078,
+        "ks_pvalue": 0.967467,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_2": {
+        "psi": 0.048015,
+        "psi_drift": false,
+        "ks_stat": 0.019841,
+        "ks_pvalue": 0.954388,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_3": {
+        "psi": 0.047896,
+        "psi_drift": false,
+        "ks_stat": 0.019078,
+        "ks_pvalue": 0.967467,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_7": {
+        "psi": 0.046333,
+        "psi_drift": false,
+        "ks_stat": 0.025946,
+        "ks_pvalue": 0.760161,
+        "ks_drift": false
+      },
+      "Usage (minutes)_lag_14": {
+        "psi": 0.05397,
+        "psi_drift": false,
+        "ks_stat": 0.039683,
+        "ks_pvalue": 0.247321,
+        "ks_drift": false
+      },
+      "Notifications_lag_1": {
+        "psi": 0.029552,
+        "psi_drift": false,
+        "ks_stat": 0.014805,
+        "ks_pvalue": 0.998427,
+        "ks_drift": false
+      },
+      "Notifications_lag_2": {
+        "psi": 0.028819,
+        "psi_drift": false,
+        "ks_stat": 0.014957,
+        "ks_pvalue": 0.99816,
+        "ks_drift": false
+      },
+      "Notifications_lag_3": {
+        "psi": 0.02896,
+        "psi_drift": false,
+        "ks_stat": 0.016789,
+        "ks_pvalue": 0.991343,
+        "ks_drift": false
+      },
+      "Notifications_lag_7": {
+        "psi": 0.027707,
+        "psi_drift": false,
+        "ks_stat": 0.023199,
+        "ks_pvalue": 0.864517,
+        "ks_drift": false
+      },
+      "Notifications_lag_14": {
+        "psi": 0.030775,
+        "psi_drift": false,
+        "ks_stat": 0.034035,
+        "ks_pvalue": 0.424886,
+        "ks_drift": false
+      },
+      "Times Opened_lag_1": {
+        "psi": 0.011716,
+        "psi_drift": false,
+        "ks_stat": 0.014957,
+        "ks_pvalue": 0.99816,
+        "ks_drift": false
+      },
+      "Times Opened_lag_2": {
+        "psi": 0.011787,
+        "psi_drift": false,
+        "ks_stat": 0.015568,
+        "ks_pvalue": 0.996716,
+        "ks_drift": false
+      },
+      "Times Opened_lag_3": {
+        "psi": 0.012138,
+        "psi_drift": false,
+        "ks_stat": 0.013736,
+        "ks_pvalue": 0.999549,
+        "ks_drift": false
+      },
+      "Times Opened_lag_7": {
+        "psi": 0.011973,
+        "psi_drift": false,
+        "ks_stat": 0.018773,
+        "ks_pvalue": 0.971931,
+        "ks_drift": false
+      },
+      "Times Opened_lag_14": {
+        "psi": 0.018958,
+        "psi_drift": false,
+        "ks_stat": 0.032662,
+        "ks_pvalue": 0.477415,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_mean_3": {
+        "psi": 0.035951,
+        "psi_drift": false,
+        "ks_stat": 0.019841,
+        "ks_pvalue": 0.954388,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_3": {
+        "psi": 0.277764,
+        "psi_drift": true,
+        "ks_stat": 0.073871,
+        "ks_pvalue": 0.001491,
+        "ks_drift": true
+      },
+      "Usage (minutes)_rolling_mean_7": {
+        "psi": 0.054859,
+        "psi_drift": false,
+        "ks_stat": 0.028541,
+        "ks_pvalue": 0.649776,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_7": {
+        "psi": 0.385061,
+        "psi_drift": true,
+        "ks_stat": 0.112943,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Usage (minutes)_rolling_mean_14": {
+        "psi": 0.168622,
+        "psi_drift": false,
+        "ks_stat": 0.041056,
+        "ks_pvalue": 0.213821,
+        "ks_drift": false
+      },
+      "Usage (minutes)_rolling_std_14": {
+        "psi": 0.557165,
+        "psi_drift": true,
+        "ks_stat": 0.113706,
+        "ks_pvalue": 0.0,
+        "ks_drift": true
+      },
+      "Notifications_rolling_mean_3": {
+        "psi": 0.076064,
+        "psi_drift": false,
+        "ks_stat": 0.019841,
+        "ks_pvalue": 0.954388,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_3": {
+        "psi": 0.114532,
+        "psi_drift": false,
+        "ks_stat": 0.040446,
+        "ks_pvalue": 0.228257,
+        "ks_drift": false
+      },
+      "Notifications_rolling_mean_7": {
+        "psi": 0.097829,
+        "psi_drift": false,
+        "ks_stat": 0.032509,
+        "ks_pvalue": 0.483446,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_7": {
+        "psi": 0.233433,
+        "psi_drift": true,
+        "ks_stat": 0.079823,
+        "ks_pvalue": 0.000447,
+        "ks_drift": true
+      },
+      "Notifications_rolling_mean_14": {
+        "psi": 0.1004,
+        "psi_drift": false,
+        "ks_stat": 0.043346,
+        "ks_pvalue": 0.165849,
+        "ks_drift": false
+      },
+      "Notifications_rolling_std_14": {
+        "psi": 0.512908,
+        "psi_drift": true,
+        "ks_stat": 0.057998,
+        "ks_pvalue": 0.023466,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_3": {
+        "psi": 0.017337,
+        "psi_drift": false,
+        "ks_stat": 0.021825,
+        "ks_pvalue": 0.907351,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_3": {
+        "psi": 0.163312,
+        "psi_drift": false,
+        "ks_stat": 0.092491,
+        "ks_pvalue": 2.5e-05,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_7": {
+        "psi": 0.031652,
+        "psi_drift": false,
+        "ks_stat": 0.038919,
+        "ks_pvalue": 0.267542,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_7": {
+        "psi": 0.447202,
+        "psi_drift": true,
+        "ks_stat": 0.073718,
+        "ks_pvalue": 0.001536,
+        "ks_drift": true
+      },
+      "Times Opened_rolling_mean_14": {
+        "psi": 0.032666,
+        "psi_drift": false,
+        "ks_stat": 0.043193,
+        "ks_pvalue": 0.168756,
+        "ks_drift": false
+      },
+      "Times Opened_rolling_std_14": {
+        "psi": 0.417841,
+        "psi_drift": true,
+        "ks_stat": 0.099054,
+        "ks_pvalue": 5e-06,
+        "ks_drift": true
+      },
+      "notifications_per_usage_minute": {
+        "psi": 0.086773,
+        "psi_drift": false,
+        "ks_stat": 0.019994,
+        "ks_pvalue": 0.951437,
+        "ks_drift": false
+      },
+      "open_frequency": {
+        "psi": 0.048685,
+        "psi_drift": false,
+        "ks_stat": 0.027778,
+        "ks_pvalue": 0.682697,
+        "ks_drift": false
+      },
+      "engagement_score": {
+        "psi": 0.018507,
+        "psi_drift": false,
+        "ks_stat": 0.021825,
+        "ks_pvalue": 0.907351,
+        "ks_drift": false
+      },
+      "notifications_x_opens": {
+        "psi": 0.011205,
+        "psi_drift": false,
+        "ks_stat": 0.016484,
+        "ks_pvalue": 0.993063,
+        "ks_drift": false
+      },
+      "usage_x_opens": {
+        "psi": 0.039459,
+        "psi_drift": false,
+        "ks_stat": 0.024573,
+        "ks_pvalue": 0.814849,
+        "ks_drift": false
+      }
+    }
+  },
+  "runtime_report": {
+    "task_runtime_seconds": {
+      "validation": 60.0,
+      "features": 90.0,
+      "training": 240.0,
+      "reporting": 45.0
+    },
+    "total_runtime_seconds": 435.0,
+    "slowest_task": "training",
+    "slowest_task_seconds": 240.0
+  },
+  "alerts": [
+    {
+      "severity": "critical",
+      "message": "Feature drift detected: ['Synthetic', 'week', 'month', 'quarter', 'year', 'Usage (minutes)_rolling_std_3', 'Usage (minutes)_rolling_std_7', 'Usage (minutes)_rolling_std_14', 'Notifications_rolling_std_7', 'Notifications_rolling_std_14', 'Times Opened_rolling_std_3', 'Times Opened_rolling_std_7', 'Times Opened_rolling_std_14']"
+    }
+  ]
+}
