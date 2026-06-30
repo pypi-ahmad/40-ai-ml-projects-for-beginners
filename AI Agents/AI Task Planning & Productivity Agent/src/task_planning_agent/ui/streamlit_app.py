@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-from datetime import datetime
-
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -167,6 +165,8 @@ def memory_page() -> None:
     st.title("Memory")
     user_id = st.text_input("User ID", value="ahmad", key="memory_user")
     query = st.text_input("Semantic Search", value="deadline risk")
+    history = _service().memory.history(user_id=user_id, limit=5)
+    st.caption(f"Stored plan sessions for user: {len(history)}")
     if st.button("Search Memory"):
         st.session_state["memory_results"] = _service().memory.semantic_search(query)
     results = st.session_state.get("memory_results", [])
