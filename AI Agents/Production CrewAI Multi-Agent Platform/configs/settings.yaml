@@ -1,0 +1,90 @@
+app:
+  name: "Production CrewAI Multi-Agent Platform"
+  environment: "dev"
+
+llm:
+  base_url: "http://127.0.0.1:11434"
+  default_model: "qwen3:8b"
+  planner_model: "qwen3:8b"
+  verifier_model: "llama3.1:8b"
+  reflection_model: "gemma3:4b"
+  consensus_models:
+    - "llama3.1:8b"
+    - "qwen3:8b"
+    - "gemma3:4b"
+  available_models:
+    - "llama3:latest"
+    - "qwen3:8b"
+    - "gemma3:4b"
+    - "deepseek-r1"
+    - "phi4-mini:latest"
+    - "mistral:7b"
+  temperature: 0.2
+  max_tokens: 1200
+  request_timeout_seconds: 180
+  auto_pull_missing_models: false
+
+orchestration:
+  mode: "hybrid"
+  max_parallel_tasks: 2
+  max_iterations: 20
+  default_retry_limit: 2
+  retry_backoff_seconds: 2.0
+  use_crewai_execution: true
+  consensus_enabled: true
+  consensus_trigger_confidence: 0.65
+  plan_approval_required: true
+
+memory:
+  sqlite_path: "artifacts/platform.db"
+  chroma_enabled: true
+  chroma_path: "artifacts/chroma"
+  embedding_model: "all-MiniLM-L6-v2"
+  embedding_dim: 384
+  retrieval_top_k: 5
+  conversation_window: 30
+
+rag:
+  chunk_size: 1200
+  chunk_overlap: 200
+  max_chunks_per_doc: 200
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+tools:
+  enabled_tools:
+    - "*"
+  optional_tools:
+    - "github_search"
+    - "news_search"
+    - "sqlite_query"
+  enable_python_tool: false
+  python_timeout_seconds: 5
+  python_memory_limit_mb: 128
+  graceful_network_fallback: true
+  workspace_root: "."
+
+monitoring:
+  collect_interval_seconds: 5
+  enable_gpu_metrics: true
+
+reports:
+  output_dir: "data/reports"
+  always_formats:
+    - "markdown"
+    - "json"
+  on_demand_formats:
+    - "html"
+    - "pdf"
+
+mcp:
+  enabled: true
+  server_name: "crew-platform-mcp"
+  external_servers: []
+
+logging:
+  level: "INFO"
+  json_logs: true
+  run_log_path: "logs/agent_runs.jsonl"

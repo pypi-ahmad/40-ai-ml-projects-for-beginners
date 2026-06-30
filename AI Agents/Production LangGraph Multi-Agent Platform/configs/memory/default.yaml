@@ -1,0 +1,4 @@
+memory:
+  sqlite_path: artifacts/langgraph_platform.db
+  chroma_path: artifacts/chroma
+  top_k: 5

@@ -1,0 +1,16 @@
+objective: Map candidate skills to normalized taxonomy and job aliases.
+constraints:
+  - Normalize aliases (reactjs -> react)
+  - Distinguish required vs preferred matches
+schema:
+  normalized_skills: array
+  matched_required: array
+  matched_preferred: array
+  missing_required: array
+example:
+  input: Candidate skill list and JD skill list
+  output:
+    normalized_skills: [react, typescript]
+    matched_required: [react]
+    matched_preferred: [typescript]
+    missing_required: [kubernetes]

@@ -1,0 +1,4 @@
+retry:
+  max_retries: 2
+  confidence_threshold: 0.72
+  backoff_seconds: 0.25

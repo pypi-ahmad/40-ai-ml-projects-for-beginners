@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from task_planning_agent.schemas import PlanSession, ReflectionRecord, Task, UserPreference
@@ -17,6 +17,10 @@ class SQLiteMemoryStore:
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init_db()
+
+    @staticmethod
+    def _utc_now_iso() -> str:
+        return datetime.now(timezone.utc).isoformat()
 
     def _conn(self) -> sqlite3.Connection:
         conn = sqlite3.connect(self.db_path)
@@ -73,7 +77,7 @@ class SQLiteMemoryStore:
                     password_hash = excluded.password_hash,
                     role = excluded.role
                 """,
-                (user_id, password_hash, role, datetime.utcnow().isoformat()),
+                (user_id, password_hash, role, self._utc_now_iso()),
             )
 
     def get_user(self, user_id: str) -> dict[str, str] | None:
@@ -89,7 +93,7 @@ class SQLiteMemoryStore:
                     INSERT OR REPLACE INTO tasks(task_id, user_id, payload, created_at)
                     VALUES(?, ?, ?, ?)
                     """,
-                    (task.id, user_id, task.model_dump_json(), datetime.utcnow().isoformat()),
+                    (task.id, user_id, task.model_dump_json(), self._utc_now_iso()),
                 )
 
     def list_tasks(self, user_id: str) -> list[Task]:
@@ -111,7 +115,7 @@ class SQLiteMemoryStore:
                     session.user_id,
                     session.raw_input,
                     session.model_dump_json(),
-                    datetime.utcnow().isoformat(),
+                    self._utc_now_iso(),
                 ),
             )
 
@@ -133,7 +137,7 @@ class SQLiteMemoryStore:
                 INSERT OR REPLACE INTO reflections(plan_id, payload, created_at)
                 VALUES(?, ?, ?)
                 """,
-                (reflection.plan_id, reflection.model_dump_json(), datetime.utcnow().isoformat()),
+                (reflection.plan_id, reflection.model_dump_json(), self._utc_now_iso()),
             )
 
     def upsert_preferences(self, preferences: UserPreference) -> None:
@@ -146,7 +150,7 @@ class SQLiteMemoryStore:
                 (
                     preferences.user_id,
                     preferences.model_dump_json(),
-                    datetime.utcnow().isoformat(),
+                    self._utc_now_iso(),
                 ),
             )
 

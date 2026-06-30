@@ -1,0 +1,7 @@
+runtime:
+  seed: 42
+  device_preference:
+    - cuda
+    - cpu
+  dtype: auto
+  allow_network_download: false

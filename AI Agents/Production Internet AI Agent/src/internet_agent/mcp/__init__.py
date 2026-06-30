@@ -1,0 +1,1 @@
+"""MCP-compatible stdio server."""

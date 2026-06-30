@@ -1,0 +1,4 @@
+routing:
+  web_search_keywords: [latest, news, trend, market, current]
+  rag_keywords: [pdf, document, repository, manual, docs]
+  memory_keywords: [previous, history, remember, prior]

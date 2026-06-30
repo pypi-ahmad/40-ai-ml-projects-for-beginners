@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.env
+.env.*
+outputs/
+data/processed/
+mlruns/
+chroma/
+*.sqlite3
+*.db
+*.log
+.DS_Store
+.ipynb_checkpoints/

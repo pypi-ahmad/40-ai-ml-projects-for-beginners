@@ -1,0 +1,11 @@
+objective: Generate concise candidate summary for recruiter.
+constraints:
+  - Cite strongest skill and role alignment
+  - Mention risk gaps
+  - Keep under 120 words
+schema:
+  summary: string
+example:
+  input: Candidate parsed data + score breakdown
+  output:
+    summary: Candidate shows strong MLOps ownership with production FastAPI deployments and moderate gap in Kubernetes depth.

@@ -1,0 +1,26 @@
+Jane Doe
+Senior AI Engineer
+jane.doe@example.com
++1 (555) 123-9876
+https://www.linkedin.com/in/janedoe
+https://github.com/janedoe
+
+Summary
+AI engineer with 6 years building production ML and LLM systems.
+
+Skills
+Python, FastAPI, LangChain, LangGraph, Docker, Kubernetes, AWS, SQL, MLflow
+
+Experience
+Lead AI Engineer - Acme AI (2022-2026)
+- Built recruiter copilots with RAG and ChromaDB.
+- Deployed model serving pipeline with FastAPI and Kubernetes.
+
+ML Engineer - DataWorks (2020-2022)
+- Implemented candidate scoring services and feature stores.
+
+Education
+B.Tech Computer Science (2019)
+
+Projects
+Talent Intelligence Platform - Tech: Python, FastAPI, LangChain, ChromaDB

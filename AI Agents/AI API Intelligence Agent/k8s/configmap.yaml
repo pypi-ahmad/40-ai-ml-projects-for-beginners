@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-api-intel-agent-config
+data:
+  AGENT__LLM__BASE_URL: "http://ollama:11434"
+  AGENT__CACHE__BACKEND: "sqlite"

@@ -1,0 +1,16 @@
+Senior Generative AI Engineer
+
+Responsibilities:
+- Build production-ready LLM and RAG systems.
+- Deploy APIs with FastAPI.
+- Implement semantic search for candidate intelligence.
+- Collaborate with recruiters and data teams.
+
+Requirements:
+- 5+ years experience in AI/ML engineering.
+- Python, FastAPI, LangChain, ChromaDB, Kubernetes, AWS.
+- Strong communication and ownership.
+- Bachelor's degree in Computer Science or related field.
+
+Preferred:
+- LangGraph, MLflow, distributed inference optimization.

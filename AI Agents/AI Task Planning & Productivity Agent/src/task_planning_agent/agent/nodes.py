@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from uuid import uuid4
 
 from task_planning_agent.analytics.metrics import AnalyticsEngine
@@ -152,7 +152,7 @@ class WorkflowNodes:
             reflection=state.get("reflection"),
             recommendations=list(state.get("recommendations", [])),
             analytics=state.get("analytics"),
-            metadata={"generated_at": datetime.utcnow().isoformat(), "issues": state.get("issues", [])},
+            metadata={"generated_at": datetime.now(timezone.utc).isoformat(), "issues": state.get("issues", [])},
         )
         report = self.report_generator.generate(session)
         return {"report": report}

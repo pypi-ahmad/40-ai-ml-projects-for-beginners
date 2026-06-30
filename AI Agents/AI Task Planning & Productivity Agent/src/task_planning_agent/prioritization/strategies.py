@@ -11,7 +11,8 @@ from task_planning_agent.schemas import Task
 def _deadline_urgency(task: Task) -> float:
     if task.deadline is None:
         return 30.0
-    hours = max(1.0, (task.deadline - datetime.utcnow()).total_seconds() / 3600)
+    now = datetime.now(tz=task.deadline.tzinfo) if task.deadline.tzinfo else datetime.now()
+    hours = max(1.0, (task.deadline - now).total_seconds() / 3600)
     return min(100.0, 120.0 / hours * 10)
 
 

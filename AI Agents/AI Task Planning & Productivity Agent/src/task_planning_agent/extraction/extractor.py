@@ -51,7 +51,8 @@ class TaskExtractor:
             confidence += 0.05
 
         risk_level = RiskLevel.MEDIUM
-        if deadline and (deadline - datetime.utcnow()).days <= 1:
+        now = datetime.now(tz=deadline.tzinfo) if deadline and deadline.tzinfo else datetime.now()
+        if deadline and (deadline - now).days <= 1:
             risk_level = RiskLevel.HIGH
         elif deadline is None:
             risk_level = RiskLevel.LOW

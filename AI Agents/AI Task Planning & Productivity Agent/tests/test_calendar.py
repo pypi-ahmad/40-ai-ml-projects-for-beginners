@@ -7,11 +7,12 @@ from task_planning_agent.schemas import RiskLevel, ScheduleBlock
 
 def test_calendar_export_import_ics(tmp_path: Path) -> None:
     service = CalendarService()
+    now = datetime.now()
     block = ScheduleBlock(
         task_id="1",
         task_name="Task",
-        suggested_start_time=datetime.utcnow(),
-        suggested_end_time=datetime.utcnow() + timedelta(minutes=30),
+        suggested_start_time=now,
+        suggested_end_time=now + timedelta(minutes=30),
         priority=80,
         confidence=0.8,
         reasoning="",

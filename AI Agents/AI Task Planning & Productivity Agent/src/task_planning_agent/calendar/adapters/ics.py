@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from icalendar import Calendar, Event
@@ -22,8 +22,8 @@ class ICSCalendarAdapter:
             events.append(
                 {
                     "summary": str(component.get("summary", "")),
-                    "start": str(component.decoded("dtstart", datetime.utcnow())),
-                    "end": str(component.decoded("dtend", datetime.utcnow())),
+                    "start": str(component.decoded("dtstart", datetime.now(timezone.utc))),
+                    "end": str(component.decoded("dtend", datetime.now(timezone.utc))),
                 }
             )
         return events

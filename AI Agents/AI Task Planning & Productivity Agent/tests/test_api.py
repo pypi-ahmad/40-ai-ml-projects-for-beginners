@@ -1,4 +1,4 @@
-from fastapi.testclient import TestClient
+from starlette.testclient import TestClient
 
 from task_planning_agent.api.app import create_app
 from task_planning_agent.api.deps import get_service

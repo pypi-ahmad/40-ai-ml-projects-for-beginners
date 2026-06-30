@@ -1,0 +1,8 @@
+ocr:
+  primary_engine: glm_ocr
+  fallback_engines:
+    - paddleocr
+    - easyocr
+    - tesseract
+  min_native_text_chars: 40
+  scanned_threshold: 0.25

@@ -1,0 +1,28 @@
+vision:
+  default: qwen2_5_vl
+  supported:
+    - clip
+    - siglip
+    - florence_2
+    - qwen2_5_vl
+    - llama_vision
+    - minicpm_v
+    - blip2
+    - smolvlm
+
+llm:
+  backend: ollama
+  default_model: llama3
+  ollama_url: http://localhost:11434
+  hf_device_map: auto
+  supported:
+    - llama3
+    - qwen3
+    - gemma3
+    - deepseek
+    - phi4_mini
+    - mistral
+
+embeddings:
+  vision: clip
+  text: sentence-transformers/all-MiniLM-L6-v2

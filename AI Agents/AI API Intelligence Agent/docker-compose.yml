@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  api:
+    build: .
+    command: uv run python main.py
+    ports:
+      - "8000:8000"
+    environment:
+      - AGENT_JWT_SECRET=change-me
+    volumes:
+      - ./:/app
+
+  streamlit:
+    build: .
+    command: uv run python app.py
+    ports:
+      - "8501:8501"
+    environment:
+      - AGENT_JWT_SECRET=change-me
+    volumes:
+      - ./:/app

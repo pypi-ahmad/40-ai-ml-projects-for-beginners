@@ -1,0 +1,98 @@
+[project]
+name = "production-internet-ai-agent"
+version = "0.1.0"
+description = "Production-grade internet-connected AI agent platform with LangGraph, Ollama, FastAPI, Streamlit, and MCP tools"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "beautifulsoup4>=4.13.0",
+  "chromadb>=1.0.0",
+  "ddgs>=9.0.0",
+  "duckduckgo-search>=8.0.0",
+  "fastapi>=0.116.0",
+  "fpdf2>=2.8.0",
+  "httpx>=0.28.0",
+  "hydra-core>=1.3.2",
+  "langchain>=0.3.0",
+  "langchain-core>=0.3.0",
+  "langchain-ollama>=0.3.0",
+  "langchain-text-splitters>=0.3.0",
+  "langgraph>=0.6.0",
+  "loguru>=0.7.0",
+  "mlflow>=2.22.0",
+  "numpy>=2.2.0",
+  "orjson>=3.10.0",
+  "pandas>=2.2.0",
+  "plotly>=6.0.0",
+  "psutil>=7.0.0",
+  "pydantic>=2.11.0",
+  "pydantic-settings>=2.10.0",
+  "pypdf>=5.0.0",
+  "python-dateutil>=2.9.0",
+  "python-dotenv>=1.0.0",
+  "pyyaml>=6.0.0",
+  "rich>=14.0.0",
+  "sentence-transformers>=5.0.0",
+  "sqlalchemy>=2.0.0",
+  "streamlit>=1.46.0",
+  "tenacity>=9.1.0",
+  "trafilatura>=1.10.0",
+  "typer>=0.16.0",
+  "uvicorn>=0.35.0",
+  "wikipedia-api>=0.8.0",
+]
+
+[dependency-groups]
+dev = [
+  "ipykernel>=6.29.0",
+  "jupyter>=1.1.0",
+  "nbformat>=5.10.0",
+  "playwright>=1.54.0",
+  "pytest>=8.4.0",
+  "pytest-asyncio>=1.0.0",
+  "pytest-cov>=6.2.0",
+  "ruff>=0.12.0",
+]
+
+[project.scripts]
+internet-agent = "internet_agent.cli:app"
+internet-agent-api = "internet_agent.api.app:run"
+internet-agent-mcp = "internet_agent.mcp.server:run_stdio_server"
+
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+  ".venv/**",
+  ".uv-cache/**",
+  ".pytest_cache/**",
+  ".ruff_cache/**",
+  "artifacts/**",
+  "outputs/**",
+  "__pycache__/**",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/internet_agent"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "integration: requires external services or network",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "C4", "N"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"streamlit_app/*.py" = ["E402"]
+"streamlit_app/pages/*.py" = ["E402"]

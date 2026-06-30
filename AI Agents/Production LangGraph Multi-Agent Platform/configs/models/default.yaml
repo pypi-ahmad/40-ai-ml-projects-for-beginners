@@ -1,0 +1,11 @@
+model:
+  planner: qwen3:8b
+  researcher: llama3:8b
+  writer: gemma3:12b
+  verifier: deepseek-r1:8b
+  embedder: all-MiniLM-L6-v2
+  fallback_chain:
+    - qwen3:8b
+    - llama3:8b
+    - mistral:7b
+    - phi4-mini:latest

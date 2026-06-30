@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict
-from datetime import datetime
+from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, Field
@@ -198,7 +198,7 @@ def health(
     runtime = monitor.collect()
     return {
         "status": "ok",
-        "time": datetime.utcnow().isoformat(),
+        "time": datetime.now(timezone.utc).isoformat(),
         "tools": tools.list_tools(),
         "runtime": asdict(runtime),
         "db": str(service.memory.sqlite.db_path),

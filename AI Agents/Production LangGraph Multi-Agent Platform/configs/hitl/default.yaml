@@ -1,0 +1,4 @@
+hitl:
+  require_plan_approval: false
+  allow_pause_resume: true
+  allow_supervisor_override: true

@@ -1,0 +1,29 @@
+prompts:
+  captioning:
+    objective: Generate faithful image caption.
+    constraints:
+      - Do not hallucinate unseen details.
+      - Mention uncertainty explicitly.
+    output_schema:
+      short: string
+      detailed: string
+      alt_text: string
+
+  vqa:
+    objective: Answer visual question using extracted visual evidence.
+    constraints:
+      - Cite evidence snippets.
+      - Return confidence in [0,1].
+    output_schema:
+      answer: string
+      confidence: float
+      evidence: list
+
+  chart_analysis:
+    objective: Explain trends and key statistics from chart.
+    constraints:
+      - Include trend direction.
+      - Mention anomalies if visible.
+    output_schema:
+      summary: string
+      insights: list

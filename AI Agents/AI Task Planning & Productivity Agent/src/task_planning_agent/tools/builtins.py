@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import math
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -60,7 +60,7 @@ class NotesTool(Tool):
             return ToolResult(tool_name=self.name, success=False, output=None, error="text is required")
         notes_dir = Path("data/processed/notes")
         notes_dir.mkdir(parents=True, exist_ok=True)
-        note_path = notes_dir / f"note-{datetime.utcnow().strftime('%Y%m%d%H%M%S')}.md"
+        note_path = notes_dir / f"note-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}.md"
         note_path.write_text(text, encoding="utf-8")
         return ToolResult(tool_name=self.name, success=True, output={"path": str(note_path)})
 
@@ -72,7 +72,7 @@ class ReminderTool(Tool):
     def run(self, **kwargs: Any) -> ToolResult:
         payload = {
             "task": kwargs.get("task", ""),
-            "remind_at": kwargs.get("remind_at", datetime.utcnow().isoformat()),
+            "remind_at": kwargs.get("remind_at", datetime.now(timezone.utc).isoformat()),
         }
         reminders_dir = Path("data/processed/reminders")
         reminders_dir.mkdir(parents=True, exist_ok=True)

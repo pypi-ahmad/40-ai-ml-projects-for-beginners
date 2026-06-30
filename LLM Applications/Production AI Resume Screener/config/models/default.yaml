@@ -1,0 +1,7 @@
+extraction_model: llama3:8b
+reasoning_model: qwen3:8b
+interview_model: gemma3:4b
+scoring_model: deepseek-r1:8b
+fallback_model: phi4-mini:latest
+parser_model: mistral:7b
+ollama_base_url: http://localhost:11434

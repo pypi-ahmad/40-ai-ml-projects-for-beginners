@@ -1,0 +1,89 @@
+app:
+  name: "Production Internet AI Agent"
+  environment: "dev"
+
+llm:
+  base_url: "${oc.env:OLLAMA_BASE_URL,http://127.0.0.1:11434}"
+  planning_model: "qwen3:8b"
+  reasoning_model: "llama3.1:8b"
+  summarization_model: "gemma3:4b"
+  verification_model: "deepseek-r1:8b"
+  reflection_model: "mistral:7b"
+  embedding_model: "BAAI/bge-small-en-v1.5"
+  temperature: 0.2
+  max_tokens: 1200
+  request_timeout_seconds: 120
+
+models:
+  supported_families:
+    - "llama3"
+    - "qwen3"
+    - "gemma3"
+    - "deepseek"
+    - "phi4-mini"
+    - "mistral"
+
+agent:
+  max_iterations: 6
+  max_verification_loops: 2
+  verification_confidence_threshold: 0.72
+  top_k_sources: 5
+  checkpointer_enabled: false
+  graph_timeout_seconds: 45
+
+search:
+  providers:
+    - "duckduckgo"
+    - "wikipedia"
+    - "github"
+    - "news"
+  default_max_results: 5
+  request_timeout_seconds: 20
+
+retrieval:
+  chunk_size: 900
+  chunk_overlap: 120
+  retrieval_top_k: 6
+  max_urls_per_query: 8
+  max_content_chars: 24000
+
+memory:
+  sqlite_url: "sqlite:///./artifacts/memory.db"
+  chroma_path: "artifacts/chroma"
+  chroma_collection: "internet_docs"
+  conversation_window: 30
+  memory_top_k: 5
+
+cache:
+  enabled: true
+  default_ttl_seconds: 1800
+  embedding_ttl_seconds: 259200
+  report_ttl_seconds: 86400
+  redis_url: ""
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  require_api_key: false
+  api_key_env: "INTERNET_AGENT_API_KEY"
+
+streamlit:
+  title: "Production Internet AI Agent"
+  dark_mode_default: true
+
+reports:
+  output_dir: "outputs/reports"
+
+logging:
+  level: "INFO"
+  json_logs: true
+  log_path: "artifacts/logs/agent.jsonl"
+
+monitoring:
+  metrics_enabled: true
+  mlflow_enabled: true
+  mlflow_experiment: "internet_agent"
+  mlflow_tracking_uri: "${oc.env:MLFLOW_TRACKING_URI,''}"
+
+plugins:
+  tool_factories: []

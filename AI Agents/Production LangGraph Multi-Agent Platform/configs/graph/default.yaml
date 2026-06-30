@@ -1,0 +1,5 @@
+graph:
+  enable_parallel: true
+  enable_reflection_loop: true
+  enable_consensus_reasoning: true
+  max_parallel_tasks: 4

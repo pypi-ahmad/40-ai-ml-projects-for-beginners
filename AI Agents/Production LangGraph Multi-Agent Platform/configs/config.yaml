@@ -1,0 +1,41 @@
+env: dev
+host: 0.0.0.0
+api_port: 8000
+streamlit_port: 8501
+model:
+  planner: qwen3:8b
+  researcher: llama3:8b
+  writer: gemma3:12b
+  verifier: deepseek-r1:8b
+  embedder: all-MiniLM-L6-v2
+  fallback_chain:
+    - qwen3:8b
+    - llama3:8b
+    - mistral:7b
+    - phi4-mini:latest
+retry:
+  max_retries: 2
+  confidence_threshold: 0.72
+  backoff_seconds: 0.25
+routing:
+  web_search_keywords: [latest, news, today, recent, trend]
+  rag_keywords: [document, pdf, docs, policy, knowledge]
+  memory_keywords: [previous, before, remember, history]
+memory:
+  sqlite_path: artifacts/langgraph_platform.db
+  chroma_path: artifacts/chroma
+  top_k: 5
+mcp:
+  enabled: true
+  transport: stdio
+  http_host: 127.0.0.1
+  http_port: 9002
+  external_servers: []
+monitoring:
+  mlflow_tracking_uri: file:./artifacts/mlruns
+  enable_gpu_metrics: true
+  structured_logs_path: artifacts/logs/platform.jsonl
+tools:
+  weather_api_key: null
+  currency_api_key: null
+  news_api_key: null

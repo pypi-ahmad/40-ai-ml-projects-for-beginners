@@ -52,6 +52,9 @@ task-agent = "task_planning_agent.cli:app"
 minversion = "8.0"
 addopts = "-q"
 testpaths = ["tests"]
+filterwarnings = [
+  "ignore:Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead\\.",
+]
 
 [tool.ruff]
 line-length = 100

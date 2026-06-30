@@ -1,0 +1,17 @@
+objective: Produce explainable hiring recommendation.
+constraints:
+  - Explicitly list strengths and weaknesses
+  - Include confidence score
+  - Avoid protected-attribute reasoning
+schema:
+  recommendation: string
+  strengths: array
+  weaknesses: array
+  confidence_score: float
+example:
+  input: Candidate parse + score
+  output:
+    recommendation: hire
+    strengths: [production FastAPI, LLM RAG deployment]
+    weaknesses: [limited Kubernetes depth]
+    confidence_score: 81.0

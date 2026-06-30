@@ -1,0 +1,7 @@
+prompts:
+  planner: src/langgraph_platform/agents/prompts.py:PLANNER_PROMPT
+  research: src/langgraph_platform/agents/prompts.py:RESEARCH_PROMPT
+  writer: src/langgraph_platform/agents/prompts.py:WRITER_PROMPT
+  verification: src/langgraph_platform/agents/prompts.py:VERIFICATION_PROMPT
+  reflection: src/langgraph_platform/agents/prompts.py:REFLECTION_PROMPT
+  supervisor: src/langgraph_platform/agents/prompts.py:SUPERVISOR_PROMPT

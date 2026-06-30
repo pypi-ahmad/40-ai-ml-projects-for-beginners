@@ -1,0 +1,97 @@
+[project]
+name = "multimodal-ai-platform"
+version = "0.1.0"
+description = "Production-grade local multimodal AI platform with FastAPI, Streamlit, CLI, RAG, and MCP tooling"
+readme = "README.md"
+requires-python = "==3.12.*"
+authors = [{ name = "Ahmad" }]
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn>=0.35.0",
+  "streamlit>=1.46.0",
+  "typer>=0.16.0",
+  "rich>=14.0.0",
+  "pydantic>=2.11.0",
+  "pydantic-settings>=2.10.0",
+  "hydra-core>=1.3.2",
+  "omegaconf>=2.3.0",
+  "sqlalchemy>=2.0.36",
+  "alembic>=1.16.0",
+  "chromadb>=1.0.15",
+  "sentence-transformers>=5.0.0",
+  "transformers>=4.53.0",
+  "torch>=2.7.0",
+  "torchvision>=0.22.0",
+  "pillow>=11.2.0",
+  "opencv-python>=4.11.0.86",
+  "numpy>=2.2.0",
+  "pandas>=2.3.0",
+  "plotly>=6.2.0",
+  "python-multipart>=0.0.20",
+  "httpx>=0.28.1",
+  "python-docx>=1.1.2",
+  "python-pptx>=1.0.2",
+  "pdfplumber>=0.11.7",
+  "pymupdf>=1.26.1",
+  "easyocr>=1.7.2",
+  "paddleocr>=3.1.0",
+  "pytesseract>=0.3.13",
+  "ultralytics>=8.3.0",
+  "mlflow>=3.1.1",
+  "loguru>=0.7.3",
+  "mcp[cli]>=1.10.1",
+  "openpyxl>=3.1.5",
+  "xlsxwriter>=3.2.5",
+  "reportlab>=4.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.1",
+  "pytest-asyncio>=1.0.0",
+  "pytest-cov>=6.2.1",
+  "ruff>=0.12.2",
+  "mypy>=1.16.1",
+  "types-python-dateutil>=2.9.0.20250516",
+]
+
+[project.scripts]
+multimodal-ai = "multimodal_ai.cli.main:app"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = [
+  ".venv",
+  "data",
+  "outputs",
+  "notebooks",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = ["notebooks", "outputs", "data"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "network: tests requiring network or model download",
+]
+
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "playwright>=1.61.0",
+    "wheel>=0.47.0",
+]

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from task_planning_agent.schemas import PlanReport, PlanSession, Recommendation
 
@@ -44,7 +44,7 @@ class ReportGenerator:
         return PlanReport(
             plan_id=session.plan_id,
             user_id=session.user_id,
-            generated_at=datetime.utcnow(),
+            generated_at=datetime.now(timezone.utc),
             summary=f"Generated {len(session.schedule_blocks)} blocks for {len(session.tasks)} tasks",
             schedule=schedule,  # type: ignore[arg-type]
             reflections=reflections,

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any
 from uuid import uuid4
@@ -116,7 +116,7 @@ class ReflectionRecord(BaseModel):
     overruns: list[str] = Field(default_factory=list)
     context_switching_issues: list[str] = Field(default_factory=list)
     recommendations: list[str] = Field(default_factory=list)
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 
 class Recommendation(BaseModel):
@@ -168,7 +168,7 @@ class ReplanRequest(BaseModel):
 class PlanReport(BaseModel):
     plan_id: str
     user_id: str
-    generated_at: datetime = Field(default_factory=datetime.utcnow)
+    generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     summary: str
     schedule: list[ScheduleResponse] = Field(default_factory=list)
     reflections: list[str] = Field(default_factory=list)

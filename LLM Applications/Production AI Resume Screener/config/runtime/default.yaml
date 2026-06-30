@@ -1,0 +1,5 @@
+environment: local_gpu
+sqlite_path: resume_ai.sqlite3
+chroma_path: chroma
+max_workers: 8
+batch_size: 64

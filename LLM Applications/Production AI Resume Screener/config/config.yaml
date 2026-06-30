@@ -1,0 +1,10 @@
+defaults:
+  - runtime: default
+  - models: default
+  - embeddings: default
+  - ocr: default
+  - scoring: default
+  - prompts: default
+
+app_name: production_ai_resume_screener
+version: 0.1.0

@@ -1,0 +1,5 @@
+tools:
+  weather_api_key: null
+  currency_api_key: null
+  news_api_key: null
+  offline_first: true

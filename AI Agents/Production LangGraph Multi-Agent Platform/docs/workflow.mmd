@@ -1,0 +1,15 @@
+graph TD
+  START --> planner
+  planner --> parallel_research
+  parallel_research --> knowledge_merge
+  knowledge_merge --> consensus_reasoning
+  consensus_reasoning --> writer
+  writer --> fact_checker
+  fact_checker --> reflection
+  reflection --> critic
+  critic --> qa
+  qa --> citation
+  citation --> supervisor
+  supervisor -- retry --> writer
+  supervisor -- finalize --> finalize
+  finalize --> END

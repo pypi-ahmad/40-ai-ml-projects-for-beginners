@@ -1,0 +1,15 @@
+objective: Generate recruiter-friendly final report artifact.
+constraints:
+  - Include match evidence snippets
+  - Include missing skill plan
+  - Keep sections deterministic for export formats
+schema:
+  executive_summary: string
+  score_breakdown: object
+  evidence: array
+  recommendation: string
+example:
+  input: Recommendation + score
+  output:
+    executive_summary: Candidate aligns strongly with MLOps-heavy role but lacks deep K8s ownership.
+    recommendation: hold

@@ -1,0 +1,3 @@
+analytics:
+  enabled: true
+  retain_runs: 500

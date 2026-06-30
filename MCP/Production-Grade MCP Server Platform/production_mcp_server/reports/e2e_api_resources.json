@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "uri": "file://README.md",
+      "name": "Project README",
+      "description": "Primary project documentation",
+      "mime_type": "text/markdown"
+    },
+    {
+      "uri": "config://default",
+      "name": "Default Configuration",
+      "description": "Primary YAML configuration",
+      "mime_type": "application/yaml"
+    },
+    {
+      "uri": "memory://recent-conversations",
+      "name": "Recent Conversations",
+      "description": "Latest recorded conversation events",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "metrics://recent",
+      "name": "Recent Metrics",
+      "description": "Recent monitoring metrics",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "logs://server",
+      "name": "Server Logs",
+      "description": "Structured run logs",
+      "mime_type": "application/json"
+    }
+  ]
+}

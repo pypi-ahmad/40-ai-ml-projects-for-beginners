@@ -1,0 +1,7 @@
+resume_extraction: src/resume_ai/prompts/resume_extraction.yaml
+candidate_summary: src/resume_ai/prompts/candidate_summary.yaml
+resume_scoring: src/resume_ai/prompts/resume_scoring.yaml
+skill_matching: src/resume_ai/prompts/skill_matching.yaml
+interview_generation: src/resume_ai/prompts/interview_generation.yaml
+hiring_recommendation: src/resume_ai/prompts/hiring_recommendation.yaml
+report_generation: src/resume_ai/prompts/report_generation.yaml

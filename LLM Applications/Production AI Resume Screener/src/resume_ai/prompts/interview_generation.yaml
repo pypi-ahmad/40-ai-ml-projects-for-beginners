@@ -1,0 +1,18 @@
+objective: Generate interview question set tied to candidate profile and skill gaps.
+constraints:
+  - Include technical, behavioral, coding, project sections
+  - Include follow-up question per item
+  - Tag each question with difficulty
+schema:
+  technical: array
+  behavioral: array
+  coding: array
+  project: array
+example:
+  input: Candidate score breakdown
+  output:
+    technical:
+      - category: technical
+        difficulty: medium
+        question: Explain production incident you resolved in model serving pipeline.
+        follow_up: What monitoring signal alerted you first?

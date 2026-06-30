@@ -1,0 +1,28 @@
+defaults:
+  - models: default
+  - ocr: default
+  - retrieval: default
+  - runtime: default
+  - prompts: default
+  - _self_
+
+app:
+  name: multimodal-ai-platform
+  environment: dev
+  enable_gpu: true
+
+storage:
+  sqlite_url: sqlite:///./data/multimodal.db
+  chroma_path: ./data/chroma
+
+monitoring:
+  metrics_window_seconds: 300
+  emit_mlflow: false
+
+api:
+  host: 0.0.0.0
+  port: 8000
+
+streamlit:
+  host: 0.0.0.0
+  port: 8501

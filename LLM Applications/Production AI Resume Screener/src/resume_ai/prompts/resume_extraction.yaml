@@ -1,0 +1,29 @@
+objective: Extract structured candidate profile from resume text.
+constraints:
+  - Return valid JSON only
+  - Do not invent missing facts
+  - Preserve evidence snippets when available
+schema:
+  candidate:
+    name: string|null
+    email: string|null
+    phone: string|null
+  education: array
+  experience: array
+  projects: array
+  skills: object
+example:
+  input: |
+    John Doe
+    Senior ML Engineer
+    Python, FastAPI, AWS
+  output:
+    candidate:
+      name: John Doe
+      email: null
+      phone: null
+    education: []
+    experience: []
+    projects: []
+    skills:
+      technical: [python, fastapi, aws]

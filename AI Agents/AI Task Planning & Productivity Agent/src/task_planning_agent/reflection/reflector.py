@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from task_planning_agent.schemas import ReflectionRecord, ScheduleBlock
 
@@ -53,5 +53,5 @@ class ReflectionAgent:
             overruns=overruns,
             context_switching_issues=switching,
             recommendations=recs,
-            created_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
         )

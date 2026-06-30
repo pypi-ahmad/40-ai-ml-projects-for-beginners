@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -131,7 +131,7 @@ def _save_analytics(report) -> None:
             vals.append(value)
     fig, ax = plt.subplots(figsize=(14, 6))
     ax.bar(keys, vals)
-    ax.set_xticklabels(keys, rotation=45, ha="right")
+    ax.tick_params(axis="x", labelrotation=45)
     ax.set_title("Analytics Dashboard")
     fig.tight_layout()
     fig.savefig(SCREENSHOT_DIR / "analytics_dashboard.png", dpi=200)
@@ -189,7 +189,7 @@ def main() -> None:
 
     log_path = LOG_DIR / "real_run.log"
     log_path.write_text(
-        f"Generated at: {datetime.utcnow().isoformat()}\n"
+        f"Generated at: {datetime.now(timezone.utc).isoformat()}\n"
         f"Plan ID: {report.plan_id}\n"
         f"Tasks: {len(report.schedule)}\n"
         f"Report: {report_path}\n",

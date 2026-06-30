@@ -1,0 +1,4 @@
+enable_tesseract: true
+enable_paddle: false
+tesseract_lang: eng
+dpi: 300

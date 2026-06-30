@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "hostname": "AHMAD-UBUNTU",
+  "platform": "Linux-7.0.0-22-generic-x86_64-with-glibc2.43",
+  "python_version": "3.12.10",
+  "cpu_percent": 27.4,
+  "memory_total": 32307298304,
+  "memory_used": 15857762304,
+  "memory_percent": 49.1,
+  "disk_total": 2015101927424,
+  "disk_used": 280473272320,
+  "disk_percent": 14.7,
+  "gpu": [],
+  "latency_ms": 123
+}

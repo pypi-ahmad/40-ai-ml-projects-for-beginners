@@ -1,0 +1,31 @@
+objective: Score candidate against job requirements with transparent components.
+constraints:
+  - Use configured weights
+  - Include matched and missing skills
+  - Return confidence score
+schema:
+  total_score: float
+  technical_skills: float
+  experience: float
+  projects: float
+  education: float
+  certifications: float
+  communication: float
+  bonus_skills: float
+  matched_skills: array
+  missing_skills: array
+  confidence: float
+example:
+  input: Parsed resume + parsed job profile
+  output:
+    total_score: 78.2
+    technical_skills: 84.0
+    experience: 70.0
+    projects: 76.0
+    education: 80.0
+    certifications: 40.0
+    communication: 75.0
+    bonus_skills: 60.0
+    matched_skills: [python, fastapi]
+    missing_skills: [kubernetes]
+    confidence: 83.0
