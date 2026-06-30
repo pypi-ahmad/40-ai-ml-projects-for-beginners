@@ -1,0 +1,20 @@
+flowchart LR
+    Start([Start]) --> Planner[Planner Node]
+    Planner --> Scheduler[Scheduler Node]
+    Scheduler --> Validator[Validator Node]
+    Validator --> Reflection[Reflection Node]
+    Reflection --> Memory[Memory Node]
+    Memory --> Reporter[Reporter Node]
+    Reporter --> End([End])
+
+    subgraph Stores
+      SQLite[(SQLite)]
+      Chroma[(ChromaDB)]
+      DuckDB[(DuckDB)]
+      MLflow[(MLflow)]
+    end
+
+    Memory --> SQLite
+    Memory --> Chroma
+    Memory --> DuckDB
+    Memory --> MLflow

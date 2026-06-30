@@ -9,12 +9,15 @@ from task_planning_agent.analytics.metrics import AnalyticsEngine
 from task_planning_agent.dependencies.planner import DependencyPlanner
 from task_planning_agent.extraction.extractor import TaskExtractor
 from task_planning_agent.memory.manager import MemoryManager
+from task_planning_agent.llm.client import LocalLLMClient
+from task_planning_agent.llm.model_registry import ModelRegistry
 from task_planning_agent.prioritization.registry import score_tasks
 from task_planning_agent.recommendations.engine import RecommendationAgent
 from task_planning_agent.reflection.reflector import ReflectionAgent
 from task_planning_agent.reports.generator import ReportGenerator
 from task_planning_agent.scheduling.optimizer import ScheduleOptimizer
 from task_planning_agent.schemas import PlanSession, PriorityStrategy, TaskStatus
+from task_planning_agent.schemas import Task
 
 
 class WorkflowNodes:
@@ -25,6 +28,9 @@ class WorkflowNodes:
         memory: MemoryManager,
         analytics: AnalyticsEngine,
         scheduler: ScheduleOptimizer,
+        llm_client: LocalLLMClient | None = None,
+        model_registry: ModelRegistry | None = None,
+        llm_enabled: bool = False,
     ) -> None:
         self.extractor = TaskExtractor()
         self.dependency_planner = DependencyPlanner()
@@ -34,6 +40,9 @@ class WorkflowNodes:
         self.memory = memory
         self.analytics = analytics
         self.scheduler = scheduler
+        self.llm_client = llm_client
+        self.model_registry = model_registry
+        self.llm_enabled = llm_enabled
 
     def planner(self, state: dict[str, object]) -> dict[str, object]:
         raw_input = str(state["raw_input"])
@@ -44,13 +53,37 @@ class WorkflowNodes:
         extraction = self.extractor.extract(raw_input)
         tasks = score_tasks(extraction.tasks, strategy)
         dependencies, issues = self.dependency_planner.build_dependencies(tasks)
+        llm_meta = self._llm_refinement(tasks=tasks, issues=issues)
 
         return {
             "tasks": tasks,
             "dependencies": dependencies,
             "issues": issues,
             "plan_id": str(uuid4()),
+            "llm_meta": llm_meta,
         }
+
+    def _llm_refinement(self, tasks: list[Task], issues: list[str]) -> dict[str, str] | None:
+        if not self.llm_enabled or self.llm_client is None or self.model_registry is None:
+            return None
+        prompt_lines = ["Refine reasoning for productivity tasks. Return concise guidance."] + [
+            f"- {task.name} | estimate={task.estimated_minutes} | score={task.priority_score}"
+            for task in tasks[:12]
+        ]
+        prompt = "\n".join(prompt_lines)
+
+        try:
+            content, model = self.llm_client.generate(
+                prompt=prompt,
+                candidate_models=self.model_registry.candidates(),
+            )
+            guidance = content[:400]
+            for task in tasks:
+                task.reasoning = f"{task.reasoning} | llm_hint={guidance}"
+            return {"model": model}
+        except Exception as exc:
+            issues.append(f"LLM refinement skipped: {exc}")
+            return None
 
     def scheduler_node(self, state: dict[str, object]) -> dict[str, object]:
         tasks = list(state.get("tasks", []))
@@ -98,7 +131,8 @@ class WorkflowNodes:
             recommendations=list(state.get("recommendations", [])),
         )
         self.memory.persist_plan(session)
-        self.memory.sqlite.save_reflection(session.reflection)  # type: ignore[arg-type]
+        if session.reflection is not None:
+            self.memory.sqlite.save_reflection(session.reflection)
         analytics = self.analytics.snapshot(
             user_id=session.user_id,
             plan_id=session.plan_id,

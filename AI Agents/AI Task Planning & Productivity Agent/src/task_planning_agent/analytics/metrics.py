@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from typing import Any
 
 import mlflow
@@ -15,6 +16,8 @@ class AnalyticsEngine:
 
     def __init__(self, duckdb_path: str, mlflow_tracking_uri: str) -> None:
         self.store = DuckDBStore(duckdb_path)
+        if mlflow_tracking_uri.startswith("file:"):
+            os.environ.setdefault("MLFLOW_ALLOW_FILE_STORE", "true")
         mlflow.set_tracking_uri(mlflow_tracking_uri)
 
     def snapshot(
@@ -77,8 +80,18 @@ class AnalyticsEngine:
 
     def _log(self, user_id: str, plan_id: str, snapshot: AnalyticsSnapshot) -> None:
         metrics: dict[str, Any] = snapshot.model_dump()
-        with mlflow.start_run(run_name=f"plan-{plan_id}", nested=True):
+        try:
+            with mlflow.start_run(run_name=f"plan-{plan_id}", nested=False):
+                for metric, value in metrics.items():
+                    if isinstance(value, (float, int)):
+                        mlflow.log_metric(metric, float(value))
+                        self.store.log_metric(
+                            user_id=user_id,
+                            plan_id=plan_id,
+                            metric=metric,
+                            value=float(value),
+                        )
+        except Exception:
             for metric, value in metrics.items():
                 if isinstance(value, (float, int)):
-                    mlflow.log_metric(metric, float(value))
                     self.store.log_metric(user_id=user_id, plan_id=plan_id, metric=metric, value=float(value))

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from dataclasses import asdict
 from datetime import datetime
 
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -199,7 +200,7 @@ def health(
         "status": "ok",
         "time": datetime.utcnow().isoformat(),
         "tools": tools.list_tools(),
-        "runtime": runtime.__dict__,
+        "runtime": asdict(runtime),
         "db": str(service.memory.sqlite.db_path),
     }
 

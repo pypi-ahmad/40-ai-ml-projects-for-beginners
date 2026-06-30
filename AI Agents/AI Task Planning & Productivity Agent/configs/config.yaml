@@ -18,6 +18,7 @@ security:
   token_expiry_minutes: 1440
 
 llm:
+  enabled: false
   base_url: http://localhost:11434
   timeout_seconds: 60
   failover: fallback

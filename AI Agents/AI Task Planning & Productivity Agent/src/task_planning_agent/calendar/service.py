@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from task_planning_agent.calendar.adapters.google_stub import GoogleCalendarAdapterStub
 from task_planning_agent.calendar.adapters.ics import ICSCalendarAdapter
@@ -65,11 +65,9 @@ class CalendarService:
                 continue
 
         while pointer < day_end:
-            next_pointer = pointer.replace(minute=pointer.minute + 30 if pointer.minute < 30 else 0)
-            if next_pointer <= pointer:
-                next_pointer = pointer + (day_end - pointer)
+            next_pointer = pointer + timedelta(minutes=30)
             overlap = any(pointer < end and next_pointer > start for start, end in busy)
             if not overlap:
                 slots.append({"start": pointer, "end": next_pointer})
-            pointer = pointer + (next_pointer - pointer)
+            pointer = next_pointer
         return slots

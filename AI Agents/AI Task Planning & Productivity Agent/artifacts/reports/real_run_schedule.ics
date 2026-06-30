@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Task Planning Agent//
+BEGIN:VEVENT
+SUMMARY:Follow up with design on dashboard UX tomorrow noon 30min
+DTSTART;TZID="+05:30":20260630T090000
+DTEND;TZID="+05:30":20260630T093000
+DESCRIPTION:Extracted from messy input using parser heuristics. | Priority
+ : WSJF weighted shortest job first | topo_rank=0
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sprint backlog refinement meeting friday 11am 45min
+DTSTART;TZID="+05:30":20260630T094500
+DTEND;TZID="+05:30":20260630T103000
+DESCRIPTION:Extracted from messy input using parser heuristics. | Priority
+ : WSJF weighted shortest job first | topo_rank=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Review architecture PR before today 7pm 60min
+DTSTART;TZID="+05:30":20260630T104500
+DTEND;TZID="+05:30":20260630T114500
+DESCRIPTION:Extracted from messy input using parser heuristics. | Priority
+ : WSJF weighted shortest job first | topo_rank=2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Draft hiring scorecard next monday 90min
+DTSTART;TZID="+05:30":20260630T120000
+DTEND;TZID="+05:30":20260630T133000
+DESCRIPTION:Extracted from messy input using parser heuristics. | Priority
+ : WSJF weighted shortest job first | topo_rank=3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Finalize quarterly planning deck by tomorrow 5pm #planning @sara 1
+ 20min
+DTSTART;TZID="+05:30":20260630T134500
+DTEND;TZID="+05:30":20260630T154500
+DESCRIPTION:Extracted from messy input using parser heuristics. | Priority
+ : WSJF weighted shortest job first | topo_rank=4
+END:VEVENT
+END:VCALENDAR

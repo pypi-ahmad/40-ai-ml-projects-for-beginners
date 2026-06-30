@@ -6,6 +6,8 @@ from task_planning_agent.agent.graph import build_graph
 from task_planning_agent.agent.nodes import WorkflowNodes
 from task_planning_agent.analytics.metrics import AnalyticsEngine
 from task_planning_agent.config import AppConfig
+from task_planning_agent.llm.client import LocalLLMClient
+from task_planning_agent.llm.model_registry import ModelRegistry
 from task_planning_agent.memory.manager import MemoryManager
 from task_planning_agent.scheduling.optimizer import ScheduleOptimizer
 from task_planning_agent.schemas import PlanReport, PriorityStrategy
@@ -19,6 +21,7 @@ class PlanningService:
         memory_cfg = config.memory
         analytics_cfg = config.raw.get("analytics", {})
         scheduling_cfg = config.scheduling
+        llm_cfg = config.llm
 
         self.memory = MemoryManager(
             sqlite_path=paths.get("sqlite_path", "data/processed/productivity_agent.db"),
@@ -35,8 +38,23 @@ class PlanningService:
             break_minutes=scheduling_cfg.get("default_break_minutes", 15),
             deep_work_block_minutes=scheduling_cfg.get("deep_work_block_minutes", 90),
         )
+        self.model_registry = ModelRegistry(
+            families=llm_cfg.get("families", {}),
+            default_family=llm_cfg.get("default_family", "qwen3"),
+        )
+        self.llm_client = LocalLLMClient(
+            base_url=llm_cfg.get("base_url", "http://localhost:11434"),
+            timeout_seconds=int(llm_cfg.get("timeout_seconds", 60)),
+        )
 
-        self.nodes = WorkflowNodes(memory=self.memory, analytics=self.analytics, scheduler=self.scheduler)
+        self.nodes = WorkflowNodes(
+            memory=self.memory,
+            analytics=self.analytics,
+            scheduler=self.scheduler,
+            llm_client=self.llm_client,
+            model_registry=self.model_registry,
+            llm_enabled=bool(llm_cfg.get("enabled", False)),
+        )
         self.graph = build_graph(self.nodes)
 
     def plan(

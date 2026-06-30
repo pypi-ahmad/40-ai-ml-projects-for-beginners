@@ -1,0 +1,103 @@
+{
+  "plan_id": "d39a08a4-6fa2-4ff2-a13a-663e08090ee6",
+  "user_id": "demo-user",
+  "generated_at": "2026-06-30T12:53:52.823471",
+  "summary": "Generated 5 blocks for 5 tasks",
+  "schedule": [
+    {
+      "task": "Follow up with design on dashboard UX tomorrow noon 30min",
+      "priority": 100.0,
+      "deadline": null,
+      "estimated_duration": 30,
+      "dependencies": [],
+      "suggested_start_time": "2026-06-30T09:00:00+05:30",
+      "suggested_end_time": "2026-06-30T09:30:00+05:30",
+      "confidence": 0.7000000000000001,
+      "reasoning": "Extracted from messy input using parser heuristics. | Priority: WSJF weighted shortest job first | topo_rank=0",
+      "risk_level": "low"
+    },
+    {
+      "task": "Sprint backlog refinement meeting friday 11am 45min",
+      "priority": 66.67,
+      "deadline": null,
+      "estimated_duration": 45,
+      "dependencies": [],
+      "suggested_start_time": "2026-06-30T09:45:00+05:30",
+      "suggested_end_time": "2026-06-30T10:30:00+05:30",
+      "confidence": 0.7000000000000001,
+      "reasoning": "Extracted from messy input using parser heuristics. | Priority: WSJF weighted shortest job first | topo_rank=1",
+      "risk_level": "low"
+    },
+    {
+      "task": "Review architecture PR before today 7pm 60min",
+      "priority": 50.0,
+      "deadline": null,
+      "estimated_duration": 60,
+      "dependencies": [],
+      "suggested_start_time": "2026-06-30T10:45:00+05:30",
+      "suggested_end_time": "2026-06-30T11:45:00+05:30",
+      "confidence": 0.7000000000000001,
+      "reasoning": "Extracted from messy input using parser heuristics. | Priority: WSJF weighted shortest job first | topo_rank=2",
+      "risk_level": "low"
+    },
+    {
+      "task": "Draft hiring scorecard next monday 90min",
+      "priority": 33.33,
+      "deadline": null,
+      "estimated_duration": 90,
+      "dependencies": [],
+      "suggested_start_time": "2026-06-30T12:00:00+05:30",
+      "suggested_end_time": "2026-06-30T13:30:00+05:30",
+      "confidence": 0.7000000000000001,
+      "reasoning": "Extracted from messy input using parser heuristics. | Priority: WSJF weighted shortest job first | topo_rank=3",
+      "risk_level": "low"
+    },
+    {
+      "task": "Finalize quarterly planning deck by tomorrow 5pm #planning @sara 120min",
+      "priority": 27.0,
+      "deadline": null,
+      "estimated_duration": 120,
+      "dependencies": [],
+      "suggested_start_time": "2026-06-30T13:45:00+05:30",
+      "suggested_end_time": "2026-06-30T15:45:00+05:30",
+      "confidence": 0.7500000000000001,
+      "reasoning": "Extracted from messy input using parser heuristics. | Priority: WSJF weighted shortest job first | topo_rank=4",
+      "risk_level": "low"
+    }
+  ],
+  "reflections": [
+    "Protect first deep-work block from meetings.",
+    "Cap daily context switches to <= 5.",
+    "Re-estimate repeated overrun tasks by +20%."
+  ],
+  "recommendations": [
+    {
+      "category": "batching",
+      "suggestion": "Batch admin tasks into one 45-minute block.",
+      "impact": "medium"
+    },
+    {
+      "category": "deep_work",
+      "suggestion": "Reserve 90-minute focus window in morning for high-priority items.",
+      "impact": "high"
+    },
+    {
+      "category": "automation",
+      "suggestion": "Automate recurring reminders for weekly report preparation.",
+      "impact": "medium"
+    }
+  ],
+  "analytics": {
+    "completed_tasks": 0,
+    "completion_rate": 0.0,
+    "average_delay_minutes": 0.0,
+    "planning_accuracy": 100.0,
+    "focus_time_minutes": 30,
+    "deep_work_minutes": 210,
+    "meetings_minutes": 45,
+    "context_switches": 4,
+    "energy_score": 90.0,
+    "burnout_score": 7.5,
+    "weekly_productivity_score": 33.5
+  }
+}
